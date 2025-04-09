@@ -1,5 +1,14 @@
 # Odoo18 tk_construction rss
 
+### APP Installation order:
+
+Seguire questo ordine di installazione pacchetti per non incappare in errori di caricamento dei dashboard:
+
+- TK Construction
+- HelpDesk
+- Contabilità
+
+
 ### Connecting to VPS
 ```
 ssh root@212.227.232.51
