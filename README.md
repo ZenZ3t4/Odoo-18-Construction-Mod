@@ -4,9 +4,11 @@
 
 Seguire questo ordine di installazione pacchetti per non incappare in errori di caricamento dei dashboard:
 
-- TK Construction
+- TK Construction Managment
 - HelpDesk
 - Contabilità
+
+Non mantenendo questo ordine, si hanno degli errori con gli script .js quando si carica la dashboard di tk_construction_managment
 
 
 ### Connecting to VPS
