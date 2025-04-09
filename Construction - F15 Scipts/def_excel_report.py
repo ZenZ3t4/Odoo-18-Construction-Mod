@@ -35,7 +35,7 @@
         al.horz = xlwt.Alignment.HORZ_LEFT
         al.vert = xlwt.Alignment.VERT_CENTER
         date_format = xlwt.XFStyle()
-        date_format.num_format_str = 'mm/dd/yyyy'
+        date_format.num_format_str = 'dd/mm/yyyy'
         date_format.font.name = "Century Gothic"
         date_format.borders = border_squre
         date_format.alignment = al
@@ -85,7 +85,7 @@
             "align: vert center, horz right; "
             "border: top hair, bottom hair, left hair, right hair, "
             "top_color gray50, bottom_color gray50, left_color gray50, right_color gray50"
-            ,num_format_str = "€_#,##0.00")
+            ,num_format_str = "[$€] #,##0.00;-[$€] #,##0.00")
         #
         # 1.0 Budget details
         #
@@ -112,7 +112,7 @@
         sheet1.write_merge(6, 6, 7, 8, "Data Fine", sub_title)
         sheet1.write_merge(6, 6, 10, 11, self.budget_id.end_date, date_format)
         sheet1.write_merge(8, 8, 1, 2, "Totale Budget", sub_title)
-        sheet1.write_merge(8, 8, 4, 5, budget_amount, values)
+        sheet1.write_merge(8, 8, 4, 5, budget_amount, f15_euro_value)
         sheet1.write_merge(10, 10, 1, 2, "Utilizzo del Budget", sub_title)
         sheet1.write_merge(10, 10, 4, 5, utilization_amount, f15_euro_value)
         sheet1.write_merge(12, 12, 1, 2, "Utilizzo (%)", sub_title)
@@ -255,7 +255,7 @@
             "align: vert center, horz right; "
             "border: top hair, bottom hair, left hair, right hair, "
             "top_color gray50, bottom_color gray50, left_color gray50, right_color gray50",
-            num_format_str = "€_#,##0.00")
+            num_format_str = "[$€] #,##0.00;-[$€] #,##0.00")
         
         for data in self.budget_id.budget_line_ids:
             budget_phase_ids = self.env['job.costing'].search(
@@ -269,7 +269,7 @@
             equip_spent_rec = self.env['order.equipment.line'].search(domain)
             labour_spent_rec = self.env['order.labour.line'].search(domain)
             overhead_spent_rec = self.env['order.overhead.line'].search(domain)
-            sheet_name = data.sub_category_id.name
+            sheet_name = "BoQ " + data.sub_category_id.name
             sheet = workbook.add_sheet(sheet_name, cell_overwrite_ok=True)
             sheet.show_grid = False
             row = 0
@@ -280,7 +280,7 @@
             # sheet.write(4, 1, (str(self.budget_id.currency_id.symbol) +
             #                    " " + str(data.budget)), sub_title_amount)
             sheet.write(4, 1, (data.budget), f15_euro_value)
-            sheet.write_merge(4, 4, 3, 4, "Ammontare Budget utilizzato", sub_title2)
+            sheet.write_merge(4, 4, 3, 4, "Budget utilizzato", sub_title2)
             # sheet.write_merge(4, 4, 5, 6, (str(self.budget_id.currency_id.symbol) +
             #                                " " + str((data.budget - data.remaining_budget))),
             #                   sub_title_amount)
@@ -291,7 +291,7 @@
             sheet.write_merge(6, 6, 5, 6, (data.remaining_budget), f15_euro_value)
             row = 5
             # Material Rec
-            sheet.write_merge(row + 4, row + 5, 0, 4, "Materiale speso", title2)
+            sheet.write_merge(row + 4, row + 5, 0, 4, "Materiale utilizzato", title2)
             # sheet.write_merge(row + 4, row + 5, 5, 6, (str(self.budget_id.currency_id.symbol) +
             #                                            " " + str(data.material_spent)), title3)
             sheet.write_merge(row + 4, row + 5, 5, 6, (data.material_spent), f15_euro_value)
@@ -314,8 +314,8 @@
             row = row + 7
             for rec in material_spent_rec:
                 sheet.row(row).height = 400
-                sheet.write(row, 0, rec.job_sheet_id.name, line_values)
-                sheet.write(row, 1, rec.job_order_id.name, line_values)
+                sheet.write(row, 0, rec.job_sheet_id.title, line_values)
+                sheet.write(row, 1, rec.job_order_id.task_name, line_values)
                 sheet.write(row, 2, rec.name, line_values)
                 sheet.write(row, 3, rec.qty, line_amount_sub_title)
                 sheet.write(row, 4, rec.uom_id.name, line_values)
@@ -331,7 +331,7 @@
 
             # Equipment Rec
             sheet.write_merge(row + 1, row + 2, 0, 4,
-                              "Attrezzatura spesa", title2)
+                              "Attrezzatura Utilizzata", title2)
             # sheet.write_merge(row + 1, row + 2, 5, 6, (str(self.budget_id.currency_id.symbol) +
             #                                            " " + str(data.equipment_spent)), title3)
             sheet.write_merge(row + 1, row + 2, 5, 6, (data.equipment_spent), f15_euro_value)
@@ -339,7 +339,7 @@
             sheet.row(row).height = 600
             sheet.write(row, 0, "Fase del progetto(WBS)", sub_title)
             sheet.write(row, 1, "Ordine di Lavoro", sub_title)
-            sheet.write(row, 2, "Fornitore", sub_title)
+            sheet.write(row, 2, "Fornitore/Dipendente", sub_title)
             sheet.write(row, 3, "Attrezzatura", sub_title)
             sheet.write(row, 4, "Qta.", line_amount_sub_title)
             sheet.write(row, 5, "Prezzo cad", line_amount_sub_title)
@@ -349,10 +349,10 @@
                 sheet.row(row).height = 400
                 # sheet.write(row, 0, (rec.job_sheet_id.name +
                 #                      " - " + rec.job_order_id.name), line_values)
-                sheet.write(row, 0, (rec.job_order_id.name), line_values)
+                sheet.write(row, 0, (rec.job_sheet_id.title), line_values)
                 # sheet.write(row, 1, (rec.job_order_id.name +
                 #                      " - " + rec.job_order_id.name), line_values)
-                sheet.write(row, 1, (rec.job_order_id.name), line_values)
+                sheet.write(row, 1, (rec.job_order_id.task_name), line_values)
                 sheet.write(row, 2, rec.vendor_id.name, line_values)
                 sheet.write(row, 3, rec.desc, line_values)
                 sheet.write(row, 4, rec.qty, line_amount_sub_title)
@@ -367,7 +367,7 @@
             row = row + 1
 
             # Labour Rec
-            sheet.write_merge(row + 1, row + 2, 0, 4, "Manodopera spesa", title2)
+            sheet.write_merge(row + 1, row + 2, 0, 4, "Manodopera utilizzata", title2)
             # sheet.write_merge(row + 1, row + 2, 5, 6, (str(self.budget_id.currency_id.symbol) +
             #                                            " " + str(data.labour_spent)), title3)
             sheet.write_merge(row + 1, row + 2, 5, 6, (data.labour_spent), f15_euro_value)
@@ -375,7 +375,7 @@
             sheet.row(row).height = 600
             sheet.write(row, 0, "Fase del progetto(WBS)", sub_title)
             sheet.write(row, 1, "Ordine di Lavoro", sub_title)
-            sheet.write(row, 2, "Fornitore", sub_title)
+            sheet.write(row, 2, "Fornitore/Dipendente", sub_title)
             sheet.write(row, 3, "Prodotto", sub_title)
             sheet.write(row, 4, "Ore", line_amount_sub_title)
             sheet.write(row, 5, "Costo Orario", line_amount_sub_title)
@@ -383,8 +383,8 @@
             row = row + 1
             for rec in labour_spent_rec:
                 sheet.row(row).height = 400
-                sheet.write(row, 0, rec.job_sheet_id.name, line_values)
-                sheet.write(row, 1, rec.job_order_id.name, line_values)
+                sheet.write(row, 0, rec.job_sheet_id.title, line_values)
+                sheet.write(row, 1, rec.job_order_id.task_name, line_values)
                 sheet.write(row, 2, rec.vendor_id.name, line_values)
                 sheet.write(row, 3, rec.name, line_values)
                 sheet.write(row, 4, rec.hours, line_amount_sub_title)
@@ -399,7 +399,7 @@
             row = row + 1
 
             # Overhead Rec
-            sheet.write_merge(row + 1, row + 2, 0, 4, "Spese generali ", title2)
+            sheet.write_merge(row + 1, row + 2, 0, 4, "Spese generali utilizzate", title2)
             # sheet.write_merge(row + 1, row + 2, 5, 6, (str(self.budget_id.currency_id.symbol) +
             #                                            " " + str(data.overhead_spent)), title3)
             sheet.write_merge(row + 1, row + 2, 5, 6, (data.overhead_spent), f15_euro_value)
@@ -407,7 +407,7 @@
             sheet.row(row).height = 600
             sheet.write(row, 0, "Fase del progetto(WBS)", sub_title)
             sheet.write(row, 1, "Ordine di Lavoro", sub_title)
-            sheet.write(row, 2, "Fornitore", sub_title)
+            sheet.write(row, 2, "Fornitore/Dipendente", sub_title)
             sheet.write(row, 3, "Prodotto", sub_title)
             sheet.write(row, 4, "Qta", line_amount_sub_title)
             sheet.write(row, 5, "Prezzo cad.", line_amount_sub_title)
@@ -419,8 +419,8 @@
                 #                      " - " + rec.job_order_id.name), line_values)
                 # sheet.write(row, 1, (rec.job_order_id.name +
                 #                      " - " + rec.job_order_id.name), line_values)
-                sheet.write(row, 0, rec.job_order_id.name, line_values)
-                sheet.write(row, 1, rec.job_order_id.name, line_values)
+                sheet.write(row, 0, rec.job_sheet_id.title, line_values)
+                sheet.write(row, 1, rec.job_order_id.task_name, line_values)
                 sheet.write(row, 2, rec.vendor_id.name, line_values)
                 sheet.write(row, 3, rec.name, line_values)
                 sheet.write(row, 4, rec.qty, line_amount_sub_title)
