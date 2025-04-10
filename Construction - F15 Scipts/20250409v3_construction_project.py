@@ -1,6 +1,22 @@
 # -*- coding: utf-8 -*-
 # Copyright 2020-Today TechKhedut.
 # Part of TechKhedut. See LICENSE file for full copyright and licensing details.
+# **************************************************************************
+# Freeday15 adds:
+# f15_x = f15_ suffix for every additional variable we use for our pourposes
+# --------------------------------------------------------------------------
+# Excel visual compiler - tracking:
+# 0.0 Data formats
+# 1.0 Budget details
+#     1.1 Headers
+#     1.2 Budget Lines
+# 2.0 BoQ line (sheet) details
+#     2.1 Headers
+#     2.2 Material Spent
+#     2.3 Equipment Spent
+#     2.4 Labour Spent
+#     2.5 Overhead Spent
+# ************************************************************************
 import base64
 from io import BytesIO
 import xlwt
@@ -488,24 +504,28 @@ class ConstructionProject(models.Model):
         # 20250401 f15_euro_value style
         #
         f15_euro_value = xlwt.easyxf(
-            "font: height 185, name Century Gothic, bold on, color_index gray80; "
+            "font: height 185, name Century Gothic, color_index gray80; "
             "align: vert center, horz right; "
             "border: top hair, bottom hair, left hair, right hair, "
             "top_color gray50, bottom_color gray50, left_color gray50, right_color gray50"
             ,num_format_str = "[$€] #,##0.00;-[$€] #,##0.00")
+        
+        f15_euro_value_bold = xlwt.easyxf(
+            "font:name Century Gothic, bold on, color_index blue_gray;"
+            " align: vert center, horz left;"
+            "border: bottom hair, bottom_color sea_green;"
+            ,num_format_str = "[$€] #,##0.00;-[$€] #,##0.00")
         #
         # 1.0 Budget details
-        #
+        #     1.1 Headers
         # Notes:
         # 20250401 - vecchia stampa
         # budget_amount = str(self.budget_id.currency_id.symbol) + \
         #                 " " + str(self.budget_id.total_budget_amount)
         # per stampare correttamente i numeri e sfruttare le funzioni di somma di Excel:
         # bisogna levare la funzione str da ogni variabile numerica in stampa sulle celle
-
+        #
         budget_amount = self.budget_id.total_budget_amount
-        # utilization_amount = str(self.budget_id.currency_id.symbol) + " " + str(
-        #     self.budget_id.utilization_amount)
         utilization_amount = self.budget_id.utilization_amount
         utilization_percentage = str(self.budget_id.progress) + " %"
         sheet1.write_merge(0, 2, 1, 11, "Dettaglio del Budget", title)
@@ -514,17 +534,19 @@ class ConstructionProject(models.Model):
         sheet1.write_merge(6, 6, 1, 2, "Sub Commessa", sub_title)
         sheet1.write_merge(6, 6, 4, 5, self.name, values)
         sheet1.write_merge(4, 4, 7, 8, "Data Inizio", sub_title)
-        sheet1.write_merge(
-            4, 4, 10, 11, self.budget_id.start_date, date_format)
+        sheet1.write_merge(4, 4, 10, 11, self.budget_id.start_date, date_format)
         sheet1.write_merge(6, 6, 7, 8, "Data Fine", sub_title)
         sheet1.write_merge(6, 6, 10, 11, self.budget_id.end_date, date_format)
         sheet1.write_merge(8, 8, 1, 2, "Totale Budget", sub_title)
-        sheet1.write_merge(8, 8, 4, 5, budget_amount, f15_euro_value)
+        sheet1.write_merge(8, 8, 4, 5, budget_amount, f15_euro_value_bold)
         sheet1.write_merge(10, 10, 1, 2, "Utilizzo del Budget", sub_title)
-        sheet1.write_merge(10, 10, 4, 5, utilization_amount, f15_euro_value)
+        sheet1.write_merge(10, 10, 4, 5, utilization_amount, f15_euro_value_bold)
         sheet1.write_merge(12, 12, 1, 2, "Utilizzo (%)", sub_title)
         sheet1.write_merge(12, 12, 4, 5, utilization_percentage, values)
+        #
         # Budget Lines
+        # 1.0 Budget details
+        #     1.2 Budget Lines
         sheet1.write_merge(14, 15, 1, 22, "Linee di Budget", title)
         sheet1.write_merge(17, 17, 1, 3, "Tipologia Lavorazione", sub_title)
         sheet1.write_merge(17, 17, 4, 6, "Sottotipo lavorazione", sub_title)
@@ -557,28 +579,6 @@ class ConstructionProject(models.Model):
                                    data.additional_qty), line_amount_values)
             sheet1.write(col, 12, ((data.rate_analysis_id.name)
                                    if data.rate_analysis_id else ""), line_values)
-            # -------------------------------------------------------------------------------------
-            # 20250401 fix after newly created f15_euro_value style - see changelog
-            #
-            # sheet1.write(col, 13, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.price_per_qty)), line_amount_values)
-            # sheet1.write(col, 14, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.untaxed_amount)), line_amount_values)
-            # sheet1.write(col, 15, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.tax_amount)), line_amount_values)
-            # sheet1.write(col, 16, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.budget)), line_amount_values)
-            # sheet1.write(col, 17, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.material_spent)), line_amount_values)
-            # sheet1.write(col, 18, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.equipment_spent)), line_amount_values)
-            # sheet1.write(col, 19, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.labour_spent)), line_amount_values)
-            # sheet1.write(col, 20, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.overhead_spent)), line_amount_values)
-            # sheet1.write(col, 21, (str(self.budget_id.currency_id.symbol) +
-            #                        " " + str(data.remaining_budget)), line_amount_values)
-            # -------------------------------------------------------------------------------------
             sheet1.write(col, 13, (data.price_per_qty), f15_euro_value)
             sheet1.write(col, 14, (data.untaxed_amount), f15_euro_value)
             sheet1.write(col, 15, (data.tax_amount), f15_euro_value)
@@ -617,6 +617,9 @@ class ConstructionProject(models.Model):
 
     def get_budget_spent(self, workbook):
         """Budget Spent Excel Report"""
+        #
+        # 0.0 Data formats
+        #
         title = xlwt.easyxf(
             "font: height 300, name Century Gothic, bold on, color_index blue_gray;"
             " align: vert center, horz center;"
@@ -664,6 +667,13 @@ class ConstructionProject(models.Model):
             "top_color gray50, bottom_color gray50, left_color gray50, right_color gray50",
             num_format_str = "[$€] #,##0.00;-[$€] #,##0.00")
         
+        # Euro Values for sub_titles
+        f15_euro_value_bold = xlwt.easyxf(
+            "font:name Century Gothic, bold on, color_index blue_gray;"
+            " align: vert center, horz left;"
+            "border: bottom hair, bottom_color sea_green;"
+            ,num_format_str = "[$€] #,##0.00;-[$€] #,##0.00")
+        
         for data in self.budget_id.budget_line_ids:
             budget_phase_ids = self.env['job.costing'].search(
                 [('project_id', '=', self.id), ('activity_id', '=', data.job_type_id.id)]).mapped(
@@ -682,26 +692,21 @@ class ConstructionProject(models.Model):
             row = 0
             sheet.row(4).height = 400
             sheet.row(6).height = 400
+            # 2.0 BoQ line (sheet) details
+            #     2.1 Headers
             sheet.write_merge(0, 2, 0, 6, sheet_name, title)
             sheet.write(4, 0, "Budget totale", sub_title2)
-            # sheet.write(4, 1, (str(self.budget_id.currency_id.symbol) +
-            #                    " " + str(data.budget)), sub_title_amount)
-            sheet.write(4, 1, (data.budget), f15_euro_value)
+            sheet.write(4, 1, (data.budget), f15_euro_value_bold)
             sheet.write_merge(4, 4, 3, 4, "Budget utilizzato", sub_title2)
-            # sheet.write_merge(4, 4, 5, 6, (str(self.budget_id.currency_id.symbol) +
-            #                                " " + str((data.budget - data.remaining_budget))),
-            #                   sub_title_amount)
-            sheet.write_merge(4, 4, 5, 6, (data.budget - data.remaining_budget), f15_euro_value)
+            sheet.write_merge(4, 4, 5, 6, (data.budget - data.remaining_budget), f15_euro_value_bold)
             sheet.write_merge(6, 6, 3, 4, "Budget rimanente", sub_title2)
-            # sheet.write_merge(6, 6, 5, 6, (str(self.budget_id.currency_id.symbol) +
-            #                                " " + str(data.remaining_budget)), sub_title_amount)
-            sheet.write_merge(6, 6, 5, 6, (data.remaining_budget), f15_euro_value)
+            sheet.write_merge(6, 6, 5, 6, (data.remaining_budget), f15_euro_value_bold)
             row = 5
             # Material Rec
+            # 2.0 BoQ line (sheet) details
+            #     2.2 Material Spent
             sheet.write_merge(row + 4, row + 5, 0, 4, "Materiale utilizzato", title2)
-            # sheet.write_merge(row + 4, row + 5, 5, 6, (str(self.budget_id.currency_id.symbol) +
-            #                                            " " + str(data.material_spent)), title3)
-            sheet.write_merge(row + 4, row + 5, 5, 6, (data.material_spent), f15_euro_value)
+            sheet.write_merge(row + 4, row + 5, 5, 6, (data.material_spent), f15_euro_value_bold)
             
             sheet.col(0).width = 8000
             sheet.col(1).width = 8000
@@ -726,22 +731,17 @@ class ConstructionProject(models.Model):
                 sheet.write(row, 2, rec.name, line_values)
                 sheet.write(row, 3, rec.qty, line_amount_sub_title)
                 sheet.write(row, 4, rec.uom_id.name, line_values)
-                # sheet.write(row, 5, (str(self.budget_id.currency_id.symbol) +
-                #                      " " + str(rec.price)), line_amount_sub_title)
                 sheet.write(row, 5, (rec.price), f15_euro_value)
-                # sheet.write(row, 6, (str(self.budget_id.currency_id.symbol) +
-                #                      " " + str(rec.total_price)), line_amount_sub_title)
                 sheet.write(row, 6, (rec.total_price), f15_euro_value)
                 row = row + 1
             sheet.write_merge(row, row, 0, 6, " ", horiz_double_line)
             row = row + 1
 
             # Equipment Rec
-            sheet.write_merge(row + 1, row + 2, 0, 4,
-                              "Attrezzatura Utilizzata", title2)
-            # sheet.write_merge(row + 1, row + 2, 5, 6, (str(self.budget_id.currency_id.symbol) +
-            #                                            " " + str(data.equipment_spent)), title3)
-            sheet.write_merge(row + 1, row + 2, 5, 6, (data.equipment_spent), f15_euro_value)
+            # 2.0 BoQ line (sheet) details
+            #     2.3 Equipment Spent
+            sheet.write_merge(row + 1, row + 2, 0, 4, "Attrezzatura Utilizzata", title2)
+            sheet.write_merge(row + 1, row + 2, 5, 6, (data.equipment_spent), f15_euro_value_bold)
             row = row + 3
             sheet.row(row).height = 600
             sheet.write(row, 0, "Fase del progetto(WBS)", sub_title)
@@ -754,19 +754,11 @@ class ConstructionProject(models.Model):
             row = row + 1
             for rec in equip_spent_rec:
                 sheet.row(row).height = 400
-                # sheet.write(row, 0, (rec.job_sheet_id.name +
-                #                      " - " + rec.job_order_id.name), line_values)
                 sheet.write(row, 0, (rec.job_sheet_id.title), line_values)
-                # sheet.write(row, 1, (rec.job_order_id.name +
-                #                      " - " + rec.job_order_id.name), line_values)
                 sheet.write(row, 1, (rec.job_order_id.task_name), line_values)
                 sheet.write(row, 2, rec.vendor_id.name, line_values)
                 sheet.write(row, 3, rec.desc, line_values)
                 sheet.write(row, 4, rec.qty, line_amount_sub_title)
-                # sheet.write(row, 5, (str(self.budget_id.currency_id.symbol) +
-                #                      " " + str(rec.cost)), line_amount_sub_title)
-                # sheet.write(row, 6, (str(self.budget_id.currency_id.symbol) +
-                #                      " " + str(rec.total_cost)), line_amount_sub_title)
                 sheet.write(row, 5, (rec.cost), f15_euro_value)
                 sheet.write(row, 6, (rec.total_cost), f15_euro_value)
                 row = row + 1
@@ -774,9 +766,9 @@ class ConstructionProject(models.Model):
             row = row + 1
 
             # Labour Rec
-            sheet.write_merge(row + 1, row + 2, 0, 4, "Manodopera utilizzata", title2)
-            # sheet.write_merge(row + 1, row + 2, 5, 6, (str(self.budget_id.currency_id.symbol) +
-            #                                            " " + str(data.labour_spent)), title3)
+            # 2.0 BoQ line (sheet) details
+            #     2.4 Labour Spent
+            sheet.write_merge(row + 1, row + 2, 0, 4, "Manodopera utilizzata", f15_euro_value_bold)
             sheet.write_merge(row + 1, row + 2, 5, 6, (data.labour_spent), f15_euro_value)
             row = row + 3
             sheet.row(row).height = 600
@@ -795,20 +787,16 @@ class ConstructionProject(models.Model):
                 sheet.write(row, 2, rec.vendor_id.name, line_values)
                 sheet.write(row, 3, rec.name, line_values)
                 sheet.write(row, 4, rec.hours, line_amount_sub_title)
-                # sheet.write(row, 5, (str(self.budget_id.currency_id.symbol) +
-                #                      " " + str(rec.cost)), line_amount_sub_title)
-                # sheet.write(row, 6, (str(self.budget_id.currency_id.symbol) +
-                #                      " " + str(rec.sub_total)), line_amount_sub_title)
                 sheet.write(row, 5, (rec.cost),f15_euro_value)
                 sheet.write(row, 6, (rec.sub_total), f15_euro_value)
                 row = row + 1
             sheet.write_merge(row, row, 0, 6, " ", horiz_double_line)
             row = row + 1
-
+            
             # Overhead Rec
+            # 2.0 BoQ line (sheet) details
+            #     2.5 Overhead Spent
             sheet.write_merge(row + 1, row + 2, 0, 4, "Spese generali utilizzate", title2)
-            # sheet.write_merge(row + 1, row + 2, 5, 6, (str(self.budget_id.currency_id.symbol) +
-            #                                            " " + str(data.overhead_spent)), title3)
             sheet.write_merge(row + 1, row + 2, 5, 6, (data.overhead_spent), f15_euro_value)
             row = row + 3
             sheet.row(row).height = 600
@@ -822,19 +810,11 @@ class ConstructionProject(models.Model):
             row = row + 1
             for rec in overhead_spent_rec:
                 sheet.row(row).height = 400
-                # sheet.write(row, 0, (rec.job_sheet_id.name +
-                #                      " - " + rec.job_order_id.name), line_values)
-                # sheet.write(row, 1, (rec.job_order_id.name +
-                #                      " - " + rec.job_order_id.name), line_values)
                 sheet.write(row, 0, rec.job_sheet_id.title, line_values)
                 sheet.write(row, 1, rec.job_order_id.task_name, line_values)
                 sheet.write(row, 2, rec.vendor_id.name, line_values)
                 sheet.write(row, 3, rec.name, line_values)
                 sheet.write(row, 4, rec.qty, line_amount_sub_title)
-                # sheet.write(row, 5, (str(self.budget_id.currency_id.symbol) +
-                #                      " " + str(rec.cost)), line_amount_sub_title)
-                # sheet.write(row, 6, (str(self.budget_id.currency_id.symbol) +
-                #                      " " + str(rec.sub_total)), line_amount_sub_title)
                 sheet.write(row, 5, (rec.cost), f15_euro_value)
                 sheet.write(row, 6, (rec.sub_total), f15_euro_value)
                 row = row + 1
