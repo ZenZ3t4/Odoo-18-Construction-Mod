@@ -1,0 +1,56 @@
+<page name="gestione_commessa" position="replace">
+    <page string="Gestione Commessa">
+        <group colspan="2">
+            <!-- Colonna 1: COSTI -->
+            <group colspan="1">
+                <group string="COSTI">
+                    <field name="x_preventivo_commessa_id" string="Analisi dei costi"/>
+                    <field string="% Costi Generali" name="x_percentuale_costi_gestione" ttype="float" groups="sales_team.group_sale_manager"/>
+                    <field string="% IRAP" name="x_percentuale_irap" ttype="float" groups="sales_team.group_sale_manager"/>
+                    <field string="% IRES" name="x_percentuale_ires" ttype="float" groups="sales_team.group_sale_manager"/>
+                </group>
+            </group>
+
+            <!-- Colonna 2: AMMORTAMENTI -->
+            <group colspan="1">
+                <group string="AMMORTAMENTI">
+                    <field string="Oneri Finanziari" name="x_oneri_finanziari_totali" ttype="float" groups="sales_team.group_sale_manager" style="white-space: nowrap;"/>
+                    <field string="Ammortamento Materiale" name="x_ammortamento_materiale" ttype="float" readonly="1" groups="sales_team.group_sale_manager"/>
+                    <field string="Ammortamento Immateriale" name="x_ammortamento_immateriale" ttype="float" readonly="1" groups="sales_team.group_sale_manager"/>
+                </group>
+            </group>
+
+            <!-- Colonna 3: IMPOSTE -->
+            <group colspan="1">
+                <group string="IMPOSTE">
+                    <field name="x_computed_irap" readonly="1" string="IRAP [€]"/>
+                    <field name="x_computed_ires" readonly="1" string="IRES [€]"/>
+                </group>
+                    <!-- Separatore per il "Valori di default" -->
+                    <separator string=" " colspan="1"/>
+                    <div style="font-size: 12px;">
+                        <p>Valori di default:</p>
+                        <i>
+                            % Costi di Gestione: 15%<br/>
+                            % IRAP: 4.5%<br/>
+                            % IRES: 24%
+                        </i>
+                    </div>
+            </group>
+
+            <!-- Colonna 4: INDICATORI -->
+            <group colspan="1">
+                <group string="RIEPILOGO">
+                    <field name="expected_revenue" readonly="1" string="Ricavi Previsti"/>
+                    <field name="x_computed_costi_totali" readonly="1" string="Costi Totali" style="white-space: nowrap;"/>
+                    <field name="x_importo_commessa" string="Costi Diretti" readonly="1" style="white-space: nowrap;"/>
+                    <field name="x_costi_gestione" readonly="1" string="Costi Generali" style="white-space: nowrap;"/>
+                    <field name="x_computed_ebitda" readonly="1" string="EBITDA" style="white-space: nowrap;"/>
+                    <field name="x_computed_ebt" readonly="1" string="EBT" style="white-space: nowrap;"/>
+                    <field name="x_computed_utile_netto" readonly="1" string="Utile Netto" style="white-space: nowrap;"/>
+                    <field name="x_computed_ricavo_minimo" readonly="1" widget="html"/>
+                </group>
+            </group>
+        </group>
+    </page>
+</page>
