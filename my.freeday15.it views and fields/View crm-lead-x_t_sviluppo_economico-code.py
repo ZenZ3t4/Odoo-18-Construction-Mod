@@ -19,6 +19,7 @@ for record in self:
         costi_operativi_successivo = record.x_importo_untaxed_gestione or 0.0  # Costi operativi anni successivi
         percenutale_costi_generali = record.x_percentuale_costi_gestione or 0.0
         tabella_sviluppo = ""  # Stringa per generare la tabella HTML
+        project_equity = record.x_importo_equity
         
         # Calcolo aliquota costi generali applicati alla Gestione
         if percenutale_costi_generali > 0:
@@ -76,7 +77,13 @@ for record in self:
         debito_totale = 0
         utile_netto_totale = 0
         fco_attualizzato_totale = 0
-
+        dscr_cumulato = 0
+        payback_year = 0
+        fco_cumulato = 0.0
+        payback_trovato = False
+        tasso_attualizzazione = 0.0465  # Puoi anche renderlo personalizzabile da un campo
+        van_totale = 0.0
+        
         for anno in range(1, durata_contratto + 1):
              # Ammortamento materiale annuale
             if anno <= am_mat_durata_1:
@@ -137,10 +144,9 @@ for record in self:
                 rata_annuale = 0  # Dopo la fine del finanziamento la rata diventa 0
                 
             # Calcolare i ricavi annuali (ricavi previsti distribuiti + ricavi ricorrenti ogni anno)
-            ricavi_anno = ricavi_previsti + ricavi_recorrenti + equity + contributo_pubblico
+            ricavi_anno = ricavi_previsti + ricavi_recorrenti + contributo_pubblico
 
             # Costi operativi: Anno 1 prende costi operativi specifici, anni successivi usano x_importo_untaxed_gestione
-
             
 
             if anno == 1 and costi_operativi_anno_0 > 0:
@@ -153,10 +159,15 @@ for record in self:
             
 
             # Calcolare EBITDA, EBT e Utile Netto per ogni anno, tenendo conto della quota interessi
+
             ebitda = ricavi_anno - costi_operativi - costi_generali
             ebt = ebitda - quota_interessi - ammortamento_materiale_totale - ammortamento_immateriale_totale# EBT diminuisce con la quota interessi
             irap = ricavi_anno * (record.x_percentuale_irap / 100)  # IRAP calcolato sui ricavi
             ires = (ebt - irap) * (record.x_percentuale_ires / 100)
+            
+            # Calcolo DSCR
+            dscr_cumulato += (ebitda/rata_annuale) if anno <= durata_finanziamento else 0
+            
             
             if ires < 0:
                 ires = 0  # Se il valore è negativo, IRES è 0
@@ -186,7 +197,18 @@ for record in self:
             utile_netto_totale += utile_netto
             
             # Somma dei flussi di cassa operativi attualizzati per il calcolo di LLCR
-            fco_attualizzato_totale += fco / (1 + tasso_interesse_annuo)**anno
+            if anno <= durata_finanziamento:
+                fco_attualizzato_totale += fco / (1 + tasso_interesse_annuo)**anno
+            
+             # Calcolo PAYBACK Year
+            if not payback_trovato:
+                fco_cumulato += fco
+                if fco_cumulato >= project_equity:
+                    payback_year = anno
+                    payback_trovato = True
+            
+            # Calcolo VAN
+            van_totale += fco / ((1 + tasso_attualizzazione) ** anno)
 
             # Applicare colore rosso se il valore è negativo
             def color_negative(value):
@@ -250,18 +272,25 @@ for record in self:
                 </tbody>
             </table>
         """
+        
         # Calcolo del DSCR come valore unico
-        dscr_unico = fco_totale / debito_totale if debito_totale != 0 else 0
+        dscr_unico = dscr_cumulato / durata_finanziamento if durata_finanziamento > 0 else 0
 
         # Calcolo del LLCR come valore unico
-        llcr_unico = fco_attualizzato_totale / capitale_residuo if capitale_residuo != 0 else 0
+        llcr_unico = fco_attualizzato_totale / importo_banca if importo_banca > 0 else 0
 
         # Calcolo del ROE come valore unico
-        roe_unico = utile_netto_totale / equity if equity != 0 else 0
+        roe_unico = utile_netto_totale / project_equity if project_equity != 0 else 0
+        
+        # Calcolo del VAN
+        project_investimento = record.x_importo_untaxed_investimento
+        van_finale = van_totale - project_equity  # oppure -investimento se vuoi il VAN globale
         
         record['x_dscr'] = dscr_unico
         record['x_llcr'] = llcr_unico
         record['x_roe'] = roe_unico
+        record['x_payback_year'] = payback_year
+        record['x_indicatore_van'] = van_finale
         
     except Exception:
         record['x_t_sviluppo_economico'] = "<p>...</p>"

@@ -3,23 +3,22 @@
         <group col="3" colspan="3" string="INFORMAZIONI DI BASE">
             <!-- Colonna 3: INFORMAZIONI -->
             <group string="INFORMAZIONI" colspan="1">
-                <field string="% Costi Generali" name="x_percentuale_costi_gestione" ttype="float" />
-                <field string="% IRAP" name="x_percentuale_irap" ttype="float" />
-                <field string="% IRES" name="x_percentuale_ires" ttype="float" />
+                <field string="% Costi Generali" name="x_percentuale_costi_gestione" ttype="float"/>
+                <field string="% IRAP" name="x_percentuale_irap" ttype="float"/>
+                <field string="% IRES" name="x_percentuale_ires" ttype="float"/>
             </group>
             <!-- Colonna 2: INVESTIMENTO -->
             <group string="INVESTIMENTO" colspan="1">
-                <field name="x_preventivo_investimento_id" string="Analisi dei costi" />
-                <field string="Costi investimento" name="x_importo_untaxed_investimento" ttype="float" readonly="1" />
-                <field string="Contributo Extra" name="x_importo_contributo_extra" ttype="float" />
-                <field string="Equity" name="x_importo_equity" ttype="float" />
+                <field name="x_preventivo_investimento_id" string="Analisi dei costi"/>
+                <field string="Costi investimento" name="x_importo_untaxed_investimento" ttype="float" readonly="1"/>
+                <field string="Contributo Extra" name="x_importo_contributo_extra" ttype="float"/>
+                <field string="Equity" name="x_importo_equity" ttype="float"/>
             </group>
             <!-- Colonna 3: GESTIONE -->
             <group string="GESTIONE" colspan="1">
-                <field name="x_preventivo_gestione_id" string="Analisi dei costi" />
-                <field string="Costi Gestione" name="x_importo_untaxed_gestione" ttype="float"
-                    readonly="1" />
-                <field string="€ Gestione Anno 1:" name="x_importo_gestione_anno_0" ttype="float" />
+                <field name="x_preventivo_gestione_id" string="Analisi dei costi"/>
+                <field string="Costi Gestione" name="x_importo_untaxed_gestione" ttype="float" readonly="1"/>
+                <field string="€ Gestione Anno 1:" name="x_importo_gestione_anno_0" ttype="float"/>
                 <div style="font-size: 14px;">
                     <p><i>Lasciare vuoto in caso siano uguali ai costi impostati in analisi dei costi</i></p>
                 </div>
@@ -27,48 +26,51 @@
         </group>
         <!-- Riga 2 - Colonne x1 : SVILUPPO ECONOMICO -->
         <group string="SVILUPPO ECONOMICO-FINANZIARIO" colspan="4">
-            <field string="Durata Contratto (Anni)" name="x_durata_contratto" ttype="int" groups="" />
-            <field string="Sviluppo Economico:" name="x_t_sviluppo_economico" ttype="html" groups="" />
+            <field string="Durata Contratto (Anni)" name="x_durata_contratto" ttype="int" groups=""/>
+            <field string="Sviluppo Economico:" name="x_t_sviluppo_economico" ttype="html" groups=""/>
         </group>
         <group string="INDICATORI" col="3" colspan="3">
-                <group colspan="1"><field name="x_dscr" ttype="float" groups="" /></group>
-                <group colspan="1"><field name="x_llcr" ttype="float" groups="" /></group>
-                <group colspan="1"><field name="x_roe" ttype="float" groups="" /></group>
+                <group colspan="1"><field name="x_dscr" ttype="float" groups=""/></group>
+                <group colspan="1"><field name="x_llcr" ttype="float" groups=""/></group>
+                <group colspan="1"><field name="x_roe" ttype="float" groups=""/></group>
+                <!-- <group colspan="1"><field name="x_tir" ttype="float" groups=""/></group> -->
+                <group colspan="1"><field name="x_indicatore_van" ttype="float" groups="" readonly="1"/></group>
+                <group colspan="1"><field name="x_payback_year" ttype="float" groups="" readonly="1"/></group>
             </group>
         <!-- Riga 3 - Colonne x2 : DATI COMPUTAZIONALI-->
         <group col="3" colspan="3" string="DATI COMPUTAZIONALI">
             <group string="Riepilogo Costi-Oneri-Tasse" colspan="1">
-                <field string="% Costi Generali" name="x_percentuale_costi_gestione" ttype="float" readonly="1" />
-                <field string="Oneri Finanziari da Banca" name="x_oneri_finanziari_totali" ttype="float" style="white-space: nowrap;" readonly="1" />
-                <field string="Durata Finanziamento" name="x_durata_finanziamento" ttype="integer" readonly="1" />
-                <field string="% IRAP" name="x_percentuale_irap" ttype="float" readonly="1" />
-                <field string="% IRES" name="x_percentuale_ires" ttype="float" readonly="1" />
+                <field string="% Costi Generali" name="x_percentuale_costi_gestione" ttype="float" readonly="1"/>
+                <field string="Oneri Finanziari da Banca" name="x_oneri_finanziari_totali" ttype="float" style="white-space: nowrap;" readonly="1"/>
+                <field string="Durata Finanziamento" name="x_durata_finanziamento" ttype="integer" readonly="1"/>
+                <field string="% IRAP" name="x_percentuale_irap" ttype="float" readonly="1"/>
+                <field string="% IRES" name="x_percentuale_ires" ttype="float" readonly="1"/>
             </group>
             <group string="Ammortamento Materiale" colspan="1">
-                <field name="x_ammortamento_materiale_txt_1" ttype="text" groups="" readonly="1" />
-                <field name="x_ammortamento_materiale_durata_1" ttype="int" groups="" readonly="1" />
-                <field name="x_ammortamento_materiale_importo_1" ttype="float" groups="" readonly="1" />
-                <separator string=" " colspan="1" />
-                <field name="x_ammortamento_materiale_txt_2" ttype="text" groups="" readonly="1" />
-                <field name="x_ammortamento_materiale_durata_2" ttype="int" groups="" readonly="1" />
-                <field name="x_ammortamento_materiale_importo_2" ttype="float" groups="" readonly="1" />
-                <separator string=" " colspan="1" />
-                <field name="x_ammortamento_materiale_txt_3" ttype="text" groups="" readonly="1" />
-                <field name="x_ammortamento_materiale_durata_3" ttype="int" groups="" readonly="1" />
-                <field name="x_ammortamento_materiale_importo_3" ttype="float" groups="" readonly="1" />
+                <field name="x_ammortamento_materiale_txt_1" ttype="text" groups="" readonly="1"/>
+                <field name="x_ammortamento_materiale_durata_1" ttype="int" groups="" readonly="1"/>
+                <field name="x_ammortamento_materiale_importo_1" ttype="float" groups="" readonly="1"/>
+                <separator string=" " colspan="1"/>
+                <field name="x_ammortamento_materiale_txt_2" ttype="text" groups="" readonly="1"/>
+                <field name="x_ammortamento_materiale_durata_2" ttype="int" groups="" readonly="1"/>
+                <field name="x_ammortamento_materiale_importo_2" ttype="float" groups="" readonly="1"/>
+                <separator string=" " colspan="1"/>
+                <field name="x_ammortamento_materiale_txt_3" ttype="text" groups="" readonly="1"/>
+                <field name="x_ammortamento_materiale_durata_3" ttype="int" groups="" readonly="1"/>
+                <field name="x_ammortamento_materiale_importo_3" ttype="float" groups="" readonly="1"/>
             </group>
             <group string="Ammortamento Immateriale" colspan="1">
-                <field name="x_ammortamento_immateriale_txt_1" ttype="text" groups="" readonly="1" />
-                <field name="x_ammortamento_immateriale_durata_1" ttype="int" groups="" readonly="1" />
-                <field name="x_ammortamento_immateriale_importo_1" ttype="float" groups="" readonly="1" />
-                <separator string=" " colspan="1" />
-                <field name="x_ammortamento_immateriale_txt_2" ttype="text" groups="" readonly="1" />
-                <field name="x_ammortamento_immateriale_durata_2" ttype="int" groups="" readonly="1" />
-                <field name="x_ammortamento_immateriale_importo_2" ttype="float" groups="" readonly="1" />
-                <separator string=" " colspan="1" />
-                <field name="x_ammortamento_immateriale_txt_3" ttype="text" groups="" readonly="1" />
-                <field name="x_ammortamento_immateriale_durata_3" ttype="int" groups="" readonly="1" />
-                <field name="x_ammortamento_immateriale_importo_3" ttype="float" groups="" readonly="1" />
+                <field name="x_ammortamento_immateriale_txt_1" ttype="text" groups="" readonly="1"/>
+                <field name="x_ammortamento_immateriale_durata_1" ttype="int" groups="" readonly="1"/>
+                <field name="x_ammortamento_immateriale_importo_1" ttype="float" groups="" readonly="1"/>
+                <separator string=" " colspan="1"/>
+                <field name="x_ammortamento_immateriale_txt_2" ttype="text" groups="" readonly="1"/>
+                <field name="x_ammortamento_immateriale_durata_2" ttype="int" groups="" readonly="1"/>
+                <field name="x_ammortamento_immateriale_importo_2" ttype="float" groups="" readonly="1"/>
+                <separator string=" " colspan="1"/>
+                <field name="x_ammortamento_immateriale_txt_3" ttype="text" groups="" readonly="1"/>
+                <field name="x_ammortamento_immateriale_durata_3" ttype="int" groups="" readonly="1"/>
+                <field name="x_ammortamento_immateriale_importo_3" ttype="float" groups="" readonly="1"/>
             </group>
         </group>
     </page>
