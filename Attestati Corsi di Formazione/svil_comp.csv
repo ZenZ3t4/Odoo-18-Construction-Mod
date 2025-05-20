@@ -1,0 +1,219 @@
+perco_comp_id,perco_titolo,perco_obiettivo,perco_contenuto,perco_durata,perco_tot_ore,perco_destinatari,perco_mod_formativa,comp_percorso,comp_ref_areacompetenza,comp_denominazione_competenza,comp_titolouc,comp_abilita,comp_conoscenze
+1,Salute e Sicurezza nei Luoghi di Lavoro,"FORMAZIONE GENERALE: Normativa di riferimento . Concetti di Rischio, Danno, Prevenzione e Protezione. Organizzazione della prevenzione aziendale; Diritti, doveri e sanzioni per i vari soggetti aziendali; Organi di vigilanza, controllo e assistenza. 
+FORMAZIONE RISCHIO SPECIFICO _ BASSO : Rischi infortuni; Meccanici generali; Elettrici generali; Macchine; Attrezzature; Rischi chimici; Nebbie Oli Fumi Vapori 
+Polveri: Etichettatura; ; Rischi biologici, Analisi del rischio di diffusione del Coronavirus e misure per il contenimento; Rischi fisici; Rumore; Vibrazione; Radiazioni; Microclima e illuminazione; Videoterminali; DPI Organizzazione del lavoro; Ambienti di lavoro; Stress lavoro correlato; Movimentazione manuale carichi; Movimentazione manuale carichi; Segnaletica; Emergenze; 
+ Le procedure di sicurezza con riferimento al profilo di rischio del comparto di riferimento al codice ATECO e al Profilo professionale; Procedure esodo e incendi; Procedure organizzative per il primo soccorso; Incidenti e infortuni mancati; Altri Rischi. Test di verifica finale","- Introduzione e rappresentazione delle informazioni
+- Codifica dell'informazione, Architettura dei computer
+- Il sistema operativo
+- Gestione dei processi e gestione della memoria
+- Gestione del file system, dell'input output della sicurezza
+- Proge",8,54,TUTTE,FAD ASINCRONA,Salute e Sicurezza nei Luoghi di Lavoro,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati
+2. Comunicazione e collaborazione
+5. Risolvere problemi","1.1 Navigare, ricercare e filtrare dati, informazioni   e contenuti digitali  (livello intermedio)
+1.2 Valutare dati, informazioni e contenuti digitali (livello intermedio)
+1.3 Gestire dati, informazioni e contenuti digitali (livello intermedio)
+2.1 Interagire attraverso le tecnologie digitali (livello intermedio)
+5.2 Individuare fabbisogni e risposte tecnologiche (livello
+intermedio)",Uso dei Sistemi Informatici,"Comprendere il funzionamento dei sistemi informatici e il loro utilizzo: comprendere come avviene la codifica dell'informazione, identificare i componenti dell'architettura di un PC, comprendere i passaggi fondamentali della progettazione di un sistema informatico, riconoscere il funzionamento di un Sistema Operativo (gestione della memoria e  gestione dei processi, gestione del file system).","La codifica dell'informazione, l'architettura del PC, il Sistema Operativo, gestione dei processi, gestione del file system, la Progettazione dei Sistemi Informatici."
+2,Responsabilit� d'Impresa: Il D.Lgs. 231/2001,"Responsabilit� d'Impresa: Il D.Lgs. 231/2001. Comprendere e Applicare il Modello Organizzativo per una Cultura Aziendale Etica e Conforme
+
+Questo corso di formazione sul D.Lgs. 231/2001 � rivolto a tutti i dipendenti di Authentica S.p.A. ed Eutourist New S.p.A. e mira a informare e sensibilizzare il personale sugli aspetti chiave della responsabilit� amministrativa degli enti, ad illustrare i criteri di responsabilit� e le possibili sanzioni e a presentare il Modello di Organizzazione, Gestione e Controllo (Modello 231) adottato dall'azienda.� uno strumento essenziale per diffondere la cultura della legalit� e della responsabilit� all'interno dell'organizzazione, coinvolgendo attivamente tutti i dipendenti nella prevenzione dei reati e nella tutela dell'integrit� aziendale.Il corso si svolger� attraverso lezioni online (o, se necessario, in presenza), dispense e slides a cura dell'Organismo di Vigilanza e di consulenti aziendali.","-Strutture dei sistemi di calcolo
+- Strutture dei sistemi operativi
+- Processi
+- Thread
+- Scheduling cpu
+- Gestione della memoria
+- Interfaccia del file system
+- Realizzazione del file system",5,96,TUTTE,FAD ASINCRONA,I Sistemi Operativi,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati
+2. Comunicazione e collaborazione
+5. Risolvere problemi","1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali (livello intermedio)
+1.2 Valutare dati, informazioni e contenuti digitali (livello intermedio)
+1.3 Gestire dati, informazioni e contenuti digitali (livello intermedio)
+2.1 Interagire attraverso le tecnologie digitali (livello intermedio)
+5.2 Individuare fabbisogni e risposte tecnologiche (livello intermedio)",Gestione dei Sistemi Operativi,"Comprendere il funzionamento dei Sistemi Operativi e utilizzare le funzioni principali: comprendere il funzionamento dei sistemi di calcolo, identificare i componenti della struttura di un Sistema Operativo, comprendere il concetto di processo, di Thread, conoscere come avviene lo Scheduling della CPU, comprendere i principi alla base della gestione della memoria; identificare l'interfaccia del file system e riconoscere i passaggi fondamentali della struttura di un file system.","Le strutture dei sistemi di calcolo, le strutture dei sistemi operativi, i processi, la gestione della memoria, il file system."
+3,Microsoft Office Specialist Excel,"Acquisire conoscenze sulle funzionalità  del software al fine di utilizzarlo per gestire dati, elenchi, archivi e liste","- Funzioni logiche
+- Serie personalizzate
+- Conteggi (Valori, numeri, fx massimo e minimo…)
+- Funzioni statistiche
+- Concatena testo in colonne
+- Funzioni date
+- Formattazione
+- Filtri
+- Convalida dati
+- Query
+- Tabelle Pivot
+- Layout classic",11,66,TUTTE,FAD ASINCRONA,Microsoft Office Specialist Excel,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati","1.3 gestire dati, informazioni e contenuti digitali (livello intermedio)",Utilizzare le funzionalità di Microsoft Office Excel,"Utilizzare le funzionalità del software per gestire dati, elenchi, archivi e liste: creare formule matematiche e logiche utilizzando funzioni avanzate del programma; applicare comandi avanzati di formattazione; creare e gestire tabelle pivot; creare e gestire query; applicare funzioni di data base; creare una macro; scegliere, creare e formattare grafici.",Funzioni avanzate del software; formattazione di un foglio di calcolo; query; tabelle Pivot; macro; grafici.
+4,Microsoft Office Specialist PowerPoint,Acquisire conoscenze sulle funzionalità del software al fine di utilizzarlo per la gestione di presentazioni multimediali,"- Formattazione e colore
+- Forme
+- Elenchi puntati e numerati
+- Immagini
+- Sfondo
+- Schema diapositiva
+- Transizioni e azioni
+- Animazioni
+- Layout tabella
+- Layout smart art e organigrammi
+- Layout grafico
+- Presentazioni personalizzate e coll",11,66,TUTTE,FAD ASINCRONA,Microsoft Office Specialist PowerPoint,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati","1.3 gestire dati, informazioni e contenuti digitali  (livello intermedio)",Creare presentazioni multimediali,"Creare presentazioni multimediali in forma statica o animata; inserire forme, elenchi, immagini, applicare transizioni alle presentazioni, inserire animazioni, oggetti, word art","Progettazione e sviluppo di una presentazione: formattazione, forme, immagini, sfondo, transizioni, animazioni, word art, oggetti"
+5,Microsoft Office Specialist Word,Acquisire conoscenze sulla funzionalità del software al fine di utilizzarlo per la gestione dei dati e delle informazioni digitali.,"- Elenchi
+- Tabulazioni
+- Tabelle
+- Stampa unione
+- Documenti su più pagine
+- Revisioni
+- Modelli
+- Campi modulo
+- Importazioni
+- Ricerche Avanzate
+- Colonne
+- Macro",11,66,TUTTE,FAD ASINCRONA,Microsoft Office Specialist Word,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati","1.3 gestire dati, informazioni e contenuti digitali (livello intermedio)",Utilizzare le funzionalità di Microsoft Office Word,"Utilizzare le funzionalità del software: creare elenchi,  impostare tabulazioni; impostare e modificare tabelle; saper applicare la stampa unione; attivare o disattivare la funzionalità  revisione; creare un modello basato su un documento o un modello esistente; creare campi modulo; importare un documento in Word; utilizzare la funzionalità di ricerca avanzata; creare colonne; creare e usare la macro in Word.",Elenchi; Tabulazioni; Tabelle; Stampa unione; Documenti su più pagine; Revisioni; modelli; Campi modulo; Importazioni; Ricerche Avanzate; Colonne;  Macro
+6,Cloud e Fog computing,Acquisire le conoscenze  relative ai concetti di Cloud e Fog Computing al fine di utilizzare le nuove Tecnologie digitali per la condivisione e la gestione delle informazioni.,"- Introduzione al Cloud Computing
+- Cloud Computing e risvolti aziendali
+- Aspetti legali del Cloud Computing
+- Sicurezza informatica applicata al Cloud
+- Esempi di applicazione aziendale del Cloud
+- Introduzione al Fog Computing
+- Esempi applicativ",20,120,TUTTE,FAD ASINCRONA,Cloud e Fog computing,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati
+2. Comunicazione e collaborazione","1.1 Navigare, ricercare e filtrare dati, informazioni (livello intermedio)
+1.3 Gestire dati, informazioni e contenuti digitali  (livello intermedio)
+2.2 Condividere informazioni attraverso le tecnologie digitali (livello intermedio)",Utilizzare il Cloud e Fog Computing,"Comprendere il concetto di Cloud computing e gli aspetti legali ad esso collegati; utilizzare il Cloud Computing per ricercare, gestire e condividere dati e informazioni; saper applicare regole per la sicurezza informatica applicata la cloud; riconoscere i diversi usi aziendali del Cloud; comprendere il concetto di Fog Computing e le sue applicazioni pratiche.",Il Cloud Computing; i risvolti aziendali del cloud computing; gli aspetti legali e la sicurezza informatica applicata al cloud; introduzione al Fog Computing e relativi esempi applicativi.
+7,Internet delle cose e delle macchine,"Acquisire conoscenze sulle tecnologie IoT (Internet of Things), tenendo conto sia delle potenzialità che dei rischi cui è soggetto il loro utilizzo e i diversi campi di applicazione, al fine di saperle identificare e utilizzare.","- IOT: Internet of Things, ieri e oggi
+- Il grande abbraccio tra IOT e digitalizzazione aziendale
+- I 5 chakra dell'IOT e sensoristica intelligente
+-Sicurezza,crimini e privacy nella tecnologia IOT
+- Sfide di sicurezza dell'IOT e impatti sulla reputaz",20,120,TUTTE,FAD ASINCRONA,Internet delle cose e delle macchine,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati","1.1 Navigare, ricercare e filtrare dati, informazioni   (livello intermedio)",Uso dell'IoT (Internet of Things),"Comprendere il concetto di IoT e come si è evoluto nel tempo; identificare potenzialità e rischi nell'uso dell'IoT e i suoi campi di applicazione; comprendere come avviene il viaggio dei dati, dagli oggetti alle applicazioni IOT al fine di saperli utilizzare; riconoscere le caratteristiche principali dei settori che utilizzano sistemi digitalizzati","La IoT; La storia dell'IoT; IoT e digitalizzazione aziendale; Sicurezza e privacy nell'IoT; esempi di applicazione dell'IoT; le quattro ""effe"" da tenere d'occhio."
+8,Sicurezza e Password Management,Acquisire le conoscenze relativamente alle tecniche di attacco finalizzate a violare le nostre Password e le soluzioni migliori per difenderle al fine di mettere in atto comportamenti atti a proteggerle.,"- L’importanza delle Password oggi
+- Perché Le Password sono così importanti
+- Gli errori da non fare
+-Come vengono scoperte (rubate) le password
+- Le tecniche di Password Cracking
+- Quante password è corretto avere
+- Massima attenzione all’a",3,18,TUTTE,FAD ASINCRONA,Sicurezza e Password Management,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+4. Sicurezza","4.1 Proteggere i dispositivi (livello intermedio)
+4.2 Proteggere i dati personali e la privacy (livello intermedio)",Difendere le proprie password,Comprendere l'importanza delle password e quali sono gli errori da non commettere nell'uso delle password; riconoscere le tecniche di Password Cracking; applicare le regole per una password sicura; saper utilizzare un Password Manager,L'importanza delle password; come è fatta una password; le regole per una password sicura; l'autenticazione forte; Password Manager.
+9,La Network Security,"Acquisire le conoscenze sui meccanismi alla base del funzionamento degli apparati tecnologici per le reti di telecomunicazione per poi indagare le dinamiche degli attacchi che minano al loro funzionamento e/o mettono a rischio i fruitori dei servizi, al fine di mettere in atto comportamenti necessari a proteggere la sicurezza della rete
+aziendale.","- Architettura dei computer
+- Codifica dell’informazione
+- Gestione dei processi e gestione della memoria
+-Gestione del file system, dell’input output e della sicurezza
+- Progettazione dei sistemi informatici
+-Introduzione e rappresentazione dell",25,150,TUTTE,FAD ASINCRONA,La Network Security,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+4. Sicurezza","4.1 Proteggere i dispositivi (livello intermedio)
+4.2 Proteggere i dati personali e la privacy    (livello intermedio)",Proteggere la rete aziendale,"Comprendere come avviene la codifica dell'informazione; distinguere le diverse componenti dell'architettura di un PC; sapere come funziona un Sistema operativo e come avviene la gestione della memoria e dei processi; comprendere e riconoscere le dinamiche degli attacchi che minano il funzionamento degli apparati tecnologici e mettono a rischio i
+fruitori dei servizi.","Architettura del computer; progettazione dei sistemi informatici; gestione dei processi e della memoria; codifica delle informazioni; Gestione del file system, dell’input output e della sicurezza"
+10,Integrazione digitale dei processi aziendali,Acquisire le conoscenze relative all'integrazione digitale dei processi aziendali al fine di operare nella gestione e nell'uso dei processi informatizzati,"- I processi aziendali e la mappatura dei processi
+- Basi di dati-modelli e linguaggi
+- Introduzione al sistema informativo aziendale
+- Sistema informativo aziendale
+- I documenti aziendali e aspetti legali
+- Industria 4.0",19,114,TUTTE,FAD ASINCRONA,Integrazione digitale dei processi aziendali,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+3. Creazione di contenuti digitali",3.2 Integrare e rielaborare contenuti digitali  (livello intermedio),Gestione dei processi informatizzati,"Comprendere i processi aziendali e come avviene la loro mappatura; comprendere cosa è un dato e un'informazione;  riconoscere il funzionamento e utilizzare un Sistema Informativo aziendale (software gestionali aziendali); sapere come avviene l'integrazione digitale dei processi aziendali; Individuare le caratteristiche delle tecnologie abilitanti 4.0 e i  vantaggi offerti per la propria
+impresa.","I processi aziendali e la loro mappatura; le basi dati, modelli e linguaggi; il Sistema informativo aziendale; industria 4.0"
+11,Ruoli e processi del Project Management,"Acquisire le conoscenze sulle origini del project Management, le caratteristiche di un Progetto, i vantaggi aziendali, le tecniche, gli strumenti digitali dedicati alla gestione dei vari ambiti al fine di  comprendere i ruoli e i processi del Project Management","- Nozioni generali su Project Management
+- Le figure professionali coinvolte nel Project Management
+- Le aree di conoscenza del Project Management (project scope management, project time management, project cost management,
+etc..)
+- Tecniche, approcci",12,72,TUTTE,FAD ASINCRONA,Ruoli e processi del Project Management,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati
+2. Comunicazione e Collaborazione","1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali (livello intermedio)
+1.2 Valutare dati, informazioni e contenuti digitali (livello intermedio)
+1.3 Gestire dati, informazioni e contenuti digitali (livello intermedio)
+2.1 Interagire attraverso le tecnologie digitali (livello intermedio)
+2.2 Condividere informazioni attraverso le tecnologie digitali (livello intermedio)
+2.4 Collaborare attraverso le tecnologie digitali (livello intermedio)",Esercitare i ruoli e i processi del Project Management con l'ausilio di strumenti digitali,"Identificare le principali aree di conoscenza del Project Management, le tecniche, gli approcci; comprendere le caratteristiche di un Progetto, le figure coinvolte,  i livelli di maturità del  Progetto.
+Comprendere le caratteristiche degli strumenti digitali per la gestione e condivisione di dati e informazioni nell'ambito del Project Management.","Nozioni generali sul Project Management; le figure professionali coinvolte nel processo; le metodologie e gli strumenti digitali dedicati alla gestione dei vari ambiti; i livelli di maturità che toccano le diverse componenti del Project Management; le varie aree di conoscenza del Project Management; le tecniche, gli approcci."
+12,Il profilo LinkedIn,"Acquisire conoscenze su quali sono le scelte, le regole e le strategie da mettere in campo per arrivare a gestire un profilo ad alta reputazione","- La struttura di un profilo efficace
+- Le regole per aumentare visibilità e efficacia
+- Come generare contenuti efficaci
+- Le ricerche di lavoro
+- La gestione in Linkedin di contenuti efficaci
+- Linkedin Social Selling: scrivere per promuoversi
+- ",15,90,TUTTE,FAD ASINCRONA,Il profilo LinkedIn,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1- Alfabetizzazione su informazioni e dati
+2- Comunicazione e collaborazione
+3- Creazione di contenuti digitali
+5- Risolvere i problemi","1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali (livello intermedio)
+1.2 Valutare dati, informazioni e contenuti digitali (livello intermedio)
+2.1 Interagire attraverso le tecnologie digitali (livello intermedio)
+2.2 Condividere informazioni attraverso le tecnologie digitali (livello intermedio)
+3.1 Sviluppare contenuti digitali (livello intermedio)
+3.2 Integrare e rielaborare contenuti digitali (livello intermedio)
+3.3 Copyright e licenze (livello intermedio)
+5.3 Utilizzare in modo creativo le tecnologie digitali (livello intermedio)",Gestire il Profilo Linkedin,"Gestire un profilo in LinkedIn (realizzare la struttura di un profilo efficace, applicare le regole per aumentare visibilità ed efficacia); generare contenuti efficaci in LinkedIn, nel rispetto delle regole di copyright e licenze; gestire la rete contatti in LinkedIn (applicare tecniche di social selling, applicare tecniche di marketing relazionale); applicare regole di deontologia e privacy.",La struttura di un profilo efficace; i contenuti efficaci su LinkedIn; scrivere per promuoversi; l'uso di LinkedIn per aumentare relazioni e clienti; la gestione delle ricerche avanzate.
+13,Dal Branding all identita digitale,"Acquisire le conoscenze necessarie a comprendere come controllare, gestire responsabilmente, mettere in sicurezza e valorizzare il proprio Branding.","-Professional Branding e Identità Digitale
+- Come sono cambiate le relazioni interpersonali e di business
+- Come controllare, gestire responsabilmente, mettere in sicurezza e valorizzare l’identità digitale individuale
+- Come sfruttare il personal ",4,24,TUTTE,FAD ASINCRONA,Dal Branding all identita digitale,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati
+2. Comunicazione e collaborazione
+3. Creazione di contenuti digitali
+5.Risolvere i problemi","1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali  (livello intermedio)
+1.2 Valutare dati, informazioni e contenuti digitali  (livello intermedio)
+1.3 Gestire dati, informazioni e contenuti digitali   (livello intermedio)
+2.2 Condividere informazioni attraverso le tecnologie digitali (livello intermedio)
+3.1 Sviluppare contenuti digitali (livello intermedio)
+3.2 Integrare e rielaborare contenuti digitali  (livello intermedio)
+3.3 Copyright e licenze   (livello intermedio)
+5.3 Utilizzare in modo creativo le tecnologie digitali (livello intermedio)",Gestire il personal Branding,"Gestire il Personal Branding: controllare, gestire, mettere in sicurezza e valorizzare il proprio Branding, utilizzare i  canali digitali per aumentare visibilità e contatti; comprendere  Cosa, Come e Dove pubblicare.",Professional Branding ; nozioni sul controllo e la gestione del proprio Branding; il cambiamento nelle relazioni interpersonali e di Business; il personal branding; il professional Branding.
+14,La Social Experience per le aziende,Acquisire conoscenze sul funzionamento dei processi di gestione di una azienda nei social al fine di saper comprendere e contribuire a gestire la Social Experience della propria azienda.,"-Introduzione alla Social Experience
+-Il Brand nei Social oggi e nel prossimo futuro
+-Motori di ricerca ed il Mobile
+-La Reputazione
+-Comunicare con i video; Il Video Marketing
+-YouTube, facebook, Instagram e le nuove tendenze",12,72,TUTTE,FAD ASINCRONA,La Social Experience per le aziende,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
+1. Alfabetizzazione su informazioni e dati
+2. Comunicazione e collaborazione
+3. Creazione di contenuti digitali
+5.Risolvere i problemi","1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali (livello intermedio)
+1.2 Valutare dati, informazioni e contenuti digitali (livello intermedio)
+1.3 Gestire dati, informazioni e contenuti digitali (livello intermedio)
+2.2 Condividere informazioni attraverso le tecnologie digitali (livello intermedio)
+3.1 Sviluppare contenuti digitali (livello intermedio)
+3.2 Integrare e rielaborare contenuti digitali (livello intermedio)
+3.3 Copyright e licenze (livello intermedio)
+5.3 Utilizzare in modo creativo le tecnologie digitali (livello intermedio)",Gestire la Social Experience,"Comprendere il concetto di Brand nei Social e di Social Experience, come funzionano i motori di ricerca ed il mobile; saper identificare il social giusto a seconda delle caratteristiche del messaggio e del destinatario; comprendere le caratteristiche del video marketing.",La Social Experience per le aziende; il Brand nei Social; Motori di ricerca e Mobile; il Video Marketing; i Social esistenti e le nuove tendenze.
+15,Introduzione alla Green Economy,Acquisire le conoscenze introduttive sulla green economy e le green skills e sui benefici economici e ambientali di un approccio sostenibile al fine di promuovere il rispetto della sostenibilità ambientale.,"-Attuale modello di sviluppo della società
+-Insostenibilità ed iniquità dell’attuale modello di sviluppo
+-I principali contributi istituzionali sulla green economy
+-Sostenibilità ambientale, energetica e economica in azienda
+-Azioni per la promo",2,12,TUTTE,FAD ASINCRONA,Introduzione alla Green Economy,"European Skills, Competences, Qualifications and Occupations (ESCO)
+F. Abilità/competenze riferibili ai processi di cui all’articolo 3, comma 1, lettera f): innovazioni volte alla promozione della sensibilità ecologica, di azioni di valorizzazione o riqualificazione del patrimonio ambientale, artistico e culturale.","F. 064 -condurre attività di formazione su questioni ambientali
+F. 067 - promuovere la consapevolezza ambientale
+F. 070 - promuovere la sostenibilità",Promuovere il rispetto della sostenibilità ambientale,"Comprendere il concetto di green economy; riconoscere i fattori di Insostenibilità ed iniquità dell’attuale modello di sviluppo; identificare principali contributi istituzionali sulla green economy; attuare comportamenti coerenti con la Sostenibilità ambientale, energetica e sociale in azienda ; identificare e mettere in atto azioni per la promozione della
+sostenibilità","L'attuale modello di sviluppo della società: gli svantaggi; I principali contributi istituzionali sulla green economy; le azioni per la promozione della sostenibilità ambientale, energetica e sociale in azienda."
+16,Indicatori per una Green Economy inclusiva,"Acquisire le conoscenze sul concetto di sviluppo sostenibile inclusivo e sugli indici di sostenibilità al fine di saperli utilizzare per valutare l’impatto ambientale, sociale e di governance della propria azienda","- Sostenibilità: una strategia misurabile.
+- Gli indici GRI-ESG e SDG
+- ESG: Environmental
+- ESG: Social
+- ESG: Governance
+- Gestione di sostenibilità: processi di misura in azienda
+- Report di Sostenibilità
+- Comunicazione di sostenibilità",4,24,TUTTE,FAD ASINCRONA,Indicatori per una Green Economy inclusiva,"European Skills, Competences, Qualifications and Occupations (ESCO)
+F. Abilità/competenze riferibili ai processi di cui all’articolo 3, comma 1, lettera f): innovazioni volte alla promozione della sensibilità ecologica, di azioni di valorizzazione o riqualificazione del patrimonio ambientale,
+artistico e culturale.","F. 002 - valutare l'impatto ambientale
+F. 003 - attuare i piani d'azione per l'ambiente
+F. 070 - promuovere la sostenibilità",Riconoscere e utilizzare gli indici di sostenibilità,"Comprendere l'utilizzo dei criteri ESG per misurare l'impatto ambientale, sociale e di governance delle aziende; riconoscere le caratteristiche di una comunicazione aziendale di sostenibilità (che esprime vicinanza e interesse ai temi della sostenibilità).",Gli indici GRI-ESG e SDG; ESG: Environmental; ESG: Social; ESG: Governance; Report di Sostenibilità; Comunicazione di sostenibilità
+17,Introduzione alla Responsabilita Sociale di Impresa,Acquisire le conoscenze sulla responsabilità sociale d'impresa e sulle sue pratiche nei processi aziendali al fine di riconoscere e valutare l'impatto dell'operato aziendale sulla società,"-Definizione Responsabilità Sociale d’Impresa (RSI) o Corporate Social responsibility (Csr)
+- Norma ISO 26000 e linee guida di RSI
+- Responsabilità Sociale d’Impresa e diritto nazionale
+- I principi della RSI (sostenibilità, volontarietà, trasp",4,24,TUTTE,FAD ASINCRONA,Introduzione alla Responsabilita Sociale di Impresa,"European Skills, Competences, Qualifications and Occupations (ESCO)
+F. Abilità/competenze riferibili ai processi di cui all’articolo 3, comma 1, lettera f): innovazioni volte alla promozione della sensibilità ecologica, di azioni di valorizzazione o riqualificazione del patrimonio ambientale, artistico e culturale.","F. 002 - valutare l'impatto ambientale
+F. 003 - attuare i piani d'azione per l'ambiente
+F. 070 - promuovere la sostenibilità",Riconoscere e valutare l'impatto dell'operato aziendale sulla società,Comprendere il concetto di responsabilità sociale d'impresa; comprendere l'applicazione della Norma ISO 26000; individuare i principi della RSI e le sue dimensioni principali in azienda e sul territorio; saper leggere un Piano di azioni per RSI,La Responsabilità sociale d'impresa; Norma ISO 26000; I principi della RSI; le Dimensioni principali della RSI in azienda e sul territorio; Il Piano di azioni RSI
+18,Introduzione alla Circular Economy,Acquisire conoscenze sui principi dell'economia circolare al fine di promuovere e adottare comportamenti con essa coerenti,"-Il modello di economia lineare
+- Il modello di economia circolare
+- Differenze tra i due modelli
+-I principi dell’economia circolare
+- Le fasi della circolarità
+- La misura della circolarità
+- La filosofia delle R (riduci, riusa, riclica, ecc.)",2,12,TUTTE,FAD ASINCRONA,Introduzione alla Circular Economy,"European Skills, Competences, Qualifications and Occupations (ESCO)
+F. Abilità/competenze riferibili ai processi di cui all’articolo 3, comma 1, lettera f): innovazioni volte alla promozione della sensibilità ecologica, di azioni di valorizzazione o riqualificazione del patrimonio ambientale, artistico e culturale.","F. 067 - promuovere la consapevolezza ambientale
+F. 070 - promuovere la sostenibilità
+F. 075 - sviluppare strategie di risanamento ambientale",Operare nel rispetto dei principi dell'economia circolare,Comprendere il modello di economia circolare; individuare le principali differenze tra i modelli di economia circolare e lineare ed i benefici dell'economia circolare; comprendere ed applicare la filosofia delle R,Il modello di economia circolare ed i suoi principi; il modello di economia lineare; la differenza tra i due modelli; la filosofia delle R; Benefici dell’economia circolare; L’economia circolare nel PNRR; La normazione nazionale ed internazionale
