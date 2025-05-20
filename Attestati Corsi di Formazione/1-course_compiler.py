@@ -222,14 +222,14 @@ def crea_pdf(codice_fiscale, info):
         # [6] = perco_destinatari
         # [7] = perco_mod_formativa
         
-        denominazione_corso = corso['titolo_sessione_formativa']
-        
-        des_percorso_formativo = ''.join((list(denominazione_corso)))
+        # denominazione_corso = corso['titolo_sessione_formativa']
+        # des_percorso_formativo = ''.join((list(id_corso)))
+        id_corso = info['id_corso']
         csv_filename = "./svil_comp.csv"
-        dettagli_percorso_formativo = csv_to_list(csv_filename, des_percorso_formativo)
+        dettagli_percorso_formativo = csv_to_list(csv_filename, id_corso)
         
         if not dettagli_percorso_formativo or dettagli_percorso_formativo == None:
-            print(f"Nessuna riga trovata con il titolo '{des_percorso_formativo}'.")   
+            print(f"Nessuna riga trovata con il titolo '{id_corso}'.")   
 
         # Stampa NOME DEL CORSO = value scritto su titolo_sessione_formativa(master) e su perco_titolo(svil_comp)
         stampa_denominazione_percorso_sviluppo(pdf, dettagli_percorso_formativo[1]) # spaziatura verticale: pdf.ln(5)
@@ -283,7 +283,7 @@ data = {}
 n_stampe = 0
 # Itera attraverso le righe del foglio Excel
 for row in sheet.iter_rows(min_row=2, values_only=True):  # Salta l'intestazione
-    moodle_institution, cognome, nome, codice_fiscale, data_di_nascita, comune_di_nascita, titolo_azione_con_id, titolo_sessione_formativa, Totaleorecorso, durata_min, stato_corso, valutazione_quiz, partita_iva, settore_ateco, ente_formativo, ente_certificatore  = row
+    moodle_institution, cognome, nome, codice_fiscale, data_di_nascita, comune_di_nascita, titolo_azione_con_id, titolo_sessione_formativa, Totaleorecorso, durata_min, stato_corso, valutazione_quiz, partita_iva, settore_ateco, ente_formativo, ente_certificatore, id_corso  = row
 
     if codice_fiscale is None:
         continue  # Salta la riga se il codice fiscale è None
@@ -299,6 +299,7 @@ for row in sheet.iter_rows(min_row=2, values_only=True):  # Salta l'intestazione
             'settore_ateco': settore_ateco, 
             'ente_formativo': ente_formativo, 
             'ente_certificatore': ente_certificatore,
+            'id_corso': id_corso,
             'corsi': []
         }
     
