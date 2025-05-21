@@ -93,13 +93,9 @@ def stampa_intestazione_pdf(pdf, image_path, header_text):
 
 # Funzione che stampa "per la partecipazione al corso di formazione generale e specifica" ed il relativo corso passato come parametro
 def stampa_denominazione_percorso_sviluppo(pdf, nome_corso_da_stampare):
-    pdf.ln(4)
-    pdf.set_font("Helvetica", "BI", size=14)
-    testo_header = "per la partecipazione al corso di formazione generale e specifica"
-    pdf.cell(200, 7, txt=testo_header, align = 'C', ln=True)
-    pdf.ln(8)
     pdf.set_text_color(235, 9, 16)
     pdf.set_font("Arial", "B", size=24)
+    pdf.set_margins(10, 10, 10)
     pdf.cell(200, 7, txt=nome_corso_da_stampare, align = 'C', ln=True)
     pdf.set_text_color(36, 35, 35)
     pdf.ln(6)
@@ -114,11 +110,11 @@ def stampa_multicell(pdf, testo):
         # Stampa testo in piu righe
         
 def stampa_multicell_grande(pdf, testo):
-    pdf.add_font('DejaVu', '', './DejaVuSansCondensed.ttf', uni=True)
-    pdf.set_font('DejaVu', '', 10)
-    pdf.set_margins(10, 10, 10)
+    pdf.set_font("Arial", "I", size=10)
+    pdf.set_margins(20, 20, 20)
     for riga in testo.splitlines():
-        pdf.multi_cell(0, 5, riga)
+        pdf.multi_cell(0, 5, riga, align='C')
+    pdf.set_margins(10, 10, 10)
 
 
 # stampa paragrafo generica con header char size = 12
@@ -177,7 +173,7 @@ def stampa_firme_accettazione(pdf, data_emissione):
     pdf.cell(60, 10, ' ', 0, 0, 'C')
     
     pdf.cell(60, 10, ' ', 0, 0, 'C')
-    pdf.cell(60, 10, 'Il Direttore del Corso', 0, 1, 'C')
+    # pdf.cell(60, 10, 'Il Direttore del Corso', 0, 1, 'C')
 
 def stampa_firma(pdf, nome_formatore="", x=None, y=None):
     if not nome_formatore:
@@ -349,20 +345,45 @@ def crea_pdf(codice_fiscale, info):
         if not dettagli_percorso_formativo or dettagli_percorso_formativo == None:
             print(f"Nessuna riga trovata con il titolo '{id_corso}'.")   
 
+        # Stampa "ha frequentato / ha partecipato"
+        if id_corso == 3:
+            pdf.ln(4)
+            pdf.set_font("Helvetica", "BI", size=14)
+            testo_header = "ha frequentato il corso di formazione"
+            pdf.cell(200, 7, txt=testo_header, align = 'C', ln=True)
+            pdf.ln(8)
+            
+        else:
+            pdf.ln(4)
+            pdf.set_font("Helvetica", "BI", size=14)
+            testo_header = "per la partecipazione al corso di formazione generale e specifica"
+            pdf.cell(200, 7, txt=testo_header, align = 'C', ln=True)
+            pdf.ln(8)
+            
         # Stampa NOME DEL CORSO = value scritto su titolo_sessione_formativa(master) e su perco_titolo(svil_comp) trovato tramite il campo id_corso
         stampa_denominazione_percorso_sviluppo(pdf, dettagli_percorso_formativo[1]) # spaziatura verticale: pdf.ln(5)
         
-        # Stampa "ai sensi dell'art..."
-        paragrafo_ai_sensi = "(ai sensi dell'Art.37 del D. Lgs. n° 81/08 e s.m.i. e secondo l'Accordo Stato Regioni e Provincie Autonome di Trento e Bolzano del 21.12.2011)"
-        stampa_multicell_grande(pdf, paragrafo_ai_sensi)
-        pdf.ln(2)
+        # Stampa "della durata di..."
+        if id_corso == 3:
+            header_str = f'della durata di {dettagli_percorso_formativo[4]} ore, in conformità al Reg. CE 852/2004'
+            text_string = ""
+            stampa_paragrafo(pdf, header_str, text_string)
+            header_str = "Allegato II Cap. XII e s.m.i. ed ai sensi delle ulteriori normative nazionali e locali applicabili"
+            text_string = ''.join((list(dettagli_percorso_formativo[2])))
+            stampa_paragrafo(pdf, header_str, text_string)
+            pdf.ln(2)
         
-        # Stampa CONTENUTI DEL CORSO
-            # STAMPA [4] = perco_durata
-        header_str = f"della durata complessiva di {dettagli_percorso_formativo[4]} ore, tenutosi in modalità FAD, con i seguenti contenuti:"
-            # STAMPA [2] = perco_obiettivo
-        text_string = ''.join((list(dettagli_percorso_formativo[2]))) 
-        stampa_paragrafo(pdf, header_str, text_string)
+        else:
+            # Stampa "ai sensi dell'art..."
+            paragrafo_ai_sensi = "ai sensi dell'Art.37 del D. Lgs. n° 81/08 e s.m.i. e secondo l'Accordo Stato Regioni e Provincie Autonome di Trento e Bolzano del 21.12.2011"
+            stampa_multicell_grande(pdf, paragrafo_ai_sensi)
+            pdf.ln(2)
+            # Stampa CONTENUTI DEL CORSO
+                # STAMPA [4] = perco_durata
+            header_str = f"della durata complessiva di {dettagli_percorso_formativo[4]} ore, tenutosi in modalità FAD, con i seguenti contenuti:"
+                # STAMPA [2] = perco_obiettivo
+            text_string = ''.join((list(dettagli_percorso_formativo[2]))) 
+            stampa_paragrafo(pdf, header_str, text_string)
         
         pdf.ln(12)
         
@@ -461,42 +482,6 @@ for row in sheet.iter_rows(min_row=2, values_only=True):  # Salta l'intestazione
         'valutazione_quiz': valutazione_quiz
     })
     n_stampe = n_stampe + 1
-    
-# TEST NEW ANAGRAFICA
-azienda_da_gen = "SARCA"
-folder_path = "./report_gen_data"
-
-def trova_file_per_azienda(folder, azienda):
-    for filename in os.listdir(folder):
-        if (filename.endswith(".xls") or filename.endswith(".xlsx")) and azienda in filename:
-            return os.path.join(folder, filename)
-    return None
-
-file_path = trova_file_per_azienda(folder_path, azienda_da_gen)
-if file_path is None:
-    raise FileNotFoundError(f"Nessun file Excel trovato in '{folder_path}' contenente '{azienda_da_gen}' nel nome.")
-
-print(f"File trovato: {file_path}")
-
-# Carica workbook e foglio attivo
-workbook = openpyxl.load_workbook(file_path)
-sheet = workbook.active
-
-# Leggi intestazioni dalla prima riga
-headers = [cell.value for cell in next(sheet.iter_rows(min_row=1, max_row=1))]
-
-new_data = []
-
-# Itera sulle righe successive
-for row in sheet.iter_rows(min_row=2, values_only=True):
-    row_dict = {}
-    for header, cell_value in zip(headers, row):
-        row_dict[header] = cell_value
-    new_data.append(row_dict)
-
-print(f"Letti {len(new_data)} record dal file.")
-print(new_data[0])  # esempio prima riga
-
 
 # Crea PDF per ogni codice fiscale
 for codice_fiscale, info in data.items():

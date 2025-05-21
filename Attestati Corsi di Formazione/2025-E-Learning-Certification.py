@@ -8,19 +8,15 @@ import os
 # -----------------------------------------
 # FUNZIONI UTILIZZATE NEL CODICE
 # -----------------------------------------
-def stampa_dati_azienda(pdf, azienda, settore_ateco, ente_formativo, ente_certificatore):
-    # BLOCCO DATI AZIENDA
-    if len(settore_ateco) > 80:
-        settore_ateco = settore_ateco[:80] + '...'
-
+def stampa_dati_azienda(pdf, dettagli_azienda):
     # Dati dinamici azienda
     pdf.set_font("Helvetica", "I", size=11)
     #azienda_row_1 = f"{azienda} - Settore ateco: {settore_ateco}"
-    azienda_row_1 = f"collaboratore dell'azienda {azienda}"
+    azienda_row_1 = f"collaboratore dell'azienda {dettagli_azienda['ragione_sociale']} - P.IVA: {dettagli_azienda['partita_iva']}"
     pdf.cell(200, 5, txt=azienda_row_1, align = 'C', ln=True)
     #--------------------------------------------------------------------------------
     
-def blocco_dati_utente(pdf, data_nascita, luogo_nascita, cognome, nome, codice_fiscale):
+def blocco_dati_utente(pdf, data_nascita, luogo_nascita, nominativo, codice_fiscale):
     # BLOCCO DATI UTENTE
     # header in grassetto
     pdf.set_font("Helvetica", "BI", size=14)
@@ -30,14 +26,13 @@ def blocco_dati_utente(pdf, data_nascita, luogo_nascita, cognome, nome, codice_f
     pdf.ln(7)
     # blocco dati dinamici
     # dati anagrafici del candidato
-    nome_cognome = nome + ' ' + cognome
     dati_utente = f"nato/a a {luogo_nascita} il {data_nascita} - Codice Fiscale: {codice_fiscale}"
     
     # Stampa nome e cognome
     pdf.set_font("Helvetica", 'B', size=32)
     pdf.set_text_color(235, 9, 16)
     pdf.set_margins(10, 10, 10)
-    for riga in nome_cognome.splitlines():
+    for riga in nominativo.splitlines():
         pdf.multi_cell(0, 10, riga, align = 'C', )
     pdf.ln(5)
 
@@ -47,13 +42,6 @@ def blocco_dati_utente(pdf, data_nascita, luogo_nascita, cognome, nome, codice_f
     pdf.set_text_color(36, 35, 35)
     pdf.cell(200, 5, txt=dati_utente, align = 'C', ln=True)
     pdf.ln(5)  # Aggiunge una nuova linea
-    
-    # Stampa dettaglio azienda
-    azienda = info['azienda'] + " - P.IVA: " + info['partita_iva']
-    settore_ateco = info['settore_ateco']
-    ente_formativo = info['ente_formativo']
-    ente_certificatore = info['ente_certificatore']
-    stampa_dati_azienda(pdf, azienda, settore_ateco, ente_formativo, ente_certificatore)
 
 def disegna_linea(pdf):
     # DISEGNA LINEA ORIZZONTALE
@@ -93,13 +81,9 @@ def stampa_intestazione_pdf(pdf, image_path, header_text):
 
 # Funzione che stampa "per la partecipazione al corso di formazione generale e specifica" ed il relativo corso passato come parametro
 def stampa_denominazione_percorso_sviluppo(pdf, nome_corso_da_stampare):
-    pdf.ln(4)
-    pdf.set_font("Helvetica", "BI", size=14)
-    testo_header = "per la partecipazione al corso di formazione generale e specifica"
-    pdf.cell(200, 7, txt=testo_header, align = 'C', ln=True)
-    pdf.ln(8)
     pdf.set_text_color(235, 9, 16)
     pdf.set_font("Arial", "B", size=24)
+    pdf.set_margins(10, 10, 10)
     pdf.cell(200, 7, txt=nome_corso_da_stampare, align = 'C', ln=True)
     pdf.set_text_color(36, 35, 35)
     pdf.ln(6)
@@ -114,11 +98,11 @@ def stampa_multicell(pdf, testo):
         # Stampa testo in piu righe
         
 def stampa_multicell_grande(pdf, testo):
-    pdf.add_font('DejaVu', '', './DejaVuSansCondensed.ttf', uni=True)
-    pdf.set_font('DejaVu', '', 10)
-    pdf.set_margins(10, 10, 10)
+    pdf.set_font("Arial", "I", size=10)
+    pdf.set_margins(20, 20, 20)
     for riga in testo.splitlines():
-        pdf.multi_cell(0, 5, riga)
+        pdf.multi_cell(0, 5, riga, align='C')
+    pdf.set_margins(10, 10, 10)
 
 
 # stampa paragrafo generica con header char size = 12
@@ -142,7 +126,7 @@ def stampa_paragrafo_secondario(pdf, header_str, text_string):
     stampa_multicell(pdf, text_string)
 
 # STAMPA LA TABELLA PER LE FIRME DI ACCETTAZIONE DEI VARI ENTI
-def stampa_firme_accettazione(pdf, data_emissione):
+def stampa_firme_accettazione(pdf, data_emissione, docente):
     # Stampa Luogo e Data
     pdf.ln(2)
     disegna_linea(pdf)
@@ -166,7 +150,7 @@ def stampa_firme_accettazione(pdf, data_emissione):
     larghezza_pagina = pdf.w
     margine_dx = pdf.r_margin
     # Calcola la posizione x della firma, allineata a destra come il testo
-    nome_formatore = info['ente_formativo']
+    nome_formatore = docente
     img_w = 39  # larghezza immagine
     x_firma = larghezza_pagina - margine_dx - img_w - 15
     
@@ -177,7 +161,7 @@ def stampa_firme_accettazione(pdf, data_emissione):
     pdf.cell(60, 10, ' ', 0, 0, 'C')
     
     pdf.cell(60, 10, ' ', 0, 0, 'C')
-    pdf.cell(60, 10, 'Il Direttore del Corso', 0, 1, 'C')
+    # pdf.cell(60, 10, 'Il Direttore del Corso', 0, 1, 'C')
 
 def stampa_firma(pdf, nome_formatore="", x=None, y=None):
     if not nome_formatore:
@@ -193,16 +177,15 @@ def stampa_firma(pdf, nome_formatore="", x=None, y=None):
     pdf.image(image_path, x=x, y=y, w=img_w, h=img_h)
 
 # Funzione che salva il pdf e ci da in out i percorsi in cui sono stati salvati
-def salvapdf(pdf, codice_fiscale, info, corso_id):
+def salvapdf(pdf, codice_fiscale, info, corso_id, ragione_sociale):
     # Salva il  pdf nella path /reports nominandolo come cf_siglacorso.pdf
     # Estrae la sigla del corso
     # Crea il percorso completo per il file PDF
-    azienda = info['azienda']
     
     saved_file_name = f"{codice_fiscale}_{corso_id}.pdf"
 
     # Directory di test: output_path = os.path.join("prova_reports", azienda, saved_file_name)
-    output_path = os.path.join("reports", azienda, saved_file_name)
+    output_path = os.path.join("new_reports", ragione_sociale, saved_file_name)
 
     # Crea la cartella se non esiste
     output_dir = os.path.dirname(output_path)
@@ -324,7 +307,53 @@ def filigrana(pdf):
     x = ((page_w - img_w) / 2)
     y = y = pdf.get_y()
     pdf.image("logo_square_autentica.png", x=x, y=y, w=img_w, h=img_h)
-    
+
+def estrai_data_nascita_da_codice_fiscale(codice_fiscale):
+    mesi_codice = 'ABCDEHLMPRST'  # Mesi: A=Gen, B=Feb, ..., T=Dic
+    anno = int(codice_fiscale[6:8])
+    mese = mesi_codice.index(codice_fiscale[8]) + 1
+    giorno = int(codice_fiscale[9:11])
+    # Correzione giorno per donne
+    if giorno > 40:
+        giorno -= 40
+    # Determina il secolo
+    if anno < 40:
+        anno += 2000
+    else:
+        anno += 1900
+    data = f"{giorno}/{mese}/{anno}"
+    return data
+
+
+def estrai_dettagli_azienda(nome_file, id_azienda):
+   
+    workbook = openpyxl.load_workbook(nome_file)
+    sheet = workbook.active  # Ottieni il foglio attivo
+
+    # Trova l'indice della colonna 'azienda_id' e delle altre colonne
+    header = [cell.value for cell in sheet[1]]
+    try:
+        idx_azienda_id = header.index('azienda_id') + 1
+        idx_ragione_sociale = header.index('ragione_sociale') + 1
+        idx_partita_iva = header.index('partita_iva') + 1
+        idx_codice_ateco = header.index('codice_ateco') + 1
+    except ValueError:
+        print("Una o più colonne necessarie non sono state trovate nel file Excel.")
+        return None
+
+    dettagli_azienda = {}
+
+    # Itera sulle righe del foglio (partendo dalla seconda riga per saltare l'intestazione)
+    for row in sheet.iter_rows(min_row=2):
+        if row[idx_azienda_id - 1].value == id_azienda:
+            dettagli_azienda['ragione_sociale'] = row[idx_ragione_sociale - 1].value
+            dettagli_azienda['partita_iva'] = row[idx_partita_iva - 1].value
+            dettagli_azienda['codice_ateco'] = row[idx_codice_ateco - 1].value
+            return dettagli_azienda  # Restituisci i dettagli non appena trovi l'azienda
+
+    return None  # Restituisci None se l'azienda non viene trovata
+
+
 # Funzione per creare PDF per ogni codice fiscale
 def crea_pdf(codice_fiscale, info):
     for corso in info['corsi']:
@@ -338,31 +367,74 @@ def crea_pdf(codice_fiscale, info):
         stampa_intestazione_pdf(pdf, image_path, testo_header_1)
         
         # STAMPA DEL BLOCCO DATI UTENTE DA "Il presente Attestato viene conferito a:" FINO AI DATI ANAGRAFICI        
-        blocco_dati_utente(pdf, info['data_nascita'], info['comune_nascita'], info['cognome'], info['nome'], codice_fiscale) # spaziatura verticale: pdf.ln(5)   
+        blocco_dati_utente(pdf, info['data_nascita'], info['comune'], info['nominativo'], codice_fiscale) # spaziatura verticale: pdf.ln(5)   
+        # Stampa dettaglio azienda
+        # Esempio di utilizzo:
+        id_azienda = info['azienda']
+        filename = './report_gen_data/aziende.xlsx'
+        dettagli_azienda = estrai_dettagli_azienda(filename, id_azienda)
+        if dettagli_azienda is None:
+            print(f"Az:{id_azienda} ; CF: {codice_fiscale}; Nessuna azienda trovata con ID: {id_azienda};")
+            dettagli_azienda = {
+                'ragione_sociale': 'Dati aziendali non disponibili',
+                'partita_iva': 'N/A',
+                'codice_ateco': 'N/A'
+            }
+            
+        stampa_dati_azienda(pdf, dettagli_azienda)
         pdf.ln()
         
         # STAMPA DETTAGLI CORSO
         id_corso = corso['id_corso']
+        if not id_corso or id_corso == None:
+            print(f"Az:{id_azienda} ; CF: {codice_fiscale}; id_corso assegnato non trovato '{id_corso}'.")
+        
         csv_filename = "./svil_comp.csv"
         dettagli_percorso_formativo = csv_to_list(csv_filename, id_corso)
         
         if not dettagli_percorso_formativo or dettagli_percorso_formativo == None:
-            print(f"Nessuna riga trovata con il titolo '{id_corso}'.")   
+            print(f"Az:{id_azienda} ; CF: {codice_fiscale}; Nessuna riga trovata con il titolo '{id_corso}'.")
+            return
 
+        # Stampa "ha frequentato / ha partecipato"
+        if id_corso == 3:
+            pdf.ln(4)
+            pdf.set_font("Helvetica", "BI", size=14)
+            testo_header = "ha frequentato il corso di formazione"
+            pdf.cell(200, 7, txt=testo_header, align = 'C', ln=True)
+            pdf.ln(8)
+            
+        else:
+            pdf.ln(4)
+            pdf.set_font("Helvetica", "BI", size=14)
+            testo_header = "per la partecipazione al corso di formazione generale e specifica"
+            pdf.cell(200, 7, txt=testo_header, align = 'C', ln=True)
+            pdf.ln(8)
+            
         # Stampa NOME DEL CORSO = value scritto su titolo_sessione_formativa(master) e su perco_titolo(svil_comp) trovato tramite il campo id_corso
         stampa_denominazione_percorso_sviluppo(pdf, dettagli_percorso_formativo[1]) # spaziatura verticale: pdf.ln(5)
         
-        # Stampa "ai sensi dell'art..."
-        paragrafo_ai_sensi = "(ai sensi dell'Art.37 del D. Lgs. n° 81/08 e s.m.i. e secondo l'Accordo Stato Regioni e Provincie Autonome di Trento e Bolzano del 21.12.2011)"
-        stampa_multicell_grande(pdf, paragrafo_ai_sensi)
-        pdf.ln(2)
+        # Stampa "della durata di..."
+        if id_corso == 3:
+            header_str = f'della durata di {dettagli_percorso_formativo[4]} ore, in conformità al Reg. CE 852/2004'
+            text_string = ""
+            stampa_paragrafo(pdf, header_str, text_string)
+            header_str = "Allegato II Cap. XII e s.m.i. ed ai sensi delle ulteriori normative nazionali e locali applicabili"
+            text_string = ''.join((list(dettagli_percorso_formativo[2])))
+            stampa_paragrafo(pdf, header_str, text_string)
+            pdf.ln(2)
         
-        # Stampa CONTENUTI DEL CORSO
-            # STAMPA [4] = perco_durata
-        header_str = f"della durata complessiva di {dettagli_percorso_formativo[4]} ore, tenutosi in modalità FAD, con i seguenti contenuti:"
-            # STAMPA [2] = perco_obiettivo
-        text_string = ''.join((list(dettagli_percorso_formativo[2]))) 
-        stampa_paragrafo(pdf, header_str, text_string)
+        else:
+            # Stampa "ai sensi dell'art..."
+            paragrafo_ai_sensi = "ai sensi dell'Art.37 del D. Lgs. n° 81/08 e s.m.i. e secondo l'Accordo Stato Regioni e Provincie Autonome di Trento e Bolzano del 21.12.2011"
+            stampa_multicell_grande(pdf, paragrafo_ai_sensi)
+            pdf.ln(2)
+            # Stampa CONTENUTI DEL CORSO
+                # STAMPA [4] = perco_durata
+            header_str = f"della durata complessiva di {dettagli_percorso_formativo[4]} ore, tenutosi in modalità FAD, con i seguenti contenuti:"
+                # STAMPA [2] = perco_obiettivo
+            text_string = ''.join((list(dettagli_percorso_formativo[2]))) 
+            stampa_paragrafo(pdf, header_str, text_string)
         
         pdf.ln(12)
         
@@ -370,7 +442,7 @@ def crea_pdf(codice_fiscale, info):
             # Stampiamo la data di emissione sincronizzata ad ora
         data_certificazione = datetime.now()
         data_certificazione = data_certificazione.strftime("%d-%m-%Y")
-        stampa_firme_accettazione(pdf, data_certificazione)
+        stampa_firme_accettazione(pdf, data_certificazione, corso['docente'])
 
         # Stampa Template Grafico
         stampa_riquadri(pdf)
@@ -378,7 +450,8 @@ def crea_pdf(codice_fiscale, info):
         # SALVATAGGIO PDF
             # id_corso per distinzione nome files
         corso = dettagli_percorso_formativo[0]
-        salvapdf(pdf, codice_fiscale, info, corso) 
+        ragione_sociale = dettagli_azienda['ragione_sociale']
+        salvapdf(pdf, codice_fiscale, info, corso, ragione_sociale) 
         
 # ----------------------------------------------------------------------------------------------------------------    
 # ------------------------------------- FINE FUNZIONI ------------------------------------------------------------
@@ -391,86 +464,134 @@ def crea_pdf(codice_fiscale, info):
 
 # file di test: file_path = './master_ridotta.xlsx' #file di prova tabella master ridotta
 
-# file_path = './master_ridotta.xlsx' #file di prova tabella master ridotta
-file_path = './master_ridotta.xlsx' # file definitivo
-
-# Leggi il file Excel
-workbook = openpyxl.load_workbook(file_path)
-sheet = workbook.active
-
-# Crea un dizionario per memorizzare i dati
-data = {}
-n_stampe = 0
-# Itera attraverso le righe del foglio Excel
-for row in sheet.iter_rows(min_row=2, values_only=True):  # Salta l'intestazione
-    moodle_institution, cognome, nome, codice_fiscale, data_di_nascita, comune_di_nascita, titolo_azione_con_id, titolo_sessione_formativa, Totaleorecorso, durata_min, stato_corso, valutazione_quiz, partita_iva, settore_ateco, ente_formativo, ente_certificatore, id_corso  = row
-
-    if codice_fiscale is None:
-        continue  # Salta la riga se il codice fiscale è None
-
-    if codice_fiscale not in data:
-        data[codice_fiscale] = {
-            'azienda': moodle_institution,
-            'nome': nome,
-            'cognome': cognome,
-            'data_nascita' : data_di_nascita.strftime("%d/%m/%Y"),
-            'comune_nascita': comune_di_nascita,
-            'partita_iva': partita_iva, 
-            'settore_ateco': settore_ateco, 
-            'ente_formativo': ente_formativo, 
-            'ente_certificatore': ente_certificatore,
-            'corsi': []
-        }
-    
-    data[codice_fiscale]['corsi'].append({
-        'id_corso': id_corso,
-    })
-    n_stampe = n_stampe + 1
 
 
 # ----------------------------------------------------------------------------------------------------------------
-# TEST NEW ANAGRAFICA
-azienda_da_gen = "SARCA"
+# Variabili iniziali
+file_master_path = './report_gen_data/new_master.xlsx'  # master
+azienda_da_gen = "sarca"
 folder_path = "./report_gen_data"
 
+# 1. Apri workbook master (già fatto da te)
+workbook = openpyxl.load_workbook(file_master_path)
+sheet_master = workbook.active
+
+# 2. Trova file azienda corrispondente
 def trova_file_per_azienda(folder, azienda):
     for filename in os.listdir(folder):
         if (filename.endswith(".xls") or filename.endswith(".xlsx")) and azienda in filename:
             return os.path.join(folder, filename)
     return None
 
-file_path = trova_file_per_azienda(folder_path, azienda_da_gen)
-if file_path is None:
+file_azienda_path = trova_file_per_azienda(folder_path, azienda_da_gen)
+if file_azienda_path is None:
     raise FileNotFoundError(f"Nessun file Excel trovato in '{folder_path}' contenente '{azienda_da_gen}' nel nome.")
+print(f"File trovato: {file_azienda_path}")
 
-print(f"File trovato: {file_path}")
+# 3. Carica workbook azienda (SARCA)
+wb_azienda = openpyxl.load_workbook(file_azienda_path)
+sheet_azienda = wb_azienda.active
 
-# Carica workbook e foglio attivo
-workbook = openpyxl.load_workbook(file_path)
-sheet = workbook.active
+# 4. Leggi intestazioni master e crea dizionario codici fiscali esistenti
+headers_master = [cell.value for cell in next(sheet_master.iter_rows(min_row=1, max_row=1))]
+idx_cf_master = headers_master.index('codice_fiscale')
 
-# Leggi intestazioni dalla prima riga
-headers = [cell.value for cell in next(sheet.iter_rows(min_row=1, max_row=1))]
+# Dizionario per memorizzare i dati master, come nel tuo codice
+data = {}
+n_stampe = 0
+n_errori = 0
 
-new_data = []
+for row in sheet_master.iter_rows(min_row=2, values_only=True):
+    cf = row[idx_cf_master]
+    if cf is None:
+        continue
+    nominativo = row[headers_master.index('nominativo')]
+    comune = row[headers_master.index('comune')]
+    provincia = row[headers_master.index('provincia')]
+    sesso = row[headers_master.index('sesso')]
+    e_mail = row[headers_master.index('e_mail')]
+    id_azienda = row[headers_master.index('id_azienda')]
+    id_corso = row[headers_master.index('id_corso')]
+    docente = row[headers_master.index('docente')]
+    
+    if cf not in data:
+        data[cf] = {
+            'nominativo': nominativo,
+            'data_nascita': estrai_data_nascita_da_codice_fiscale(cf),
+            'comune': comune,
+            'provincia': provincia,
+            'sesso': sesso,
+            'e_mail': e_mail,
+            'azienda': id_azienda,
+            'corsi': []
+        }
+    data[cf]['corsi'].append({
+        'id_corso': id_corso,
+        'docente': docente   # associato al corso
+    })
+    n_stampe += 1
 
-# Itera sulle righe successive e converte le chiavi in minuscolo
-for row in sheet.iter_rows(min_row=2, values_only=True):
-    row_dict = {headers[i].lower(): value for i, value in enumerate(row)}
-    # Converte tutte le chiavi in minuscolo prima di aggiungere il record a new_data
-    new_data.append(row_dict)
+# 5. Prepara intestazioni azienda (SARCA) per la lettura
+headers_azienda = [cell.value.lower() for cell in next(sheet_azienda.iter_rows(min_row=1, max_row=1))]
 
-# Ora new_data contiene tutti i record con le chiavi in minuscolo
-print(f"Letti {len(new_data)} record dal file.")
-print(new_data[0])  # esempio di prima riga letta
+# 6. Crea mapping per i campi corrispondenti, aggiorna secondo i nomi corretti
+mapping = {
+    'cognome': 'nominativo',  # qui forse devi integrare nome e cognome, oppure usa solo cognome
+    'codice fiscale': 'codice_fiscale',
+    'comune': 'comune',
+    'provincia': 'provincia',
+    'sesso': 'sesso',
+    'e-mail': 'e_mail',
+    # id_azienda sarà sempre azienda_da_gen
+}
 
-# ----------------------------------------------------------------------------------------------------------------
-# ----------------------------------------------------------------------------------------------------------------
-# ----------------------------------------------------------------------------------------------------------------
-# Crea PDF per ogni codice fiscale
+# 7. Trova indici master per scrivere dati
+idx_cols_master = {col: headers_master.index(col) for col in headers_master}
+
+# 8. Itera sui record azienda e inserisci solo quelli non presenti
+righe_aggiunte = 0
+for row in sheet_azienda.iter_rows(min_row=2, values_only=True):
+    record = {headers_azienda[i]: row[i] for i in range(len(headers_azienda))}
+    cf = record.get('codice fiscale')
+    if cf is None or cf in data:
+        continue  # salta se codice fiscale mancante o già presente
+
+    # Prepara nuova riga per master
+    new_row = [None] * len(headers_master)
+
+    # Campi mappati dal file azienda a master
+    # Dentro il ciclo di inserimento nuovi record:
+
+    for key_azi, key_master in mapping.items():
+        if key_master == 'nominativo':
+            # Usa direttamente il campo 'cognome' che contiene già nome e cognome completo
+            nominativo = record.get('cognome', '').strip()
+            new_row[idx_cols_master[key_master]] = nominativo
+        else:
+            new_row[idx_cols_master[key_master]] = record.get(key_azi)
+
+
+    # Assegna azienda_da_gen e id_corso (puoi modificare id_corso a piacere)
+    new_row[idx_cols_master['id_azienda']] = azienda_da_gen
+    new_row[idx_cols_master['id_corso']] = None  # o un valore di default se vuoi
+
+    # Aggiungi la nuova riga al foglio master
+    sheet_master.append(new_row)
+    righe_aggiunte += 1
+
+print(f"Righe totali lette nel master: {n_stampe}")
+print(f"Righe nuove aggiunte dal file azienda '{azienda_da_gen}': {righe_aggiunte}")
+
+# 9. Salva il file master aggiornato
+workbook.save(file_master_path)
+
+# 10. Crea PDF come da tuo codice originale
 for codice_fiscale, info in data.items():
-    crea_pdf(codice_fiscale, info)
+    try:
+        crea_pdf(codice_fiscale, info)
+    except Exception as e:
+        n_errori += 1
+        print(f"Errore nel creare PDF per {codice_fiscale}: {e}")
 
 print("N. totale stampe: "+str(n_stampe))
-
-
+print("N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: "+str(n_errori))
