@@ -342,7 +342,7 @@ def crea_pdf(codice_fiscale, info):
         pdf.ln()
         
         # STAMPA DETTAGLI CORSO
-        id_corso = info['id_corso']
+        id_corso = corso['id_corso']
         csv_filename = "./svil_comp.csv"
         dettagli_percorso_formativo = csv_to_list(csv_filename, id_corso)
         
@@ -379,39 +379,10 @@ def crea_pdf(codice_fiscale, info):
             # id_corso per distinzione nome files
         corso = dettagli_percorso_formativo[0]
         salvapdf(pdf, codice_fiscale, info, corso) 
-
+        
 # ----------------------------------------------------------------------------------------------------------------    
 # ------------------------------------- FINE FUNZIONI ------------------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------------
-#########################################################################################################
-        # Funzione che stampa i dettagli dell'utente relativi al percorso formativo: durata, ore totali e valutazione
-        # passare in input il pdf, il dict del corso e la valutazione ottenuta al quiz 
-        # momentaneamente la valutazione è fissa ma bisogna implementare la logica corretta    
-        # valutazione = corso['valutazione_quiz']
-        # DELETATA stampa_dettaglio_percorso_sviluppo(pdf, corso, valutazione)
-        #########################################################################################################
-        
-        # IMPORTANTE: Dopo le modifiche del 20/05/2025, la chiave che lega master.xls a svil_comp.csv è:
-        # il campo titolo_sessione_formativa di master è la chiave della colonna b di svil_comp.csv denominata perco_titolo
-        # Quando dovremmo aggiungere una nuova tipologia di corso dovremmo aggiungere una riga al file svil_comp.csv
-        # Nel file svil_comp bisogna compilare:
-        # - la colonna perco_obiettivo con i dati relativi ai contenuti del corso
-        # - la colonna perco_titolo con il titolo del corso
-        # - la colonna perco_durata con il numero delle ore di durata del corso
-        # Mentre nel file master.xlsx, quando si va ad aggiungere un utente che ha effettuato un corso bisogna
-        # compilare come titolo_sessione_formativa lo stesso valore del campo perco_titolo del file svil_comp.csv
-        # per assegnare all'utente un corso fatto e far stampare le denominazioni corrette sul PDF
-        
-        # DECODIFICA DELLA LISTA dettagli_percorso_formativo
-        # [0] = perco_comp_id                   # [8] = comp_percorso
-        # [1] = perco_titolo                    # [9] = comp_ref_areacompetenza
-        # [2] = perco_obiettivo                 # [10] = comp_denominazione_competenza
-        # [3] = perco_contenuto                 # [11] = comp_titolouc
-        # [4] = perco_durata                    # [12] = comp_abilita
-        # [5] = perco_tot_ore                   # [13] = comp_conoscenze
-        # [6] = perco_destinatari
-        # [7] = perco_mod_formativa
-#
 # ----------------------------------------------------------------------------------------------------------------  
 # ------------------------------- INIZIO GENERAZIONE DEI FILE PDF ------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------------
@@ -448,20 +419,16 @@ for row in sheet.iter_rows(min_row=2, values_only=True):  # Salta l'intestazione
             'settore_ateco': settore_ateco, 
             'ente_formativo': ente_formativo, 
             'ente_certificatore': ente_certificatore,
-            'id_corso': id_corso,
             'corsi': []
         }
     
     data[codice_fiscale]['corsi'].append({
-        'titolo_azione_con_id': titolo_azione_con_id,
-        'titolo_sessione_formativa': titolo_sessione_formativa,
-        'Totaleorecorso': Totaleorecorso,
-        'durata_min': durata_min,
-        'stato_corso': stato_corso,
-        'valutazione_quiz': valutazione_quiz
+        'id_corso': id_corso,
     })
     n_stampe = n_stampe + 1
-    
+
+
+# ----------------------------------------------------------------------------------------------------------------
 # TEST NEW ANAGRAFICA
 azienda_da_gen = "SARCA"
 folder_path = "./report_gen_data"
@@ -487,19 +454,23 @@ headers = [cell.value for cell in next(sheet.iter_rows(min_row=1, max_row=1))]
 
 new_data = []
 
-# Itera sulle righe successive
+# Itera sulle righe successive e converte le chiavi in minuscolo
 for row in sheet.iter_rows(min_row=2, values_only=True):
-    row_dict = {}
-    for header, cell_value in zip(headers, row):
-        row_dict[header] = cell_value
+    row_dict = {headers[i].lower(): value for i, value in enumerate(row)}
+    # Converte tutte le chiavi in minuscolo prima di aggiungere il record a new_data
     new_data.append(row_dict)
 
+# Ora new_data contiene tutti i record con le chiavi in minuscolo
 print(f"Letti {len(new_data)} record dal file.")
-print(new_data[0])  # esempio prima riga
+print(new_data[0])  # esempio di prima riga letta
 
-
+# ----------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------
+# ----------------------------------------------------------------------------------------------------------------
 # Crea PDF per ogni codice fiscale
 for codice_fiscale, info in data.items():
     crea_pdf(codice_fiscale, info)
 
 print("N. totale stampe: "+str(n_stampe))
+
+
