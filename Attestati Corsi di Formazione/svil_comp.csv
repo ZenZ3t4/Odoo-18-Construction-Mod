@@ -7,15 +7,7 @@ Polveri: Etichettatura; ; Rischi biologici, Analisi del rischio di diffusione de
 - Il sistema operativo
 - Gestione dei processi e gestione della memoria
 - Gestione del file system, dell'input output della sicurezza
-- Proge",8,54,TUTTE,FAD ASINCRONA,Salute e Sicurezza nei Luoghi di Lavoro,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
-1. Alfabetizzazione su informazioni e dati
-2. Comunicazione e collaborazione
-5. Risolvere problemi","1.1 Navigare, ricercare e filtrare dati, informazioni   e contenuti digitali  (livello intermedio)
-1.2 Valutare dati, informazioni e contenuti digitali (livello intermedio)
-1.3 Gestire dati, informazioni e contenuti digitali (livello intermedio)
-2.1 Interagire attraverso le tecnologie digitali (livello intermedio)
-5.2 Individuare fabbisogni e risposte tecnologiche (livello
-intermedio)",Uso dei Sistemi Informatici,"Comprendere il funzionamento dei sistemi informatici e il loro utilizzo: comprendere come avviene la codifica dell'informazione, identificare i componenti dell'architettura di un PC, comprendere i passaggi fondamentali della progettazione di un sistema informatico, riconoscere il funzionamento di un Sistema Operativo (gestione della memoria e  gestione dei processi, gestione del file system).","La codifica dell'informazione, l'architettura del PC, il Sistema Operativo, gestione dei processi, gestione del file system, la Progettazione dei Sistemi Informatici."
+- Proge",8,54,TUTTE,FAD ASINCRONA,,,,,,
 2,Responsabilit� d'Impresa: Il D.Lgs. 231/2001,"TESTO DA RIEMPIRE - TESTO DA RIEMPIRE
 
 testo da riempire con i contenuti del corso - testo da riempire con i contenuti del corso - 
@@ -29,14 +21,7 @@ testo da riempire con i contenuti del corso - testo da riempire con i contenuti 
 - Scheduling cpu
 - Gestione della memoria
 - Interfaccia del file system
-- Realizzazione del file system",5,96,TUTTE,FAD ASINCRONA,I Sistemi Operativi,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
-1. Alfabetizzazione su informazioni e dati
-2. Comunicazione e collaborazione
-5. Risolvere problemi","1.1 Navigare, ricercare e filtrare dati, informazioni e contenuti digitali (livello intermedio)
-1.2 Valutare dati, informazioni e contenuti digitali (livello intermedio)
-1.3 Gestire dati, informazioni e contenuti digitali (livello intermedio)
-2.1 Interagire attraverso le tecnologie digitali (livello intermedio)
-5.2 Individuare fabbisogni e risposte tecnologiche (livello intermedio)",Gestione dei Sistemi Operativi,"Comprendere il funzionamento dei Sistemi Operativi e utilizzare le funzioni principali: comprendere il funzionamento dei sistemi di calcolo, identificare i componenti della struttura di un Sistema Operativo, comprendere il concetto di processo, di Thread, conoscere come avviene lo Scheduling della CPU, comprendere i principi alla base della gestione della memoria; identificare l'interfaccia del file system e riconoscere i passaggi fondamentali della struttura di un file system.","Le strutture dei sistemi di calcolo, le strutture dei sistemi operativi, i processi, la gestione della memoria, il file system."
+- Realizzazione del file system",5,96,TUTTE,FAD ASINCRONA,,,,,,
 3,Pacchetto Igiene,"TESTO DA RIEMPIRE - TESTO DA RIEMPIRE
 
 testo da riempire con i contenuti del corso - testo da riempire con i contenuti del corso - 
@@ -54,5 +39,4 @@ testo da riempire con i contenuti del corso - testo da riempire con i contenuti 
 - Convalida dati
 - Query
 - Tabelle Pivot
-- Layout classic",12,66,TUTTE,FAD ASINCRONA,Microsoft Office Specialist Excel,"Innovazione Digitale  Quadro di riferimento per le competenze digitali di base - DigiComp 2.1
-1. Alfabetizzazione su informazioni e dati","1.3 gestire dati, informazioni e contenuti digitali (livello intermedio)",Utilizzare le funzionalità di Microsoft Office Excel,"Utilizzare le funzionalità del software per gestire dati, elenchi, archivi e liste: creare formule matematiche e logiche utilizzando funzioni avanzate del programma; applicare comandi avanzati di formattazione; creare e gestire tabelle pivot; creare e gestire query; applicare funzioni di data base; creare una macro; scegliere, creare e formattare grafici.",Funzioni avanzate del software; formattazione di un foglio di calcolo; query; tabelle Pivot; macro; grafici.
+- Layout classic",6,66,TUTTE,FAD ASINCRONA,,,,,,
