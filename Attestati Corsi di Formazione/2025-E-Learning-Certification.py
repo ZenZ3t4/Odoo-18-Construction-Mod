@@ -3,6 +3,18 @@ import openpyxl
 from fpdf import FPDF
 from datetime import datetime
 import os
+import logging
+
+log_dir = './logs'
+os.makedirs(log_dir, exist_ok=True)
+log_file_path = os.path.join(log_dir, 'app.log')
+logging.basicConfig(
+    filename=log_file_path,
+    filemode='a',
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    datefmt='%Y-%m-%d %H:%M:%S',
+    level=logging.INFO
+)
 
 # #####################################################
 # -----------------------------------------
@@ -193,6 +205,7 @@ def salvapdf(pdf, codice_fiscale, info, corso_id, ragione_sociale):
     # Salva il PDF
     pdf.output(output_path, "F")
     print(f"Il file PDF è stato salvato in: {output_path}")
+    logging.info(f"Il file PDF è stato salvato in: {output_path}")
 
 
 # funzione per convertire minuti in HH:MM
@@ -339,6 +352,7 @@ def estrai_dettagli_azienda(nome_file, id_azienda):
         idx_codice_ateco = header.index('codice_ateco') + 1
     except ValueError:
         print("Una o più colonne necessarie non sono state trovate nel file Excel.")
+        logging.error("Una o più colonne necessarie non sono state trovate nel file Excel.")
         return None
 
     dettagli_azienda = {}
@@ -375,6 +389,7 @@ def crea_pdf(codice_fiscale, info):
         dettagli_azienda = estrai_dettagli_azienda(filename, id_azienda)
         if dettagli_azienda is None:
             print(f"Az:{id_azienda} ; CF: {codice_fiscale}; Nessuna azienda trovata con ID: {id_azienda};")
+            logging.error(f"Az:{id_azienda} ; CF: {codice_fiscale}; Nessuna azienda trovata con ID: {id_azienda};")
             dettagli_azienda = {
                 'ragione_sociale': 'Dati aziendali non disponibili',
                 'partita_iva': 'N/A',
@@ -388,12 +403,14 @@ def crea_pdf(codice_fiscale, info):
         id_corso = corso['id_corso']
         if not id_corso or id_corso == None:
             print(f"Az:{id_azienda} ; CF: {codice_fiscale}; id_corso assegnato non trovato '{id_corso}'.")
+            logging.error(f"Az:{id_azienda} ; CF: {codice_fiscale}; id_corso assegnato non trovato '{id_corso}'.")
         
         csv_filename = "./svil_comp.csv"
         dettagli_percorso_formativo = csv_to_list(csv_filename, id_corso)
         
         if not dettagli_percorso_formativo or dettagli_percorso_formativo == None:
             print(f"Az:{id_azienda} ; CF: {codice_fiscale}; Nessuna riga trovata con il titolo '{id_corso}'.")
+            logging.error(f"Az:{id_azienda} ; CF: {codice_fiscale}; Nessuna riga trovata con il titolo '{id_corso}'.")
             return
 
         # Stampa "ha frequentato / ha partecipato"
@@ -467,6 +484,18 @@ def crea_pdf(codice_fiscale, info):
 
 
 # ----------------------------------------------------------------------------------------------------------------
+def crea_nominativo(record):
+    cogn = record.get('cognome', '')
+    nome = record.get('nome', '')  # Se disponibile, altrimenti metti ''
+    return f"{cogn} {nome}".strip()
+
+def trova_file_per_azienda(folder, azienda):
+    for filename in os.listdir(folder):
+        if (filename.endswith(".xls") or filename.endswith(".xlsx")) and azienda in filename:
+            return os.path.join(folder, filename)
+    return None
+
+
 # Variabili iniziali
 file_master_path = './report_gen_data/new_master.xlsx'  # master
 azienda_da_gen = "sarca"
@@ -477,16 +506,11 @@ workbook = openpyxl.load_workbook(file_master_path)
 sheet_master = workbook.active
 
 # 2. Trova file azienda corrispondente
-def trova_file_per_azienda(folder, azienda):
-    for filename in os.listdir(folder):
-        if (filename.endswith(".xls") or filename.endswith(".xlsx")) and azienda in filename:
-            return os.path.join(folder, filename)
-    return None
-
 file_azienda_path = trova_file_per_azienda(folder_path, azienda_da_gen)
 if file_azienda_path is None:
     raise FileNotFoundError(f"Nessun file Excel trovato in '{folder_path}' contenente '{azienda_da_gen}' nel nome.")
 print(f"File trovato: {file_azienda_path}")
+logging.info(f"File trovato: {file_azienda_path}")
 
 # 3. Carica workbook azienda (SARCA)
 wb_azienda = openpyxl.load_workbook(file_azienda_path)
@@ -581,6 +605,8 @@ for row in sheet_azienda.iter_rows(min_row=2, values_only=True):
 
 print(f"Righe totali lette nel master: {n_stampe}")
 print(f"Righe nuove aggiunte dal file azienda '{azienda_da_gen}': {righe_aggiunte}")
+logging.info(f"Righe totali lette nel master: {n_stampe}")
+logging.info(f"Righe nuove aggiunte dal file azienda '{azienda_da_gen}': {righe_aggiunte}")
 
 # 9. Salva il file master aggiornato
 workbook.save(file_master_path)
@@ -592,6 +618,9 @@ for codice_fiscale, info in data.items():
     except Exception as e:
         n_errori += 1
         print(f"Errore nel creare PDF per {codice_fiscale}: {e}")
+        logging.error(f"Errore nel creare PDF per {codice_fiscale}: {e}")
 
 print("N. totale stampe: "+str(n_stampe))
 print("N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: "+str(n_errori))
+logging.info("N. totale stampe: "+str(n_stampe))
+logging.info("N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: "+str(n_errori))
