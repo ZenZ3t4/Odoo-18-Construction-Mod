@@ -5,7 +5,7 @@ import logging
 from datetime import datetime
 
 # === CONFIGURAZIONE LOG ===
-log_dir = './report_gen_data/logs/'
+log_dir = './logs/'
 os.makedirs(log_dir, exist_ok=True)
 log_file_path = os.path.join(log_dir, 'merge_report.log')
 logging.basicConfig(
@@ -22,15 +22,15 @@ def trova_file_odoo(folder, azienda):
     return None
 
 # === PERCORSI FILE ===
-file_anagrafica = './report_gen_data/db/db_anagrafica_new_reports.xlsx'
-file_output = './report_gen_data/db/stampa_pdf.xlsx'
-file_merge_error_xlsx = './report_gen_data/logs/merge_errors.xlsx'
-folder_session_output = './report_gen_data/db/xls_stampa'
+file_anagrafica = './db/db_anagrafica_new_reports.xlsx'
+file_output = './db/stampa_pdf.xlsx'
+file_merge_error_xlsx = './logs/merge_errors.xlsx'
+folder_session_output = './db/merge_outputs'
 os.makedirs(folder_session_output, exist_ok=True)
 
 try:
     input_file_id_odoo = input("Inserisci identificativo file odoo: ")
-    folder_path = "./report_gen_data/odoo_data"
+    folder_path = "./odoo_data"
     file_lista_odoo = trova_file_odoo(folder_path, input_file_id_odoo)
 
     if file_lista_odoo is None:
@@ -55,7 +55,7 @@ try:
     headers_odoo = [cell.value for cell in sheet_odoo[1]]
 
     idx_email_master = headers_master.index("e_mail")
-    colonne_output = headers_master + ["id_corso", "docente", "record_id"]
+    colonne_output = headers_master + ["id_corso", "docente", "data_corso", "record_id"]
     idx_codice_fiscale = headers_master.index("codice_fiscale")
 
     # === Dizionario anagrafico ===
@@ -83,12 +83,16 @@ try:
     sheet_session.append(colonne_output)
 
      # === OUTPUT ERRORI ===
-    folder_error_output = './report_gen_data/logs/errors'
+    folder_error_output = './logs/errors'
     os.makedirs(folder_error_output, exist_ok=True)
 
+    # Generazione file xls errori
+    
     wb_error = openpyxl.Workbook()
     sheet_error = wb_error.active
-    sheet_error.append(["E-mail", "Corso", "Motivo"])
+    headers_error = headers_odoo + ["Motivo"]
+    sheet_error.append(headers_error)
+
     
     # Controllo duplicati
     existing_keys = set()
@@ -115,14 +119,15 @@ try:
 
     for row in sheet_odoo.iter_rows(min_row=2, values_only=True):
         try:
-            email_odoo = row[headers_odoo.index("E-mail")].strip().lower()
+            email_odoo = row[headers_odoo.index("E-mail")]
             codice_corso = row[headers_odoo.index("Corso")]
-            nome_corso_sample = codice_corso  # usato per nome file
+            data_creazione = row[headers_odoo.index("Data creazione")]
+            nome_corso_sample = codice_corso  # per nome file
 
-            if email_odoo in diz_anagrafica:
-                dati = list(diz_anagrafica[email_odoo])  # <-- QUI
-                
-                codice_fiscale = dati[idx_codice_fiscale]  # usato per controllare duplicati
+            if email_odoo and email_odoo.strip().lower() in diz_anagrafica:
+                dati = list(diz_anagrafica[email_odoo.strip().lower()])
+                codice_fiscale = dati[idx_codice_fiscale]
+
                 if (codice_fiscale, codice_corso) in existing_keys:
                     logging.info(f"Duplicato evitato per {codice_fiscale} - Corso: {codice_corso}")
                     continue
@@ -130,17 +135,23 @@ try:
                 record_id = str(uuid.uuid4())
                 dati.append(codice_corso)
                 dati.append(docente)
+                dati.append(data_creazione)  # <-- aggiunto qui
                 dati.append(record_id)
+
                 sheet_output.append(dati)
                 sheet_session.append(dati)
                 existing_keys.add((codice_fiscale, codice_corso))
                 righe_scritti += 1
             else:
-                msg = f"[!] Email non trovata nel master: {email_odoo}"
-                print(msg)
-                logging.warning(msg)
-                sheet_error.append([email_odoo, codice_corso, "Email non presente in db_anagrafica"])
+                motivo = "Email non presente in db_anagrafica"
+                print(f"[!] Email non trovata nel master: {email_odoo}")
+                logging.warning(f"[!] Email non trovata nel master: {email_odoo}")
+                sheet_error.append(list(row) + [motivo])
                 righe_mancanti += 1
+
+        except Exception as e:
+            logging.error(f"Errore durante l'elaborazione della riga Odoo: {row} -> {e}")
+            sheet_error.append(["ERRORE"]*len(headers_odoo) + [str(e)])
 
         except Exception as e:
             logging.error(f"Errore durante l'elaborazione della riga Odoo: {row} -> {e}")
