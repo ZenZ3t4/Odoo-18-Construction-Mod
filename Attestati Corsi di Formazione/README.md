@@ -1,3 +1,6 @@
+# DEPRECATO
+# ANDARE SU report_gen_data per nuovo generatore
+# ------------------------------------------
 # PDF Generator - Attestati FAD
 
 I dati utilizzati per generare i file sono contenuti all'interno della tabella master
