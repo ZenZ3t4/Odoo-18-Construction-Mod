@@ -59,4 +59,31 @@ Contiene script Python per l'estrazione dati, l'integrazione con database, e la 
 - Log e messaggi a console aiutano a diagnosticare problemi.
 - Modifiche al layout PDF vanno fatte in `freedaypdf.py`.
 
+
+## Files Path
+project_root/
+│
+├── db/
+│ ├── new_master.xlsx
+│ ├── aziende.xlsx
+│ ├── db_corsi.xlsx
+│ └── stampa_pdf.xlsx # generato da processo di merge dati
+│
+├── images/
+│ ├── intestazione.png
+│ ├── logo_square_autentica.png
+│ └── firme/
+│ └── firma_<nome_docente>.png
+│
+├── font/
+│ └── DejaVuSansCondensed.ttf
+│
+├── report_gen_data/
+│ └── scripts/
+│ ├── 2025-Odoo-E-Learning-Certification.py
+│ ├── freedaypdf.py
+│ ├── genera_tabella_stampa_pdf.py
+│ └── xlsdatafunctions.py
+│
+└── README.md
 ---
