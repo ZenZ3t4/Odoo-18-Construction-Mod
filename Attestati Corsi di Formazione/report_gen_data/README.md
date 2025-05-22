@@ -1,9 +1,6 @@
 
 # Report Gen Data - Guida Interna
 
-## TO-DO
-- Ripristinare la funzione di caricamento anagrafica su interfaccia script `2025-Odoo-E-Learning-Certification.py` alla funzione `[2]'
-
 ## Descrizione
 Questo pacchetto genera attestati PDF di formazione professionale partendo da dati Excel (anagrafica, corsi, aziende). 
 Contiene script Python per l'estrazione dati, l'integrazione con database, e la generazione automatica dei PDF, con layout personalizzato.
@@ -31,7 +28,7 @@ Contiene script Python per l'estrazione dati, l'integrazione con database, e la 
 
 ## Struttura file principali
 - **2025-Odoo-E-Learning-Certification.py**  
-  Script principale per caricare i dati Excel, aggiornare il master e generare i PDF. Punta al file `stampa_pdf.xlsx`
+  Script principale per caricare i dati Excel, aggiornare il master e generare i PDF.
 
 - **freedaypdf.py**  
   Contiene funzioni per la composizione del PDF, stampa layout, firme, salvataggio e gestione percorsi.
@@ -58,6 +55,11 @@ Contiene script Python per l'estrazione dati, l'integrazione con database, e la 
 - Verificare la presenza delle immagini firme prima di generare PDF.
 - Log e messaggi a console aiutano a diagnosticare problemi.
 - Modifiche al layout PDF vanno fatte in `freedaypdf.py`.
+
+---
+
+## Contatti
+Per supporto contattare il team sviluppo interno.
 
 ---
 
