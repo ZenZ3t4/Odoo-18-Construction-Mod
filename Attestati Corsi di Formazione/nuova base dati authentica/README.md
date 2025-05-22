@@ -11,4 +11,4 @@ Su alcuni ho lasciato una nota per il merge e le modifiche da effettuare quando 
 - Montebuono: merge su Nome e Cognome in campo cognome
 - Ortona: merge su Nome e Cognome in campo cognome
 - Amis: Tolta unione celle su header tabella. Tolte righe 1-3-4. Rinominati i campi 'cognome' e 'codice fiscale'. Aggiunta colonna e-mail (in giallo), vuote al momento.
-- Peserico e Belenchia: Stesso tipo di file. Le operazioni da effettuare sono:
+- Peserico e Belenchia: Stesso tipo di file. Le operazioni da effettuare sono: Tolta unione celle su header tabella. Tolte righe 1 e 3. Rinominati i campi 'cognome' e 'codice fiscale'. Aggiunta colonna e-mail (in giallo), vuote al momento
