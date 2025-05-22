@@ -1,5 +1,18 @@
 import openpyxl
 
+def estrai_data_nascita(codice_fiscale):
+    mesi_codice = 'ABCDEHLMPRST'  # Mesi: A=Gen, B=Feb, ..., T=Dic
+    anno = int(codice_fiscale[6:8])
+    mese = mesi_codice.index(codice_fiscale[8]) + 1
+    giorno = int(codice_fiscale[9:11])
+    if giorno > 40:
+        giorno -= 40
+    if anno < 40:
+        anno += 2000
+    else:
+        anno += 1900
+    return f"{giorno}/{mese}/{anno}"
+
 def xls_to_dict(xls_filename, id_corso):
     try:
         wb = openpyxl.load_workbook(xls_filename, data_only=True)
@@ -68,7 +81,7 @@ def carica_stampa_pdf(path_stampa_pdf):
 
     idx_cf = headers.index("codice_fiscale")
     idx_nome = headers.index("nominativo")
-    idx_luogo = headers.index("luogo_nascita")
+    idx_comune = headers.index("comune")  # <-- qui correggi
     idx_id_azienda = headers.index("id_azienda") if "id_azienda" in headers else None
     idx_id_corso = headers.index("id_corso")
     idx_docente = headers.index("docente")
@@ -81,8 +94,8 @@ def carica_stampa_pdf(path_stampa_pdf):
         if cf not in data:
             data[cf] = {
                 "nominativo": row[idx_nome],
-                "data_nascita": estrai_data_nascita_da_codice_fiscale(cf),
-                "luogo_nascita": row[idx_luogo],
+                "data_nascita": estrai_data_nascita(cf),
+                "luogo_nascita": row[idx_comune],  # <-- qui assegni comune a luogo_nascita
                 "id_azienda": row[idx_id_azienda] if idx_id_azienda is not None else None,
                 "corsi": []
             }

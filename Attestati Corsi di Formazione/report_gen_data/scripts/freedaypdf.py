@@ -70,8 +70,7 @@ def stampa_contenuti_percorso(pdf, contenuti_corso):
         pdf.ln(5)
 
 def stampa_multicell(pdf, testo):
-    pdf.add_font('DejaVu', '', './font/DejaVuSansCondensed.ttf', uni=True)
-    pdf.set_font('DejaVu', '', 8)
+    pdf.set_font('Arial', '', 8)
     pdf.set_margins(10, 10, 10)
     for riga in testo.splitlines():
         pdf.multi_cell(0, 5, riga)
@@ -134,8 +133,13 @@ def stampa_firma(pdf, nome_formatore="", x=None, y=None):
     pdf.image(sign_path, x=x, y=y, w=img_w, h=img_h)
 
 def salvapdf(pdf, codice_fiscale, info, corso_id, ragione_sociale):
-    saved_file_name = f"{codice_fiscale}_{corso_id}.pdf"
-    output_path = os.path.join("new_reports", ragione_sociale, saved_file_name)
+    # Ottieni solo l'anno corrente come stringa
+    year = datetime.now().strftime("%Y")
+    
+    # Costruisci il nome del file con l'anno prima di corso_id
+    saved_file_name = f"{codice_fiscale}_{year}_{corso_id}.pdf"
+    
+    output_path = os.path.join("E-Learning Odoo Reports", ragione_sociale, year, corso_id, saved_file_name)
     output_dir = os.path.dirname(output_path)
     os.makedirs(output_dir, exist_ok=True)
     pdf.output(output_path, "F")
@@ -214,12 +218,12 @@ def crea_pdf(codice_fiscale, info):
         pdf.add_page()
 
         image_path = "./images/intestazione.png"
-        header_text = "ATTESTATO DI FORMAZIONE PROFESSIONALE"
+        header_text = "ATTESTATO DI FORMAZIONE"
         stampa_intestazione_pdf(pdf, image_path, header_text)
 
         blocco_dati_utente(pdf,
                            info.get('data_nascita', ''),
-                           info.get('luogo_nascita', ''),
+                           info.get('comune', ''),
                            info.get('nominativo', ''),
                            codice_fiscale)
 
