@@ -132,14 +132,14 @@ def stampa_firma(pdf, nome_formatore="", x=None, y=None):
         y = pdf.get_y()
     pdf.image(sign_path, x=x, y=y, w=img_w, h=img_h)
 
-def salvapdf(pdf, codice_fiscale, info, corso_id, ragione_sociale):
+def salvapdf(pdf, codice_fiscale, ragione_sociale, report_save_path):
     # Ottieni solo l'anno corrente come stringa
     year = datetime.now().strftime("%Y")
-    
+
     # Costruisci il nome del file con l'anno prima di corso_id
-    saved_file_name = f"{codice_fiscale}_{year}_{corso_id}.pdf"
+    saved_file_name = f"{codice_fiscale}_{year}_{report_save_path}.pdf"
     
-    output_path = os.path.join("E-Learning Odoo Reports", ragione_sociale, year, corso_id, saved_file_name)
+    output_path = os.path.join("E-Learning Odoo Reports", ragione_sociale, year, report_save_path, saved_file_name)
     output_dir = os.path.dirname(output_path)
     os.makedirs(output_dir, exist_ok=True)
     pdf.output(output_path, "F")
@@ -246,7 +246,8 @@ def crea_pdf(codice_fiscale, info):
         nome_corso = corso.get('nome_corso', 'Corso non trovato')
         contenuti_corso = corso.get('contenuti_corso', '')
         durata_corso = corso.get('durata_corso', '')
-
+        odoo_report_save_path = corso.get('save_path', '')
+        
         pdf.ln(4)
         pdf.set_font("Helvetica", "BI", size=14)
         if id_corso == 3:
@@ -279,9 +280,8 @@ def crea_pdf(codice_fiscale, info):
 
         stampa_riquadri(pdf)
 
-        corso_id_file = id_corso.replace(" ", "_")
         ragione_sociale = dettagli_azienda.get('ragione_sociale', 'default')
-        salvapdf(pdf, codice_fiscale, info, corso_id_file, ragione_sociale)
+        salvapdf(pdf, codice_fiscale, ragione_sociale, odoo_report_save_path)
 
 
 def genera_PDF(data, azienda_da_gen):

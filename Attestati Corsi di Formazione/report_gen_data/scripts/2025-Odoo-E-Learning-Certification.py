@@ -1,9 +1,7 @@
 from freedaypdf import *
 from xlsdatafunctions import *
-import openpyxl
 import os
 import logging
-import sys
 
 log_dir = './logs'
 os.makedirs(log_dir, exist_ok=True)
@@ -30,8 +28,8 @@ def estrai_data_nascita_da_codice_fiscale(codice_fiscale):
         anno += 2000
     else:
         anno += 1900
-    data = f"{giorno}/{mese}/{anno}"
-    return data
+    data_ita = f"{giorno}/{mese}/{anno}"
+    return data_ita
 
 # Percorsi e costanti
 path_db_master = "./db/new_master.xlsx"
@@ -70,9 +68,10 @@ if scelta == '1':
                     corso.update({
                         "nome_corso": "Corso non trovato",
                         "contenuti_corso": "",
-                        "durata_corso": ""
+                        "durata_corso": "",
+                        "save_path": "default_path"
                     })
-
+                    
         azienda_da_gen = "default_azienda"
         genera_PDF(data, azienda_da_gen)
 

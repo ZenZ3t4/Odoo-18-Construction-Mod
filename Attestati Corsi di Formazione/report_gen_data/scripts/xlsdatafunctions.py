@@ -29,14 +29,13 @@ def xls_to_dict(xls_filename, id_corso):
 def carica_db_corsi(path_db_corsi):
     """
     Carica db_corsi.xlsx in un dizionario con chiave 'odoo_id'.
-    Restituisce dict[id_corso] = {nome_corso, contenuti_corso, durata_corso}
+    Restituisce dict[id_corso] = {'odoo_id', 'nome_corso', 'contenuti_corso', 'durata_corso','save_path'}
     """
     try:
         wb = openpyxl.load_workbook(path_db_corsi, data_only=True)
         sheet = wb.active
         headers = [cell.value for cell in sheet[1]]
-
-        expected_headers = ['odoo_id', 'nome_corso', 'contenuti_corso', 'durata_corso']
+        expected_headers = ['odoo_id', 'nome_corso', 'contenuti_corso', 'durata_corso','save_path']
         for eh in expected_headers:
             if eh not in headers:
                 raise ValueError(f"Header '{eh}' mancante in db_corsi.xlsx")
@@ -47,7 +46,8 @@ def carica_db_corsi(path_db_corsi):
             corsi[id_corso] = {
                 "nome_corso": row[headers.index('nome_corso')],
                 "contenuti_corso": row[headers.index('contenuti_corso')],
-                "durata_corso": row[headers.index('durata_corso')]
+                "durata_corso": row[headers.index('durata_corso')],
+                "save_path": row[headers.index('save_path')]
             }
         return corsi
     except Exception as e:
