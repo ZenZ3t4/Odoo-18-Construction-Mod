@@ -88,8 +88,6 @@ def stampa_intestazione_pdf(pdf, image_path, header_text):
     pdf.set_text_color(36, 35, 35)
     disegna_linea(pdf)
     pdf.ln(3)  # Spazio dopo header
-    
-    
 
 # Funzione che stampa "per la partecipazione al corso di formazione generale e specifica" ed il relativo corso passato come parametro
 def stampa_denominazione_percorso_sviluppo(pdf, nome_corso_da_stampare):
@@ -142,7 +140,7 @@ def stampa_firme_accettazione(pdf, data_emissione, docente):
     # Stampa Luogo e Data
     pdf.ln(2)
     disegna_linea(pdf)
-    filigrana(pdf)
+    stampa_timbro(pdf)
     pdf.set_margins(10, 10, 10)
     pdf.set_font('Arial', 'B', 12)
     pdf.cell(60, 10, 'Luogo e Data', 0, 0, 'C')
@@ -207,20 +205,9 @@ def salvapdf(pdf, codice_fiscale, info, corso_id, ragione_sociale):
     print(f"Il file PDF è stato salvato in: {output_path}")
     logging.info(f"Il file PDF è stato salvato in: {output_path}")
 
+# Composizione template grafico del PDF
 
-# funzione per convertire minuti in HH:MM
-# serve per stampare il tempo dell'utente nel corso
-def convert_minutes_to_hours_minutes(minutes):
-    hours = int(minutes // 60)
-    remaining_minutes = int(minutes % 60)
-    return f"{hours:02d}:{remaining_minutes:02d}"
-
-# funzione per convertire minuti in ore troncate
-# serve per popolare la durata totale dei corsi
-def convert_minutes_to_hours(minutes):
-    hours = int(minutes // 60)
-    return f"{hours}"
-
+# Cornice e riquadro + triangoli
 def stampa_riquadri(pdf):
     # DRAWING - Cornice + L agli angoli
     pdf.set_draw_color(200, 200, 200)
@@ -295,7 +282,8 @@ def stampa_riquadri(pdf):
         margin, margin + triangle_size
     ]
     polygon(pdf, points_tl, style='F')
-    
+
+# Funzione per creare graficamente i triangoli
 def polygon(pdf, points, style='D'):
     h = pdf.h
     k = pdf.k
@@ -310,7 +298,8 @@ def polygon(pdf, points, style='D'):
             points_str += f'{x:.2f} {y:.2f} l '
     pdf._out(points_str + op)
 
-def filigrana(pdf):
+# Funzione per stampare il logo Authentica s.p.a. al center-bottom nel PDF
+def stampa_timbro(pdf):
     # dimensioni pagina
     page_w = pdf.w
     # dimensioni immagine da usare (puoi personalizzare)
@@ -321,29 +310,14 @@ def filigrana(pdf):
     y = y = pdf.get_y()
     pdf.image("logo_square_autentica.png", x=x, y=y, w=img_w, h=img_h)
 
-def estrai_data_nascita_da_codice_fiscale(codice_fiscale):
-    mesi_codice = 'ABCDEHLMPRST'  # Mesi: A=Gen, B=Feb, ..., T=Dic
-    anno = int(codice_fiscale[6:8])
-    mese = mesi_codice.index(codice_fiscale[8]) + 1
-    giorno = int(codice_fiscale[9:11])
-    # Correzione giorno per donne
-    if giorno > 40:
-        giorno -= 40
-    # Determina il secolo
-    if anno < 40:
-        anno += 2000
-    else:
-        anno += 1900
-    data = f"{giorno}/{mese}/{anno}"
-    return data
-
-
+# Estrae ragione_sociale, p_iva, ateco da aziende.xlsx 
+#   Key: id_azienda | colonna A | es: authentica, sarca, enerstreet, ecc...
+#   Restituisce una tabella dettagli_azienda con i vari dati estratti
 def estrai_dettagli_azienda(nome_file, id_azienda):
-   
+    # Apri il workbook
     workbook = openpyxl.load_workbook(nome_file)
     sheet = workbook.active  # Ottieni il foglio attivo
-
-    # Trova l'indice della colonna 'azienda_id' e delle altre colonne
+    # Trova gli header delle colonne in prima riga
     header = [cell.value for cell in sheet[1]]
     try:
         idx_azienda_id = header.index('azienda_id') + 1
@@ -354,7 +328,7 @@ def estrai_dettagli_azienda(nome_file, id_azienda):
         print("Una o più colonne necessarie non sono state trovate nel file Excel.")
         logging.error("Una o più colonne necessarie non sono state trovate nel file Excel.")
         return None
-
+    
     dettagli_azienda = {}
 
     # Itera sulle righe del foglio (partendo dalla seconda riga per saltare l'intestazione)
@@ -366,7 +340,6 @@ def estrai_dettagli_azienda(nome_file, id_azienda):
             return dettagli_azienda  # Restituisci i dettagli non appena trovi l'azienda
 
     return None  # Restituisci None se l'azienda non viene trovata
-
 
 # Funzione per creare PDF per ogni codice fiscale
 def crea_pdf(codice_fiscale, info):
@@ -385,7 +358,7 @@ def crea_pdf(codice_fiscale, info):
         # Stampa dettaglio azienda
         # Esempio di utilizzo:
         id_azienda = info['azienda']
-        filename = './report_gen_data/aziende.xlsx'
+        filename = './report_gen_data/db/aziende.xlsx'
         dettagli_azienda = estrai_dettagli_azienda(filename, id_azienda)
         if dettagli_azienda is None:
             print(f"Az:{id_azienda} ; CF: {codice_fiscale}; Nessuna azienda trovata con ID: {id_azienda};")
@@ -471,23 +444,76 @@ def crea_pdf(codice_fiscale, info):
         salvapdf(pdf, codice_fiscale, info, corso, ragione_sociale) 
         
 # ----------------------------------------------------------------------------------------------------------------    
-# ------------------------------------- FINE FUNZIONI ------------------------------------------------------------
+# -------------------------------- FINE FUNZIONE GENERAZIONE PDF -------------------------------------------------
 # ----------------------------------------------------------------------------------------------------------------
-# ----------------------------------------------------------------------------------------------------------------  
-# ------------------------------- INIZIO GENERAZIONE DEI FILE PDF ------------------------------------------------
+# ------------------ FUNZIONI ESTRAZIONE DATI ANAGRAFICI DA TABELLE AUTHENTICA -----------------------------------  
 # ----------------------------------------------------------------------------------------------------------------
-# Usa il percorso assoluto del file Excel
-#  file_path = './dati.xlsx'
+# Carica i codici catastali da file Excel in un dizionario.
+# Returns:
+#       dict: Dizionario {codice_catastale: (comune, provincia)}
+def carica_codici_catastali(percorso_file_excel):
+    try:
+        wb = openpyxl.load_workbook(percorso_file_excel)
+        sheet = wb.active
 
-# file di test: file_path = './master_ridotta.xlsx' #file di prova tabella master ridotta
+        headers = {str(cell.value).strip(): idx for idx, cell in enumerate(sheet[1])}
+        idx_catastale = headers.get("Codice Catastale del comune")
+        idx_comune = headers.get("Denominazione in italiano")
+        idx_provincia = headers.get("Sigla automobilistica")
 
+        if idx_catastale is None or idx_comune is None or idx_provincia is None:
+            raise ValueError("Colonne richieste non trovate")
 
+        mappa_catastali = {}
+        for row in sheet.iter_rows(min_row=2, values_only=True):
+            codice = str(row[idx_catastale]).strip().upper()
+            comune = str(row[idx_comune]).strip()
+            provincia = str(row[idx_provincia]).strip()
+            mappa_catastali[codice] = (comune, provincia)
 
-# ----------------------------------------------------------------------------------------------------------------
+        return mappa_catastali
+
+    except Exception as e:
+        print("Errore nella lettura del file:", e)
+        return {}
+
+# Decodifica comune e provincia da un dizionario già caricato.  
+#    Args:
+#        codice_fiscale (str): Il codice fiscale (16 caratteri).
+#        dizionario_catastali (dict): Dizionario con chiave codice catastale.
+    
+#    Returns:
+#        tuple: (comune, provincia) oppure (None, None)
+def decodifica_da_dizionario(codice_fiscale, dizionario_catastali):
+    if len(codice_fiscale) != 16:
+        return None, None
+
+    codice_catastale = codice_fiscale[11:15].upper()
+    #print(codice_catastale)
+    return dizionario_catastali.get(codice_catastale, (None, None))
+
+    
+# Funzione che estrae data di nascita da codice fiscale e restituisce gg/mm/aaaa
+def estrai_data_nascita_da_codice_fiscale(codice_fiscale):
+    mesi_codice = 'ABCDEHLMPRST'  # Mesi: A=Gen, B=Feb, ..., T=Dic
+    anno = int(codice_fiscale[6:8])
+    mese = mesi_codice.index(codice_fiscale[8]) + 1
+    giorno = int(codice_fiscale[9:11])
+    # Correzione giorno per donne
+    if giorno > 40:
+        giorno -= 40
+    # Determina il secolo
+    if anno < 40:
+        anno += 2000
+    else:
+        anno += 1900
+    data = f"{giorno}/{mese}/{anno}"
+    return data
+
 def crea_nominativo(record):
-    cogn = record.get('cognome', '')
-    nome = record.get('nome', '')  # Se disponibile, altrimenti metti ''
-    return f"{cogn} {nome}".strip()
+    surname = record.get('cognome', '')
+    name = record.get('nome', '')  # Se disponibile, altrimenti metti ''
+    return f"{surname} {name}".strip()
 
 def trova_file_per_azienda(folder, azienda):
     for filename in os.listdir(folder):
@@ -495,24 +521,66 @@ def trova_file_per_azienda(folder, azienda):
             return os.path.join(folder, filename)
     return None
 
+# ----------------------------------------------------------------------------------------------------------------
+# Function - FOR generazione PDF
+# ----------------------------------------------------------------------------------------------------------------
+def genera_PDF(data, azienda_da_gen):
+    n_errori = 0
+    n_stampe = 0
+    n_non_generati = 0
+    for codice_fiscale, info in data.items():
+        # Supponiamo che 'corsi' sia una lista di dizionari con 'id_corso'
+        # Se vuoi generare un PDF per ogni corso presente:
+        for corso in info.get('corsi', []):
+            id_corso = corso.get('id_corso')
+            if not id_corso:  # id_corso è None, stringa vuota o valore falsy
+                n_non_generati += 1
+                logging.warning(f"ID corso {id_corso} mancante per azienda '{azienda_da_gen}', codice fiscale '{codice_fiscale}'. PDF non generato.")
+                print(f"Attenzione: ID corso mancante per azienda '{azienda_da_gen}', codice fiscale '{codice_fiscale}'. PDF non generato.")
+                continue
+            try:
+                # Se id_corso è presente, genera il PDF
+                crea_pdf(codice_fiscale, info)
+                n_stampe += 1
+            except Exception as e:
+                n_errori += 1
+                print(f"Errore nel creare PDF per {codice_fiscale}: {e}")
+                logging.error(f"Errore nel creare PDF per {codice_fiscale}: {e}")
 
+    print("N. totale stampe: "+str(n_stampe))
+    print(f"N. PDF non generati per mancanza id_corso: {n_non_generati}")
+    print("N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: "+str(n_errori))
+    logging.info("N. totale stampe: "+str(n_stampe))
+    logging.info(f"N. PDF non generati per mancanza id_corso: {n_non_generati}")
+    logging.info("N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: "+str(n_errori))
+# ------------------------------------------------------------------------------------------
+# INIZIO GENERAZIONE PDF
+
+# CARTELLA FILE MASTER,AZIENDA E aziende.xlsx: folder_path | cartella attuale: ./report_gen_data
+# WORKBOOK MASTER: file_master_path
+# WORKBOOK AZIENDA: filname che contiene azienda_da_gen stringa come da tabella aziende.xlsx
+#                   ad esempio azienda_da_gen = "sarca":
+#                           - aprirà il file che nel nome contiene la stringa "sarca"
+#                           - nel file aziende.xlsx verranno estratti i dati di id_azienda = "sarca" [Colonna A del file]
 # Variabili iniziali
-file_master_path = './report_gen_data/new_master.xlsx'  # master
-azienda_da_gen = "sarca"
 folder_path = "./report_gen_data"
+file_master_path = './report_gen_data/db/new_master.xlsx'
+file_codici_catastali = "./report_gen_data/db/codici_catastali_comuni.xlsx"
+azienda_da_gen = input("Inserisci id azienda da aziende.xlsx: ")
 
-# 1. Apri workbook master (già fatto da te)
+# 1. Apri workbook master
 workbook = openpyxl.load_workbook(file_master_path)
 sheet_master = workbook.active
 
 # 2. Trova file azienda corrispondente
 file_azienda_path = trova_file_per_azienda(folder_path, azienda_da_gen)
+
 if file_azienda_path is None:
     raise FileNotFoundError(f"Nessun file Excel trovato in '{folder_path}' contenente '{azienda_da_gen}' nel nome.")
 print(f"File trovato: {file_azienda_path}")
 logging.info(f"File trovato: {file_azienda_path}")
 
-# 3. Carica workbook azienda (SARCA)
+# 3. Carica workbook azienda
 wb_azienda = openpyxl.load_workbook(file_azienda_path)
 sheet_azienda = wb_azienda.active
 
@@ -524,14 +592,22 @@ idx_cf_master = headers_master.index('codice_fiscale')
 data = {}
 n_stampe = 0
 n_errori = 0
+dict_codici_catastali = carica_codici_catastali(file_codici_catastali)
 
 for row in sheet_master.iter_rows(min_row=2, values_only=True):
     cf = row[idx_cf_master]
     if cf is None:
         continue
+    
+    comune, provincia = decodifica_da_dizionario(cf, dict_codici_catastali)
+    if comune and provincia == None:
+        comune = "non trovato"
+        provincia = "non trovato"
+        print("R-{row} - CF {cf}: Codice catastale non trovato o errore nel file.")
+        logging.info("R-{row} - CF {cf}: Codice catastale non trovato o errore nel file.")
+
+
     nominativo = row[headers_master.index('nominativo')]
-    comune = row[headers_master.index('comune')]
-    provincia = row[headers_master.index('provincia')]
     sesso = row[headers_master.index('sesso')]
     e_mail = row[headers_master.index('e_mail')]
     id_azienda = row[headers_master.index('id_azienda')]
@@ -556,8 +632,10 @@ for row in sheet_master.iter_rows(min_row=2, values_only=True):
     n_stampe += 1
 
 # 5. Prepara intestazioni azienda (SARCA) per la lettura
-headers_azienda = [cell.value.lower() for cell in next(sheet_azienda.iter_rows(min_row=1, max_row=1))]
-
+headers_azienda = [
+    cell.value.lower() if cell.value is not None else ""
+    for cell in next(sheet_azienda.iter_rows(min_row=1, max_row=1))
+]
 # 6. Crea mapping per i campi corrispondenti, aggiorna secondo i nomi corretti
 mapping = {
     'cognome': 'nominativo',  # qui forse devi integrare nome e cognome, oppure usa solo cognome
@@ -601,26 +679,34 @@ for row in sheet_azienda.iter_rows(min_row=2, values_only=True):
 
     # Aggiungi la nuova riga al foglio master
     sheet_master.append(new_row)
+    logging.info(f"MASTER - add row - : {new_row}")
     righe_aggiunte += 1
-
-print(f"Righe totali lette nel master: {n_stampe}")
+    
+print("+----------------------------------------------------------------------------------+")
 print(f"Righe nuove aggiunte dal file azienda '{azienda_da_gen}': {righe_aggiunte}")
-logging.info(f"Righe totali lette nel master: {n_stampe}")
 logging.info(f"Righe nuove aggiunte dal file azienda '{azienda_da_gen}': {righe_aggiunte}")
-
+print("+----------------------------------------------------------------------------------+")
 # 9. Salva il file master aggiornato
 workbook.save(file_master_path)
 
-# 10. Crea PDF come da tuo codice originale
-for codice_fiscale, info in data.items():
-    try:
-        crea_pdf(codice_fiscale, info)
-    except Exception as e:
-        n_errori += 1
-        print(f"Errore nel creare PDF per {codice_fiscale}: {e}")
-        logging.error(f"Errore nel creare PDF per {codice_fiscale}: {e}")
+# 10. Crea PDF se l'utente sceglie 1, se sceglie 2 o qualcosaltro esci
 
-print("N. totale stampe: "+str(n_stampe))
-print("N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: "+str(n_errori))
-logging.info("N. totale stampe: "+str(n_stampe))
-logging.info("N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: "+str(n_errori))
+# GUI di selezione
+cornice = """
++-------------------------------------------------------+
+| Seleziona come proseguire, digita:                    |
+| 1 - Genera PDF                                        |
+| 2 - Confronto con dati Odoo                           |
+|  Premi un tasto qualsiasi per uscire dal programma    | 
++-------------------------------------------------------+
+Digita e premi ENTER: """
+
+scelta = input(cornice)
+
+if scelta == '1':
+    genera_PDF(data, azienda_da_gen)
+elif scelta == '2':
+    print("Funzione ancora non implementata...")
+    print("Uscita dal programma.")
+else:
+    print("Scelta non valida. Uscita dal programma.")
