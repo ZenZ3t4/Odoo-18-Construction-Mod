@@ -3445,3 +3445,194 @@
 2025-05-22 12:28:23 - INFO - MASTER - add row - : ['TESTI SERENA', 'TSTSRN76R44G843J', 'CASCINA', 'PI', 'F', 'President@crazypistons.org', 'chef-and-go', None, None]
 2025-05-22 12:28:23 - INFO - Righe totali lette nel master: 11
 2025-05-22 12:28:23 - INFO - Righe nuove aggiunte dal file azienda 'chef-and-go': 24
+2025-05-22 12:37:05 - INFO - File trovato: ./report_gen_data\elettrohertz_ELENCO DEL PERSONALE AL 17_12_2024 ELETTROHERTZ.xlsx
+2025-05-22 12:37:09 - INFO - Righe nuove aggiunte dal file azienda 'elettrohertz': 0
+2025-05-22 12:37:14 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\BBTSFN62A07L182O_1.pdf
+2025-05-22 12:37:14 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\BRGSTF65A01L117U_2.pdf
+2025-05-22 12:37:15 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\GLNNNA68D64H439I_3.pdf
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BSSSNT70B59F844L'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'CNLLRT64T12L117Y'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'FSTFNC95H16L117E'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'FRTNCL97T13L117W'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'MSSRRT78T23L117N'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'TNTFBA67E10L117E'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'ZNNNDR91A02L117U'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'DCKFLC95B22Z311K'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BRGCLD76E48G702U'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BNGDKL91A41Z313H'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BRTRSL56C62D629R'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BRNNMR66M68H769S'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BRNLCU62B41F591R'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'CRLGRL83H08G702H'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'CRLCST68B44L833F'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'DLFDNL64R50B832W'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'FRRSMN85H58G273V'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'GLTCHR96B66G628K'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'LTNGNN76T27G273H'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'LBDFTH60S04Z352M'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'LPRDRO78D58G273D'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'LSUNNL68H44G702H'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'MTHMMD92H21Z352P'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'MNCLRA64M50G702W'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'PRRDNL83R43G702B'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'PCCGMR84R17E463W'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'PRVRSS90E48C351O'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'SVAMMM69A45E463O'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'SCRMGR62T69G702W'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'TVRLBT88A66C352L'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'TSTBRC72C43G843Y'. PDF non generato.
+2025-05-22 12:37:15 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'TSTSRN76R44G843J'. PDF non generato.
+2025-05-22 12:37:15 - INFO - N. totale stampe: 3
+2025-05-22 12:37:15 - INFO - N. PDF non generati per mancanza id_corso: 32
+2025-05-22 12:37:15 - INFO - N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: 0
+2025-05-22 12:38:49 - INFO - File trovato: ./report_gen_data\elettrohertz_ELENCO DEL PERSONALE AL 17_12_2024 ELETTROHERTZ.xlsx
+2025-05-22 12:38:52 - INFO - Righe nuove aggiunte dal file azienda 'elettrohertz': 0
+2025-05-22 12:38:56 - INFO - N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: 0
+2025-05-22 12:38:56 - INFO - EXIT - Select ANY ----------------------------------------------------------------- 
+2025-05-22 12:40:22 - INFO - ------------------------------------------------------------------------------------------- 
+2025-05-22 12:40:22 - INFO - -------------------------------STARTING SESSION LOG --------------------------------------- 
+2025-05-22 12:40:26 - INFO - File trovato: ./report_gen_data\elettrohertz_ELENCO DEL PERSONALE AL 17_12_2024 ELETTROHERTZ.xlsx
+2025-05-22 12:40:29 - INFO - Righe nuove aggiunte dal file azienda 'ELETTROHERTZ': 0
+2025-05-22 12:40:32 - INFO - N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: 0
+2025-05-22 12:40:32 - INFO - END SESSION LOG - Select ANY ----------------------------------------------------------------- 
+2025-05-22 12:41:44 - INFO - ------------------------------------------------------------------------------------------- 
+2025-05-22 12:41:44 - INFO - -------------------------------STARTING SESSION LOG --------------------------------------- 
+2025-05-22 12:41:49 - INFO - File trovato: ./report_gen_data\elettrohertz_ELENCO DEL PERSONALE AL 17_12_2024 ELETTROHERTZ.xlsx
+2025-05-22 12:41:52 - INFO - Righe nuove aggiunte dal file azienda 'ELETTROHERTZ': 0
+2025-05-22 12:41:55 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\BBTSFN62A07L182O_1.pdf
+2025-05-22 12:41:55 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\BRGSTF65A01L117U_2.pdf
+2025-05-22 12:41:56 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\GLNNNA68D64H439I_3.pdf
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'BSSSNT70B59F844L'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'CNLLRT64T12L117Y'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'FSTFNC95H16L117E'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'FRTNCL97T13L117W'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'MSSRRT78T23L117N'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'TNTFBA67E10L117E'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'ZNNNDR91A02L117U'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'DCKFLC95B22Z311K'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'BRGCLD76E48G702U'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'BNGDKL91A41Z313H'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'BRTRSL56C62D629R'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'BRNNMR66M68H769S'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'BRNLCU62B41F591R'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'CRLGRL83H08G702H'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'CRLCST68B44L833F'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'DLFDNL64R50B832W'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'FRRSMN85H58G273V'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'GLTCHR96B66G628K'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'LTNGNN76T27G273H'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'LBDFTH60S04Z352M'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'LPRDRO78D58G273D'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'LSUNNL68H44G702H'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'MTHMMD92H21Z352P'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'MNCLRA64M50G702W'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'PRRDNL83R43G702B'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'PCCGMR84R17E463W'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'PRVRSS90E48C351O'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'SVAMMM69A45E463O'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'SCRMGR62T69G702W'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'TVRLBT88A66C352L'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'TSTBRC72C43G843Y'. PDF non generato.
+2025-05-22 12:41:56 - WARNING - ID corso None mancante per azienda 'ELETTROHERTZ', codice fiscale 'TSTSRN76R44G843J'. PDF non generato.
+2025-05-22 12:41:56 - INFO - N. totale stampe: 3
+2025-05-22 12:41:56 - INFO - N. PDF non generati per mancanza id_corso: 32
+2025-05-22 12:41:56 - INFO - N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: 0
+2025-05-22 12:43:11 - INFO - ------------------------------------------------------------------------------------------- 
+2025-05-22 12:43:11 - INFO - -------------------------------STARTING SESSION LOG --------------------------------------- 
+2025-05-22 12:43:18 - INFO - File trovato: ./report_gen_data\elettrohertz_ELENCO DEL PERSONALE AL 17_12_2024 ELETTROHERTZ.xlsx
+2025-05-22 12:43:21 - INFO - Righe nuove aggiunte dal file azienda 'elettrohe': 0
+2025-05-22 12:43:25 - INFO - N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: 0
+2025-05-22 12:43:25 - INFO - ------------------------------- EXITING SESSION LOG --------------------------------------- 
+2025-05-22 12:43:25 - INFO - ------------------------------------------------------------------------------------------- 
+2025-05-22 12:43:28 - INFO - ------------------------------------------------------------------------------------------- 
+2025-05-22 12:43:28 - INFO - -------------------------------STARTING SESSION LOG --------------------------------------- 
+2025-05-22 12:43:31 - INFO - File trovato: ./report_gen_data\chef-and-go_ELENCO DIPENDENTI CHEF & GO AL 31_01_25.xlsx
+2025-05-22 12:43:34 - INFO - Righe nuove aggiunte dal file azienda 'chef-and-go': 0
+2025-05-22 12:43:36 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-22 12:43:36 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\BBTSFN62A07L182O_1.pdf
+2025-05-22 12:43:37 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\BRGSTF65A01L117U_2.pdf
+2025-05-22 12:43:37 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\GLNNNA68D64H439I_3.pdf
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'BSSSNT70B59F844L'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'CNLLRT64T12L117Y'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'FSTFNC95H16L117E'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'FRTNCL97T13L117W'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'MSSRRT78T23L117N'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'TNTFBA67E10L117E'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'ZNNNDR91A02L117U'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'DCKFLC95B22Z311K'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'BRGCLD76E48G702U'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'BNGDKL91A41Z313H'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'BRTRSL56C62D629R'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'BRNNMR66M68H769S'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'BRNLCU62B41F591R'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'CRLGRL83H08G702H'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'CRLCST68B44L833F'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'DLFDNL64R50B832W'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'FRRSMN85H58G273V'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'GLTCHR96B66G628K'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'LTNGNN76T27G273H'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'LBDFTH60S04Z352M'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'LPRDRO78D58G273D'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'LSUNNL68H44G702H'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'MTHMMD92H21Z352P'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'MNCLRA64M50G702W'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'PRRDNL83R43G702B'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'PCCGMR84R17E463W'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'PRVRSS90E48C351O'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'SVAMMM69A45E463O'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'SCRMGR62T69G702W'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'TVRLBT88A66C352L'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'TSTBRC72C43G843Y'. PDF non generato.
+2025-05-22 12:43:37 - WARNING - ID corso None mancante per azienda 'chef-and-go', codice fiscale 'TSTSRN76R44G843J'. PDF non generato.
+2025-05-22 12:43:37 - INFO - N. totale stampe: 3
+2025-05-22 12:43:37 - INFO - N. PDF non generati per mancanza id_corso: 32
+2025-05-22 12:43:37 - INFO - N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: 0
+2025-05-22 12:43:37 - INFO - ------------------------------- PDF GENERATI ---------------------------------------------- 
+2025-05-22 12:43:37 - INFO - ------------------------------- EXITING SESSION LOG --------------------------------------- 
+2025-05-22 12:43:37 - INFO - ------------------------------------------------------------------------------------------- 
+2025-05-22 12:45:49 - INFO - ------------------------------------------------------------------------------------------- 
+2025-05-22 12:45:49 - INFO - -------------------------------STARTING SESSION LOG --------------------------------------- 
+2025-05-22 12:45:55 - INFO - File trovato: ./report_gen_data\elettrohertz_ELENCO DEL PERSONALE AL 17_12_2024 ELETTROHERTZ.xlsx
+2025-05-22 12:45:58 - INFO - Righe nuove aggiunte dal file azienda 'elettrohertz': 0
+2025-05-22 12:45:59 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-22 12:46:00 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\BBTSFN62A07L182O_1.pdf
+2025-05-22 12:46:00 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\BRGSTF65A01L117U_2.pdf
+2025-05-22 12:46:01 - INFO - Il file PDF è stato salvato in: new_reports\Authentica S.p.A.\GLNNNA68D64H439I_3.pdf
+2025-05-22 12:46:01 - INFO - Il file PDF è stato salvato in: new_reports\ELETTROHERTZ SRL\BSSSNT70B59F844L_1.pdf
+2025-05-22 12:46:01 - INFO - Il file PDF è stato salvato in: new_reports\ELETTROHERTZ SRL\CNLLRT64T12L117Y_1.pdf
+2025-05-22 12:46:02 - INFO - Il file PDF è stato salvato in: new_reports\ELETTROHERTZ SRL\FSTFNC95H16L117E_2.pdf
+2025-05-22 12:46:02 - INFO - Il file PDF è stato salvato in: new_reports\ELETTROHERTZ SRL\FRTNCL97T13L117W_2.pdf
+2025-05-22 12:46:03 - INFO - Il file PDF è stato salvato in: new_reports\ELETTROHERTZ SRL\MSSRRT78T23L117N_2.pdf
+2025-05-22 12:46:03 - INFO - Il file PDF è stato salvato in: new_reports\ELETTROHERTZ SRL\TNTFBA67E10L117E_3.pdf
+2025-05-22 12:46:03 - INFO - Il file PDF è stato salvato in: new_reports\ELETTROHERTZ SRL\ZNNNDR91A02L117U_3.pdf
+2025-05-22 12:46:04 - INFO - Il file PDF è stato salvato in: new_reports\ELETTROHERTZ SRL\DCKFLC95B22Z311K_3.pdf
+2025-05-22 12:46:04 - INFO - Il file PDF è stato salvato in: new_reports\CHEF & GO S.R.L.\BRGCLD76E48G702U_3.pdf
+2025-05-22 12:46:05 - INFO - Il file PDF è stato salvato in: new_reports\CHEF & GO S.R.L.\BNGDKL91A41Z313H_1.pdf
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BRTRSL56C62D629R'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BRNNMR66M68H769S'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'BRNLCU62B41F591R'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'CRLGRL83H08G702H'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'CRLCST68B44L833F'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'DLFDNL64R50B832W'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'FRRSMN85H58G273V'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'GLTCHR96B66G628K'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'LTNGNN76T27G273H'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'LBDFTH60S04Z352M'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'LPRDRO78D58G273D'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'LSUNNL68H44G702H'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'MTHMMD92H21Z352P'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'MNCLRA64M50G702W'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'PRRDNL83R43G702B'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'PCCGMR84R17E463W'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'PRVRSS90E48C351O'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'SVAMMM69A45E463O'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'SCRMGR62T69G702W'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'TVRLBT88A66C352L'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'TSTBRC72C43G843Y'. PDF non generato.
+2025-05-22 12:46:05 - WARNING - ID corso None mancante per azienda 'elettrohertz', codice fiscale 'TSTSRN76R44G843J'. PDF non generato.
+2025-05-22 12:46:05 - INFO - N. totale stampe: 13
+2025-05-22 12:46:05 - INFO - N. PDF non generati per mancanza id_corso: 22
+2025-05-22 12:46:05 - INFO - N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: 0
+2025-05-22 12:46:05 - INFO - ------------------------------- PDF GENERATI ---------------------------------------------- 
+2025-05-22 12:46:05 - INFO - ------------------------------- EXITING SESSION LOG --------------------------------------- 
+2025-05-22 12:46:05 - INFO - ------------------------------------------------------------------------------------------- 

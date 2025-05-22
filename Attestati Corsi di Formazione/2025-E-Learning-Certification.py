@@ -563,6 +563,8 @@ def genera_PDF(data, azienda_da_gen):
 #                           - aprirà il file che nel nome contiene la stringa "sarca"
 #                           - nel file aziende.xlsx verranno estratti i dati di id_azienda = "sarca" [Colonna A del file]
 # Variabili iniziali
+logging.info("------------------------------------------------------------------------------------------- ")
+logging.info("-------------------------------STARTING SESSION LOG --------------------------------------- ")
 folder_path = "./report_gen_data"
 file_master_path = './report_gen_data/db/new_master.xlsx'
 file_codici_catastali = "./report_gen_data/db/codici_catastali_comuni.xlsx"
@@ -704,9 +706,19 @@ Digita e premi ENTER: """
 scelta = input(cornice)
 
 if scelta == '1':
+    logging.info("------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ ")
     genera_PDF(data, azienda_da_gen)
+    logging.info("------------------------------- PDF GENERATI ---------------------------------------------- ")
+    logging.info("------------------------------- EXITING SESSION LOG --------------------------------------- ")
+    logging.info("------------------------------------------------------------------------------------------- ")
 elif scelta == '2':
     print("Funzione ancora non implementata...")
     print("Uscita dal programma.")
+    logging.info("------------------------------- EXITING SESSION LOG --------------------------------------- ")
+    logging.info("------------------------------------------------------------------------------------------- ")
 else:
     print("Scelta non valida. Uscita dal programma.")
+    logging.info("N. ERRORI CRITICI [except for codice_fiscale, info in data.items]: "+str(n_errori))
+    
+    logging.info("------------------------------- EXITING SESSION LOG --------------------------------------- ")
+    logging.info("------------------------------------------------------------------------------------------- ")
