@@ -6,6 +6,7 @@ Tutti i file contrassegnati con x_ sono stati importati correttamente nella path
 
 Su alcuni ho lasciato una nota per il merge e le modifiche da effettuare quando arrivano nuovi file:
 
+- Authentica: Rinominato campo 'cognome'
 - Enerstreet: Tolta prima riga vuota, merge su Nome e Cognome in campo cognome
 - Montebuono: merge su Nome e Cognome in campo cognome
 - Ortona: merge su Nome e Cognome in campo cognome
