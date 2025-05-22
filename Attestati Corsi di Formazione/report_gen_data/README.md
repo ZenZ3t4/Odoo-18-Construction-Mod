@@ -1,81 +1,56 @@
-# PDF Generator - Attestati FAD
+# Generatore PDF Attestati Formazione - Uso Interno
 
-I dati utilizzati per generare i file sono contenuti all'interno della tabella master
-Per generare tutti i PDF eseguire lo script 1-course-compiler.py
-Per generare i PDF di un singolo utente si può utilizzare lo script 2-course by codice_fiscale.py
-Se si utilizza lo script singolo (2), la console chiederà in input il codice fiscale della persona di cui si vogliono estrarre i dati. Il metodo di salvataggio dei documenti è lo stesso dello script (1).
+## Descrizione
+Script Python per generare attestati PDF per corsi di formazione da dati Excel anagrafici, aziendali e corsi.
 
-N.B. Per eseguire lo script 1-course_compiler.py bisogna aprire la directory "generazione pdf" su VSCode. Aprendo solo lo script, non viene generato l'ambiente virtuale in cui sono presenti le librerie e quindi lo script incappa in degli errori. Invece, aprendo tramite VSCode la directory, sarà possibile installare le varie librerie necessarie (tipo FPDF), se richiesto, e mantenerle per l'esecuzione del programma.
+## Requisiti
+- Python 3.7+
+- Librerie: `fpdf`, `openpyxl`
+- Cartelle dati: `./db` con Excel (`new_master.xlsx`, `aziende.xlsx`, `db_corsi.xlsx`, `stampa_pdf.xlsx`)
+- Cartelle risorse: `./images` (intestazione, firme, logo), `./font` (DejaVuSansCondensed.ttf)
 
-***
-# Informazioni sulla base dati
-
-## Tabella Master - Campi
-  - moodle_institution
-  - cognome
-  - nome
-  - codice_fiscale
-  - data_di_nascita
-  - comune_di_nascita
-  - titolo_azione_con_id
-  - titolo_sessione_formativa
-  - Totale ore corso
-  - durata_min
-  - stato_corso
-  - valutazione_quiz
-  - partita_iva
-  - codice_ateco
-  - ente_formatore
-  - ente_certificatore
-
-Per matchare i dati tra la tabella Master ed il DB di Euromedia possiamo sfruttare i match di moodle_institution e codice_fiscale, dati ugualmente presenti in entrambe le basi dati.
-
-## Estrapolazione dei dati e composizione del front-end
-Per l'estrazione dei dati proporrei una maschera con, all'interno, la possibilità di selezionare i dati come nel seguente Tree:
-
-Ricerca per:
-
-moodle_institution
-
-├── codice_fiscale {Cognome} {Nome}
-
-└── titolo_sessione_formativa
-
-Per quanto concerne la maschera, procederei ad una configurazione come la seguente:
-![maschera_dati_euromedia](https://github.com/user-attachments/assets/b0f57848-19a9-4609-92fe-a4ea5f98161a)
-
-Inoltre, in ogni riga, aggiungerei un tasto PDF export per effettuare il download dell'attestato dalla risorsa FTP in cui verrano salvati
-
-# Note sul funzionamento del generatore
-
-## Salvataggio degli attestati
-
-Una volta partito lo script di generazione degli attestati, i file verranno salvati come segue:
-
-- __Nome del file__: i file saranno sempre composti dal codice fiscale e dalla sigla del corso di cui stiamo emettendo l'attestato. Aggiungiamo alla fine del nome il suffisso "inc" se il corso non è stato completato.
-
-```python
-if corso['stato_corso'] == 'incompleto':
-    saved_file_name = f"{codice_fiscale}_{sigla_corso}_inc.pdf"
-else:
-    saved_file_name = f"{codice_fiscale}_{sigla_corso}.pdf"
+## Setup librerie
+```bash
+pip install fpdf openpyxl
 ```
 
-- __Percorso del file__: /reports/{azienda}/{saved_file_name}
+## Come usare
 
-```python
-# Directory di salvataggio del file
-output_path = os.path.join("reports", azienda, saved_file_name)
+1. Prepara/aggiorna i file Excel in `./db` con dati anagrafici, aziende, corsi e tabella per stampa (`stampa_pdf.xlsx`).
 
-# Crea la cartella se non esiste
-output_dir = os.path.dirname(output_path)
-os.makedirs(output_dir, exist_ok=True)
+2. Esegui lo script principale:
+```bash
+python 2025-Odoo-E-Learning-Certification.py
 ```
 
-## Path dei file necessari al funzionamento
+3. Segui il prompt:
+- Digita `1` per generare PDF.
+- PDF generati in:  
+`E-Learning Odoo Reports/{ragione_sociale}/{anno}/{save_path}/{codice_fiscale}_{anno}_{save_path}.pdf`
 
-I file necessari al generatore come la tabella master ed i file di emissione del pdf (intestazioni, firme, ecc) risiedono tutti nella cartella in cui è posizionata la sorgente con path *"./nomefile.estensione"*
+## Note importanti
+- Assicurati che il campo `save_path` sia valorizzato in `db_corsi.xlsx` e correttamente caricato.
+- Controlla la presenza delle immagini firme in `./images/firme/`.
+- Verifica permessi scrittura cartelle output.
 
-## Librerie utilizzate
-- __openpyxl__: Estrapolazione dei dati tramite Excel - File type: .xlsx
-- __fpdf__: Per la composizione visuale dei PDF
+## Debug
+- Errori su path NoneType -> verifica `save_path`
+- Mancanza file font o immagini -> controlla cartelle relative
+
+---
+
+## Struttura cartelle
+
+```
+./db/               # File Excel dati
+./images/           # Immagini header, firme, logo
+./font/             # Font DejaVuSansCondensed.ttf
+./report_gen_data/  # Script Python
+```
+
+---
+
+## Contatti
+Per supporto interno, contatta il team dev.
+
+---
