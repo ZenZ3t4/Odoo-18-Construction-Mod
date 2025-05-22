@@ -484,13 +484,18 @@ def carica_codici_catastali(percorso_file_excel):
     
 #    Returns:
 #        tuple: (comune, provincia) oppure (None, None)
-def decodifica_da_dizionario(codice_fiscale, dizionario_catastali):
-    if len(codice_fiscale) != 16:
+def decodifica_da_dizionario(cf, mappa_catastali):
+    if len(cf) != 16:
         return None, None
 
-    codice_catastale = codice_fiscale[11:15].upper()
-    #print(codice_catastale)
-    return dizionario_catastali.get(codice_catastale, (None, None))
+    codice_catastale = cf[11:15].upper()
+    comune, provincia = mappa_catastali.get(codice_catastale, (None, None))
+
+    # Se provincia è vuota, e il codice inizia per Z, consideralo estero
+    if codice_catastale.startswith("Z") and provincia is None:
+        provincia = "EE"  # Estero
+
+    return comune, provincia
 
     
 # Funzione che estrae data di nascita da codice fiscale e restituisce gg/mm/aaaa
@@ -600,16 +605,10 @@ for row in sheet_master.iter_rows(min_row=2, values_only=True):
     cf = row[idx_cf_master]
     if cf is None:
         continue
-    
-    comune, provincia = decodifica_da_dizionario(cf, dict_codici_catastali)
-    if comune and provincia == None:
-        comune = "non trovato"
-        provincia = "non trovato"
-        print("R-{row} - CF {cf}: Codice catastale non trovato o errore nel file.")
-        logging.info("R-{row} - CF {cf}: Codice catastale non trovato o errore nel file.")
-
 
     nominativo = row[headers_master.index('nominativo')]
+    comune = row[headers_master.index('comune')]
+    provincia = row[headers_master.index('provincia')]
     sesso = row[headers_master.index('sesso')]
     e_mail = row[headers_master.index('e_mail')]
     id_azienda = row[headers_master.index('id_azienda')]
@@ -662,7 +661,15 @@ for row in sheet_azienda.iter_rows(min_row=2, values_only=True):
 
     # Prepara nuova riga per master
     new_row = [None] * len(headers_master)
+    
+    comune_value, provincia_value = decodifica_da_dizionario(cf, dict_codici_catastali)
 
+    if comune_value and provincia_value == None:
+        comune_value = "non trovato"
+        provincia_value = "non trovato"
+        print("R-{row} - CF {cf}: Codice catastale non trovato o errore nel file.")
+        logging.info("R-{row} - CF {cf}: Codice catastale non trovato o errore nel file.")
+        
     # Campi mappati dal file azienda a master
     # Dentro il ciclo di inserimento nuovi record:
 
@@ -673,7 +680,10 @@ for row in sheet_azienda.iter_rows(min_row=2, values_only=True):
             new_row[idx_cols_master[key_master]] = nominativo
         else:
             new_row[idx_cols_master[key_master]] = record.get(key_azi)
-
+    
+    # Scrivi comune e provincia sul master
+    new_row[idx_cols_master['comune']] = comune_value
+    new_row[idx_cols_master['provincia']] = provincia_value
 
     # Assegna azienda_da_gen e id_corso (puoi modificare id_corso a piacere)
     new_row[idx_cols_master['id_azienda']] = azienda_da_gen
