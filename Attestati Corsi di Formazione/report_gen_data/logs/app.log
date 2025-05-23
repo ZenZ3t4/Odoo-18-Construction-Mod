@@ -10879,3 +10879,773 @@
 2025-05-23 22:03:05 - ERROR - Errore nel creare PDF per DCNDNL76A26H501U: [Errno 13] Permission denied: 'E-Learning Odoo Reports\\2025\\Authentica S.p.A.\\Sicurezza sul Lavoro\\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf'
 2025-05-23 22:03:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
 2025-05-23 22:03:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:49 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:08:49 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:08:49 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:08:49 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:08:49 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:08:49 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:08:49 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:08:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:08:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:08:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:08:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:08:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:08:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:08:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:08:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:08:51 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:08:51 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:08:51 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:08:51 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:08:51 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:08:51 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:08:51 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:08:51 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:08:52 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:52 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:52 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:52 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:52 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:52 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:52 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:53 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:53 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:53 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:53 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:53 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:53 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:53 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:53 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:54 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:54 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:54 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:54 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:54 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:54 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:54 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:55 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:55 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:55 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:55 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:55 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:55 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:55 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:55 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:08:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:08:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:08:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:08:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:08:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:08:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:08:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:08:57 - INFO - N. totale stampe: 64
+2025-05-23 22:08:57 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:08:57 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:11:56 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:11:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:11:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:11:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:11:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:11:56 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:11:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:11:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:11:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:11:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:11:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:11:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:11:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:11:57 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:11:58 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:11:58 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:11:58 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:11:58 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:11:58 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:11:58 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:11:58 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:11:58 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:11:59 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:12:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:12:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:12:04 - INFO - N. totale stampe: 64
+2025-05-23 22:12:04 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:12:04 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:18:25 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:18:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:18:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:18:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:18:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:18:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:18:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:18:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:18:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:18:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:18:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:18:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:18:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:18:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:18:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:18:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:18:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:18:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:18:28 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:18:28 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:18:28 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:18:28 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:18:28 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:18:28 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:28 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:18:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:18:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:18:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:18:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:18:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:18:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:18:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:18:34 - INFO - N. totale stampe: 64
+2025-05-23 22:18:34 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:18:34 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:20:06 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:20:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:20:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:20:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:20:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:20:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:20:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:20:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:20:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:20:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:20:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:20:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:20:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:20:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:20:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:20:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:20:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:20:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:20:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:20:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:20:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:20:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:20:19 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:20:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:20:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:20:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:20:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:20:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:20:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:20:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:20:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:20:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:20:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:20:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:20:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:20:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:20:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:20:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:24 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:24 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:24 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:24 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:24 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:24 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:24 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:24 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:25 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:26 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:20:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:20:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:20:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:20:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:20:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:20:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:20:27 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:20:27 - INFO - N. totale stampe: 64
+2025-05-23 22:20:27 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:20:27 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:23:11 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:23:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:23:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:23:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:23:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:23:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:23:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:23:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:23:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:23:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:23:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:23:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:23:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:23:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:23:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:23:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:23:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:23:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:23:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:23:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:23:14 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:23:14 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:23:14 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:23:14 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:14 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:14 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:14 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:23:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:23:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:23:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:23:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:23:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:23:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:23:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:23:19 - INFO - N. totale stampe: 64
+2025-05-23 22:23:19 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:23:19 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:24:37 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:24:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:24:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:24:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:24:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:24:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:24:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:24:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:24:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:24:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:24:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:24:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:24:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:24:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:24:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:24:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:24:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:24:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:24:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:24:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:24:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:24:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:24:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:24:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:24:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:24:45 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:24:45 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:24:45 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:24:45 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:24:45 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:24:45 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:24:45 - INFO - N. totale stampe: 64
+2025-05-23 22:24:45 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:24:45 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:25:35 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:25:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:25:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:25:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:25:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:25:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:25:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:25:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:25:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:25:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:25:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:25:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:25:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:25:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:25:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:25:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:25:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:25:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:25:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:25:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:25:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:25:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:25:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:25:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:38 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:39 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:41 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:25:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:25:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:25:42 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:25:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:25:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:25:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:25:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:25:43 - INFO - N. totale stampe: 64
+2025-05-23 22:25:43 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:25:43 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:26:29 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:26:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:26:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:26:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:26:29 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:26:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:26:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:26:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:26:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:26:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:26:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:26:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:26:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:26:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:26:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:26:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:26:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:26:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:26:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:26:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:26:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:26:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:26:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:26:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:32 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:33 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:34 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:35 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:26:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:26:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:26:36 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:26:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:26:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:26:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:26:37 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:26:37 - INFO - N. totale stampe: 64
+2025-05-23 22:26:37 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:26:37 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:31:05 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:31:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:31:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:31:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:31:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:31:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:31:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:31:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:31:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:31:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:31:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:31:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:31:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:31:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:31:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:31:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:31:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:31:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:31:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:31:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:31:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:31:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:31:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:31:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:11 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:31:12 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:31:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:31:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:31:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:31:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:31:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:31:13 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:31:13 - INFO - N. totale stampe: 64
+2025-05-23 22:31:13 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:31:13 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:36:02 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:36:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:36:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:36:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:36:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:36:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:36:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:36:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:36:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:36:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:36:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:36:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:36:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:36:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:36:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:36:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:36:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:36:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:36:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:36:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:36:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:36:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:36:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:36:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:06 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:07 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:08 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:09 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:36:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:36:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:36:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:36:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:36:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:36:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:36:10 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:36:10 - INFO - N. totale stampe: 64
+2025-05-23 22:36:10 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:36:10 - INFO - N. ERRORI CRITICI: 0
+2025-05-23 22:37:15 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:37:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:37:15 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:37:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:37:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:37:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:37:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:37:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:37:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:37:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:37:16 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:37:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:37:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:37:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:37:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:37:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:37:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:37:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:37:17 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:37:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:37:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:37:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:37:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:37:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:18 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\CNTSRA80B63H501G_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PRZVEA73C51Z216T_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\NKTYLY74D58Z138N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\BRGLRI76B51D403C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\SPZTZN70E71H501C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MNAFRN69E50Z129P_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MZZSVN64H68A764S_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:19 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKVSCH61L44Z148V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DMIVLR73C43G273L_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DDJLNR74S44Z100V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\HRNCDY83D42Z506W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\GSBSVN81A42F205X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\MLLFNC77D58F112W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\NKLZNK64T59Z148O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:20 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LRSCCT69M63D976E_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\LFNRHL67B58G813X_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\CHKLMY86L44Z138A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\KCLFRN82B46Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\PLNSVT69E13B519C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\DLLCLD60A26G535V_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\TRKNLA76T63Z100W_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\PLLPLA72B28L483I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:21 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CRSLNZ75E11G535B_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PDNRRT83M23L182N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\GRMCML78B47H501R_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\DSMMRC06R12D286N_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\QNNMLK81D43Z605A_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\VGVLPT74B62Z611C_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Sicurezza sul Lavoro\BSONGL03T01F205F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Sicurezza sul Lavoro\CMPLVC89T63Z129Q_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:22 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\LNZLDN66T55H501O_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:37:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\PLLMGV68R44Z114P_2025_HACCP e Celiachia.pdf
+2025-05-23 22:37:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\LRASLM71A11Z301E_2025_HACCP e Celiachia.pdf
+2025-05-23 22:37:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\SBLSDR68P65A123J_2025_HACCP e Celiachia.pdf
+2025-05-23 22:37:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\CNZLRA76P45B729O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:37:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\DRGSLV68R42Z129O_2025_HACCP e Celiachia.pdf
+2025-05-23 22:37:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\HACCP e Celiachia\MRLMST68M63E617R_2025_HACCP e Celiachia.pdf
+2025-05-23 22:37:23 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-05-23 22:37:23 - INFO - N. totale stampe: 64
+2025-05-23 22:37:23 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-05-23 22:37:23 - INFO - N. ERRORI CRITICI: 0

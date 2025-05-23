@@ -81,7 +81,7 @@ def stampa_multicell(pdf, testo):
 
 def stampa_multicell_grande(pdf, testo):
     pdf.set_font("Arial", "I", size=10)
-    pdf.set_margins(20, 20, 20)
+    pdf.set_margins(10, 10, 10)
     for riga in testo.splitlines():
         pdf.multi_cell(0, 5, riga, align='C')
     pdf.set_margins(10, 10, 10)
@@ -112,9 +112,13 @@ def stampa_firme_accettazione(pdf, data_emissione, docente, id_corso):
     pdf.set_font('Arial', 'B', 12)
     pdf.cell(60, 10, ' ', 0, 0, 'C')
 
-    if id_corso == "FORMAZIONE 231":
+    if id_corso == 'FORMAZIONE 231':
         pdf.cell(60, 10, 'Il direttore del corso', 0, 1, 'C')
-    else:
+        
+    elif id_corso == 'Nozioni di sicurezza alimentare e applicazione HACCP':
+        pdf.cell(60, 10, ' ', 0, 1, 'C')
+        
+    elif id_corso is not None:
         pdf.cell(60, 10, 'Il Docente', 0, 1, 'C')
     
     y_firma = pdf.get_y()
@@ -263,12 +267,15 @@ def crea_pdf(codice_fiscale, info):
         pdf.ln(4)
         pdf.set_font("Helvetica", "BI", size=14)
 
-        if id_corso == 'Nozioni di sicurezza alimentare e applicazione HACCP':
+        if id_corso == "Nozioni di sicurezza alimentare e applicazione HACCP":
             testo_header = "ha frequentato il corso di formazione"
-        if id_corso == 'FORMAZIONE 231':
+            
+        if id_corso == "FORMAZIONE 231":
             testo_header = "per la partecipazione al Corso di Formazione:"
-        else:
+            
+        if id_corso == "CORSO SICUREZZA SUL LAVORO 2025":
             testo_header = "per la partecipazione al corso di formazione generale e specifica"
+            
         pdf.cell(200, 7, txt=testo_header, align='C', ln=True)
         pdf.ln(8)
 
@@ -296,6 +303,8 @@ def crea_pdf(codice_fiscale, info):
             grassetto_2 = ("nel periodo 02/2025 - 03/2025 con i seguenti contenuti:")
             stampa_grassetto(pdf, grassetto_2)
 
+            pdf.ln(7)
+            
             pdf.set_margins(10, 10, 10)
             # Testo da stampare, coppie di righe
             coppie = [
@@ -303,14 +312,41 @@ def crea_pdf(codice_fiscale, info):
                 ("Il sistema sanzionatorio ed elenco dei reati presupposto", "a cura del Membro OdV Avv. Fabio Calaciura"),
                 ("I reati fiscali e societari nella normativa 231", "a cura del Membro OdV Dott. Marco Rosatelli")
             ]
-            y = 50  # Posizione iniziale Y
             for titolo, autore in coppie:
-                # Stampa titolo in grassetto, size 11
+                # Calcola larghezza testo con font appropriati
                 pdf.set_font('Arial', 'B', 11)
-                pdf.cell(0, 10, titolo + ' - ', 0, 0)
-                # Stampa autore in normale, size 10
-                pdf.set_font('Arial', '', 10)
-                pdf.cell(0, 10, autore, 0, 1)
+                w_titolo = pdf.get_string_width(titolo)
+                
+                pdf.set_font('Arial', 'B', 11)
+                w_trattino = pdf.get_string_width(' - ')
+                
+                pdf.set_font('Arial', 'I', 10)
+                w_autore = pdf.get_string_width(autore)
+                
+                total_width = w_titolo + w_trattino + w_autore
+                
+                # Calcola larghezza area scrivibile (escludendo margini)
+                page_width = pdf.w - pdf.l_margin - pdf.r_margin
+                
+                # Calcola posizione X centrata nell'area scrivibile
+                x = pdf.l_margin + (page_width - total_width) / 2
+                
+                # Imposta cursore in posizione (x, y corrente)
+                y = pdf.get_y()
+                pdf.set_xy(x, y)
+                
+                # Stampa titolo
+                pdf.set_font('Arial', 'B', 11)
+                pdf.cell(w_titolo, 10, titolo, border=0, ln=0)
+                
+                # Stampa trattino
+                pdf.set_font('Arial', 'B', 11)
+                pdf.cell(w_trattino, 10, ' - ', border=0, ln=0)
+                
+                # Stampa autore
+                pdf.set_font('Arial', 'I', 10)
+                pdf.cell(w_autore, 10, autore, border=0, ln=1)
+
 
         else:
             paragrafo_ai_sensi = ("ai sensi dell'Art.37 del D. Lgs. n° 81/08 e s.m.i. e secondo l'Accordo Stato Regioni e "
