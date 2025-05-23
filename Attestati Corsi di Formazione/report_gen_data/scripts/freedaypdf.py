@@ -3,9 +3,13 @@ from datetime import datetime
 import os
 import logging
 
-def stampa_dati_azienda(pdf, dettagli_azienda):
+def stampa_dati_azienda(pdf, dettagli_azienda, id_corso):
     pdf.set_font("Helvetica", "I", size=11)
-    azienda_row_1 = f"collaboratore dell'azienda {dettagli_azienda['ragione_sociale']} - P.IVA: {dettagli_azienda['partita_iva']}"
+
+    if id_corso == 'FORMAZIONE 231':
+        azienda_row_1 = f"collaboratore/dipendente dell'azienda {dettagli_azienda['ragione_sociale']} - P.IVA: {dettagli_azienda['partita_iva']}"
+    else:
+        azienda_row_1 = f"collaboratore dell'azienda {dettagli_azienda['ragione_sociale']} - P.IVA: {dettagli_azienda['partita_iva']}"
     pdf.cell(200, 5, txt=azienda_row_1, align='C', ln=True)
 
 def blocco_dati_utente(pdf, data_nascita, luogo_nascita, nominativo, codice_fiscale):
@@ -89,14 +93,13 @@ def stampa_paragrafo(pdf, header_str, text_string):
     pdf.ln(3)
     stampa_multicell(pdf, text_string)
 
-def stampa_paragrafo_secondario(pdf, header_str, text_string):
-    pdf.set_font("Helvetica", "B", size=12)
+def stampa_grassetto(pdf, text_to_print):
+    pdf.set_font("Helvetica", "BI", size=12)
     pdf.set_margins(10, 10, 10)
-    pdf.cell(200, 7, txt=header_str, align='C', ln=True)
+    pdf.cell(200, 7, txt=text_to_print, align='C', ln=True)
     pdf.ln(1)
-    stampa_multicell(pdf, text_string)
 
-def stampa_firme_accettazione(pdf, data_emissione, docente):
+def stampa_firme_accettazione(pdf, data_emissione, docente, id_corso):
     pdf.ln(2)
     disegna_linea(pdf)
     stampa_timbro(pdf)
@@ -108,7 +111,12 @@ def stampa_firme_accettazione(pdf, data_emissione, docente):
     pdf.text(25, pdf.get_y() + 12, txt=txt_date)
     pdf.set_font('Arial', 'B', 12)
     pdf.cell(60, 10, ' ', 0, 0, 'C')
-    pdf.cell(60, 10, 'Il Docente', 0, 1, 'C')
+
+    if id_corso == "FORMAZIONE 231":
+        pdf.cell(60, 10, 'Il direttore del corso', 0, 1, 'C')
+    else:
+        pdf.cell(60, 10, 'Il Docente', 0, 1, 'C')
+    
     y_firma = pdf.get_y()
     larghezza_pagina = pdf.w
     margine_dx = pdf.r_margin
@@ -139,10 +147,12 @@ def salvapdf(pdf, codice_fiscale, ragione_sociale, report_save_path):
     # Costruisci il nome del file con l'anno prima di corso_id
     saved_file_name = f"{codice_fiscale}_{year}_{report_save_path}.pdf"
     
-    output_path = os.path.join("E-Learning Odoo Reports", ragione_sociale, year, report_save_path, saved_file_name)
+    output_path = os.path.join("E-Learning Odoo Reports", year, ragione_sociale, report_save_path, saved_file_name)
     output_dir = os.path.dirname(output_path)
     os.makedirs(output_dir, exist_ok=True)
+
     pdf.output(output_path, "F")
+
     print(f"Il file PDF è stato salvato in: {output_path}")
     logging.info(f"Il file PDF è stato salvato in: {output_path}")
 
@@ -234,10 +244,12 @@ def crea_pdf(codice_fiscale, info):
                 'partita_iva': 'N/A',
                 'codice_ateco': 'N/A'
             }
-        stampa_dati_azienda(pdf, dettagli_azienda)
+        
+        id_corso = corso.get('id_corso')
+
+        stampa_dati_azienda(pdf, dettagli_azienda, id_corso)
         pdf.ln()
 
-        id_corso = corso.get('id_corso')
         if not id_corso:
             print(f"CF:{codice_fiscale}; id_corso non trovato")
             logging.error(f"CF:{codice_fiscale}; id_corso non trovato")
@@ -250,8 +262,11 @@ def crea_pdf(codice_fiscale, info):
         
         pdf.ln(4)
         pdf.set_font("Helvetica", "BI", size=14)
-        if id_corso == 3:
+
+        if id_corso == 'Nozioni di sicurezza alimentare e applicazione HACCP':
             testo_header = "ha frequentato il corso di formazione"
+        if id_corso == 'FORMAZIONE 231':
+            testo_header = "per la partecipazione al Corso di Formazione:"
         else:
             testo_header = "per la partecipazione al corso di formazione generale e specifica"
         pdf.cell(200, 7, txt=testo_header, align='C', ln=True)
@@ -259,24 +274,59 @@ def crea_pdf(codice_fiscale, info):
 
         stampa_denominazione_percorso_sviluppo(pdf, nome_corso)
 
+        #print(f"Id corso: {id_corso} della durata di {durata_corso}")
+        #print(f"contenuti: {contenuti_corso}")
         if id_corso == 'Nozioni di sicurezza alimentare e applicazione HACCP':
+            
             header_str = f'della durata di {durata_corso} ore, in conformità al Reg. CE 852/2004'
-            stampa_paragrafo(pdf, header_str, "")
+            stampa_grassetto(pdf, header_str)
+
             header_str_2 = "Allegato II Cap. XII e s.m.i. ed ai sensi delle ulteriori normative nazionali e locali applicabili"
             stampa_paragrafo(pdf, header_str_2, contenuti_corso)
+
             pdf.ln(2)
+
+        elif id_corso == 'FORMAZIONE 231':
+
+            grassetto_1 = f"della durata complessiva di {durata_corso} ore, tenutosi in modalità FAD"
+            stampa_grassetto(pdf, grassetto_1)
+            
+            pdf.ln(2)
+
+            grassetto_2 = ("nel periodo 02/2025 - 03/2025 con i seguenti contenuti:")
+            stampa_grassetto(pdf, grassetto_2)
+
+            pdf.set_margins(10, 10, 10)
+            # Testo da stampare, coppie di righe
+            coppie = [
+                ("La normativa del D.Lgs 231/2001 principi generali", "a cura del Presidente OdV Prof. Paolo Fratini"),
+                ("Il sistema sanzionatorio ed elenco dei reati presupposto", "a cura del Membro OdV Avv. Fabio Calaciura"),
+                ("I reati fiscali e societari nella normativa 231", "a cura del Membro OdV Dott. Marco Rosatelli")
+            ]
+            y = 50  # Posizione iniziale Y
+            for titolo, autore in coppie:
+                # Stampa titolo in grassetto, size 11
+                pdf.set_font('Arial', 'B', 11)
+                pdf.cell(0, 10, titolo + ' - ', 0, 0)
+                # Stampa autore in normale, size 10
+                pdf.set_font('Arial', '', 10)
+                pdf.cell(0, 10, autore, 0, 1)
+
         else:
             paragrafo_ai_sensi = ("ai sensi dell'Art.37 del D. Lgs. n° 81/08 e s.m.i. e secondo l'Accordo Stato Regioni e "
                                  "Provincie Autonome di Trento e Bolzano del 21.12.2011")
             stampa_multicell_grande(pdf, paragrafo_ai_sensi)
-            pdf.ln(2)
+
             header_str = f"della durata complessiva di {durata_corso} ore, tenutosi in modalità FAD, con i seguenti contenuti:"
             stampa_paragrafo(pdf, header_str, contenuti_corso)
+            pdf.ln(2)
+            
+            
 
         pdf.ln(12)
 
         data_certificazione = datetime.now().strftime("%d-%m-%Y")
-        stampa_firme_accettazione(pdf, data_certificazione, corso.get('docente', ''))
+        stampa_firme_accettazione(pdf, data_certificazione, corso.get('docente', ''), id_corso)
 
         stampa_riquadri(pdf)
 

@@ -10782,3 +10782,100 @@
 2025-05-23 12:56:33 - INFO - -------------------------------STARTING SESSION LOG --------------------------------------- 
 2025-05-23 12:57:14 - INFO - ------------------------------------------------------------------------------------------- 
 2025-05-23 12:57:14 - INFO - -------------------------------STARTING SESSION LOG --------------------------------------- 
+2025-05-23 21:45:01 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 21:45:01 - ERROR - Errore nel creare PDF per CRFSNO68D60F384X: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:01 - ERROR - Errore nel creare PDF per MZZGPP69B56F839A: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:02 - ERROR - Errore nel creare PDF per MRSVNT87M69F023L: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:02 - ERROR - Errore nel creare PDF per ZCCCRL83L44F023B: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:02 - ERROR - Errore nel creare PDF per GLIPRI64R26D653U: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:02 - ERROR - Errore nel creare PDF per VNLCRN90C60G273E: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:02 - ERROR - Errore nel creare PDF per BRTPLA63M07H783M: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:02 - ERROR - Errore nel creare PDF per RAALZK67H62Z368E: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:02 - ERROR - Errore nel creare PDF per PCNMSM61T30L117U: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:02 - ERROR - Errore nel creare PDF per KDRTLV74T57Z100K: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:03 - ERROR - Errore nel creare PDF per LBNGZN93P69E017O: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:03 - ERROR - Errore nel creare PDF per THMPTA94A41Z335Q: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:03 - ERROR - Errore nel creare PDF per TRMFLL62M52L210C: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:03 - ERROR - Errore nel creare PDF per CHLBGT69B47Z129O: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:03 - ERROR - Errore nel creare PDF per VLSNLY71C66Z138J: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:03 - ERROR - Errore nel creare PDF per DHKWFA80T53Z330C: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:03 - ERROR - Errore nel creare PDF per PPPSNT81P43E716T: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:03 - ERROR - Errore nel creare PDF per SHKNLD73P63Z100Z: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:04 - ERROR - Errore nel creare PDF per CCCLSN74D56H501M: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:04 - ERROR - Errore nel creare PDF per SPSRNO57R56H501C: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:04 - ERROR - Errore nel creare PDF per CPNVNI72B29D643E: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:04 - ERROR - Errore nel creare PDF per MGLFLR84A59D960F: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:45:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 21:45:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 21:45:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 21:45:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 21:52:27 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 21:52:28 - ERROR - Errore nel creare PDF per CRFSNO68D60F384X: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:28 - ERROR - Errore nel creare PDF per MZZGPP69B56F839A: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:28 - ERROR - Errore nel creare PDF per MRSVNT87M69F023L: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:28 - ERROR - Errore nel creare PDF per ZCCCRL83L44F023B: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:28 - ERROR - Errore nel creare PDF per GLIPRI64R26D653U: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:28 - ERROR - Errore nel creare PDF per VNLCRN90C60G273E: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:28 - ERROR - Errore nel creare PDF per BRTPLA63M07H783M: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:28 - ERROR - Errore nel creare PDF per RAALZK67H62Z368E: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:29 - ERROR - Errore nel creare PDF per PCNMSM61T30L117U: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:29 - ERROR - Errore nel creare PDF per KDRTLV74T57Z100K: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:29 - ERROR - Errore nel creare PDF per LBNGZN93P69E017O: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:29 - ERROR - Errore nel creare PDF per THMPTA94A41Z335Q: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:29 - ERROR - Errore nel creare PDF per TRMFLL62M52L210C: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:29 - ERROR - Errore nel creare PDF per CHLBGT69B47Z129O: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:29 - ERROR - Errore nel creare PDF per VLSNLY71C66Z138J: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:29 - ERROR - Errore nel creare PDF per DHKWFA80T53Z330C: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:30 - ERROR - Errore nel creare PDF per PPPSNT81P43E716T: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:30 - ERROR - Errore nel creare PDF per SHKNLD73P63Z100Z: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:30 - ERROR - Errore nel creare PDF per CCCLSN74D56H501M: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:30 - ERROR - Errore nel creare PDF per SPSRNO57R56H501C: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:30 - ERROR - Errore nel creare PDF per CPNVNI72B29D643E: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:30 - ERROR - Errore nel creare PDF per MGLFLR84A59D960F: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:52:30 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 21:52:30 - ERROR - Errore nel creare PDF per DCNDNL76A26H501U: [Errno 13] Permission denied: 'E-Learning Odoo Reports\\2025\\Authentica S.p.A.\\Sicurezza sul Lavoro\\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf'
+2025-05-23 21:52:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 21:52:31 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 21:59:24 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 21:59:24 - ERROR - Errore nel creare PDF per CRFSNO68D60F384X: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:24 - ERROR - Errore nel creare PDF per MZZGPP69B56F839A: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:24 - ERROR - Errore nel creare PDF per MRSVNT87M69F023L: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:24 - ERROR - Errore nel creare PDF per ZCCCRL83L44F023B: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:24 - ERROR - Errore nel creare PDF per GLIPRI64R26D653U: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:25 - ERROR - Errore nel creare PDF per VNLCRN90C60G273E: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:25 - ERROR - Errore nel creare PDF per BRTPLA63M07H783M: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:25 - ERROR - Errore nel creare PDF per RAALZK67H62Z368E: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:25 - ERROR - Errore nel creare PDF per PCNMSM61T30L117U: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:25 - ERROR - Errore nel creare PDF per KDRTLV74T57Z100K: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:25 - ERROR - Errore nel creare PDF per LBNGZN93P69E017O: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:25 - ERROR - Errore nel creare PDF per THMPTA94A41Z335Q: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:26 - ERROR - Errore nel creare PDF per TRMFLL62M52L210C: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:26 - ERROR - Errore nel creare PDF per CHLBGT69B47Z129O: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 21:59:26 - ERROR - Errore nel creare PDF per VLSNLY71C66Z138J: stampa_paragrafo() missing 1 required positional argument: 'text_string'
+2025-05-23 22:03:00 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-05-23 22:03:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CRFSNO68D60F384X_2025_Modello 231.pdf
+2025-05-23 22:03:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MZZGPP69B56F839A_2025_Modello 231.pdf
+2025-05-23 22:03:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\MRSVNT87M69F023L_2025_Modello 231.pdf
+2025-05-23 22:03:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\ZCCCRL83L44F023B_2025_Modello 231.pdf
+2025-05-23 22:03:00 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\GLIPRI64R26D653U_2025_Modello 231.pdf
+2025-05-23 22:03:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\VNLCRN90C60G273E_2025_Modello 231.pdf
+2025-05-23 22:03:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\BRTPLA63M07H783M_2025_Modello 231.pdf
+2025-05-23 22:03:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\RAALZK67H62Z368E_2025_Modello 231.pdf
+2025-05-23 22:03:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PCNMSM61T30L117U_2025_Modello 231.pdf
+2025-05-23 22:03:01 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\KDRTLV74T57Z100K_2025_Modello 231.pdf
+2025-05-23 22:03:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\LBNGZN93P69E017O_2025_Modello 231.pdf
+2025-05-23 22:03:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\THMPTA94A41Z335Q_2025_Modello 231.pdf
+2025-05-23 22:03:02 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\TRMFLL62M52L210C_2025_Modello 231.pdf
+2025-05-23 22:03:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CHLBGT69B47Z129O_2025_Modello 231.pdf
+2025-05-23 22:03:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\SARCA-GMA S.R.L.\Modello 231\VLSNLY71C66Z138J_2025_Modello 231.pdf
+2025-05-23 22:03:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\DHKWFA80T53Z330C_2025_Modello 231.pdf
+2025-05-23 22:03:03 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\PPPSNT81P43E716T_2025_Modello 231.pdf
+2025-05-23 22:03:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SHKNLD73P63Z100Z_2025_Modello 231.pdf
+2025-05-23 22:03:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CCCLSN74D56H501M_2025_Modello 231.pdf
+2025-05-23 22:03:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\SPSRNO57R56H501C_2025_Modello 231.pdf
+2025-05-23 22:03:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Modello 231\CPNVNI72B29D643E_2025_Modello 231.pdf
+2025-05-23 22:03:04 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-05-23 22:03:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:03:05 - ERROR - Errore nel creare PDF per DCNDNL76A26H501U: [Errno 13] Permission denied: 'E-Learning Odoo Reports\\2025\\Authentica S.p.A.\\Sicurezza sul Lavoro\\DCNDNL76A26H501U_2025_Sicurezza sul Lavoro.pdf'
+2025-05-23 22:03:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MCHNNA64A54D773I_2025_Sicurezza sul Lavoro.pdf
+2025-05-23 22:03:05 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\MNCTZN68L46D612F_2025_Sicurezza sul Lavoro.pdf

@@ -32,9 +32,9 @@ def estrai_data_nascita_da_codice_fiscale(codice_fiscale):
     return data_ita
 
 # Percorsi e costanti
-path_db_master = "./db/new_master.xlsx"
+path_db_master = "./db/test_db_anagrafica.xlsx"
 path_aziende = "./db/aziende.xlsx"
-path_stampa_pdf = "./db/stampa_pdf.xlsx"
+path_stampa_pdf = "./db/test_stampa_pdf.xlsx"
 print(os.getcwd())
 if not os.path.exists(path_stampa_pdf):
     print(f"Errore: il file {path_stampa_pdf} non esiste. Prima devi generarlo")
