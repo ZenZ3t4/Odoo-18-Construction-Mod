@@ -81,7 +81,12 @@ if scelta == '1':
 
 
 elif scelta == '0':
-    print("Uscita...")
+    print(f"Aggiornamento dati master con dati da azienda '{azienda_da_gen}'...")
+    aggiorna_master_da_azienda(azienda_da_gen)
+    print("Aggiornamento completato. Uscita dal programma.")
+    logging.info("------------------------------- EXITING SESSION LOG --------------------------------------- ")
+    logging.info("------------------------------------------------------------------------------------------- ")
+    print("SCELTA: FUNZIONE IMPORT DATI ANAGRAFICA...")
 
 else:
     print("Opzione non valida.")
