@@ -36,7 +36,7 @@ def blocco_dati_utente(pdf, data_nascita, luogo_nascita, nominativo, codice_fisc
     testo_rilasciato_a = "il presente attestato viene conferito a"
     pdf.cell(200, 10, txt=testo_rilasciato_a, align = 'C', ln=True)
     pdf.ln(7)
-    # blocco dati dinamici
+    # blocco dati dinamicii
     # dati anagrafici del candidato
     dati_utente = f"nato/a a {luogo_nascita} il {data_nascita} - Codice Fiscale: {codice_fiscale}"
     
