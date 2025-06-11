@@ -36,7 +36,7 @@ def blocco_dati_utente(pdf, data_nascita, luogo_nascita, nominativo, codice_fisc
     testo_rilasciato_a = "il presente attestato viene conferito a"
     pdf.cell(200, 10, txt=testo_rilasciato_a, align = 'C', ln=True)
     pdf.ln(7)
-    # blocco dati dinamicii
+    # blocco dati dinamici
     # dati anagrafici del candidato
     dati_utente = f"nato/a a {luogo_nascita} il {data_nascita} - Codice Fiscale: {codice_fiscale}"
     
@@ -601,6 +601,8 @@ n_stampe = 0
 n_errori = 0
 dict_codici_catastali = carica_codici_catastali(file_codici_catastali)
 
+# FOR per iterare nelle righe di sheet_master
+
 for row in sheet_master.iter_rows(min_row=2, values_only=True):
     cf = row[idx_cf_master]
     if cf is None:
@@ -701,6 +703,7 @@ print("+------------------------------------------------------------------------
 # 9. Salva il file master aggiornato
 workbook.save(file_master_path)
 
+# Per integrare una nuova funzione in input = 2 da interfaccia grafica
 # 10. Crea PDF se l'utente sceglie 1, se sceglie 2 o qualcosaltro esci
 
 # GUI di selezione

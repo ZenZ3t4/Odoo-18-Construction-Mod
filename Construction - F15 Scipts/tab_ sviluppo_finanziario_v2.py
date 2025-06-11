@@ -81,7 +81,7 @@ for record in self:
         payback_year = 0
         fco_cumulato = 0.0
         payback_trovato = False
-        tasso_attualizzazione = 0.0465  # Puoi anche renderlo personalizzabile da un campo
+        tasso_attualizzazione = 5.11  # Puoi anche renderlo personalizzabile da un campo
         van_totale = 0.0
         
         for anno in range(1, durata_contratto + 1):
@@ -127,7 +127,7 @@ for record in self:
                 contributo_pubblico = contributo_pubblico  # Contributo pubblico valido solo per l'anno 1
                 equity = equity  # Equity valido solo per l'anno 1
                 investimento = investimento  # Investimento valido solo per l'anno 1
-                costi_generali_investimento = investimento * (aliquota_costi_generali / 100) # Costi generali dell'investimento
+                costi_generali_investimento = investimento * aliquota_costi_generali # Costi generali dell'investimento
             else:
                 finanziamento = 0
                 contributo_pubblico = 0
@@ -152,15 +152,19 @@ for record in self:
             if anno == 1 and costi_operativi_anno_0 > 0:
                 costi_generali = (costi_operativi_anno_0 * aliquota_costi_generali) + costi_generali_investimento
                 costi_operativi = costi_operativi_anno_0 + costi_generali
+            elif anno == 1 and costi_operativi_anno_0 == 0:
+                costi_generali = (costi_operativi_anno_0 * aliquota_costi_generali) + costi_generali_investimento 
+                costi_operativi = 0
             else:
                 costi_generali = (costi_operativi_successivo * aliquota_costi_generali) + costi_generali_investimento
                 costi_operativi = costi_operativi_successivo + costi_generali
 
             
-
             # Calcolare EBITDA, EBT e Utile Netto per ogni anno, tenendo conto della quota interessi
-
-            ebitda = ricavi_anno - costi_operativi - costi_generali
+            if anno == 1 and costi_operativi_anno_0 == 0:
+                ebitda = ricavi_anno - costi_operativi - costi_generali - costi_investimento
+            else:
+                ebitda = ricavi_anno - costi_operativi - costi_generali
             ebt = ebitda - quota_interessi - ammortamento_materiale_totale - ammortamento_immateriale_totale# EBT diminuisce con la quota interessi
             irap = ricavi_anno * (record.x_percentuale_irap / 100)  # IRAP calcolato sui ricavi
             ires = (ebt - irap) * (record.x_percentuale_ires / 100)
@@ -208,7 +212,7 @@ for record in self:
                     payback_trovato = True
             
             # Calcolo VAN
-            van_totale += fco / ((1 + tasso_attualizzazione) ** anno)
+            van_totale += fco * (1/((1 + tasso_attualizzazione) ** anno))
 
             # Applicare colore rosso se il valore è negativo
             def color_negative(value):
@@ -246,12 +250,12 @@ for record in self:
                 <thead>
                     <tr>
                         <th style="width: 50px; padding: 5px; text-align: center; word-wrap: break-word;">Anno</th>
-                        <th style="width: 100px; padding: 5px; text-align: center; word-wrap: break-word;">Canone Annuo</th>
+                        <th style="width: 100px; padding: 5px; text-align: center; word-wrap: break-word;">Ricavi</th>
                         <th style="width: 110px; padding: 5px; text-align: center; word-wrap: break-word;">Finanziamento</th>
                         <th style="width: 100px; padding: 5px; text-align: center; word-wrap: break-word;">Contributo Extra</th>
                         <th style="width: 100px; padding: 5px; text-align: center; word-wrap: break-word;">Equity</th>
-                        <th style="width: 110px; padding: 5px; text-align: center; word-wrap: break-word;">Investimento</th>
-                        <th style="width: 90px; padding: 5px; text-align: center; word-wrap: break-word;">Costi Operativi</th>
+                        <th style="width: 110px; padding: 5px; text-align: center; word-wrap: break-word;">Costi Realizzazione</th>
+                        <th style="width: 90px; padding: 5px; text-align: center; word-wrap: break-word;">Costi Manutenzione</th>
                         <th style="width: 90px; padding: 5px; text-align: center; word-wrap: break-word;">Costi Generali</th>
                         <th style="width: 90px; padding: 5px; text-align: center; word-wrap: break-word;">Ammortamento Materiale</th>
                         <th style="width: 90px; padding: 5px; text-align: center; word-wrap: break-word;">Ammortamento Immateriale</th>
@@ -284,7 +288,7 @@ for record in self:
         
         # Calcolo del VAN
         project_investimento = record.x_importo_untaxed_investimento
-        van_finale = van_totale - project_equity  # oppure -investimento se vuoi il VAN globale
+        van_finale =  van_totale  # oppure -investimento se vuoi il VAN globale
         
         record['x_dscr'] = dscr_unico
         record['x_llcr'] = llcr_unico

@@ -86,6 +86,15 @@ def stampa_multicell_grande(pdf, testo):
         pdf.multi_cell(0, 5, riga, align='C')
     pdf.set_margins(10, 10, 10)
 
+def stampa_multicell_nome_corso(pdf, testo):
+    pdf.set_text_color(235, 9, 16)
+    pdf.set_font("Arial", "B", size=24)
+    pdf.set_margins(10, 10, 10)
+    for riga in testo.splitlines():
+        pdf.multi_cell(0, 10, riga, align='C')
+    pdf.set_margins(10, 10, 10)
+    pdf.set_text_color(36, 35, 35)
+
 def stampa_paragrafo(pdf, header_str, text_string):
     pdf.set_font("Helvetica", "BI", size=12)
     pdf.set_margins(10, 10, 10)
@@ -116,8 +125,8 @@ def stampa_firme_accettazione(pdf, data_emissione, docente, id_corso):
         pdf.cell(60, 10, 'Il direttore del corso', 0, 1, 'C')
         
     elif id_corso == 'Nozioni di sicurezza alimentare e applicazione HACCP':
-        pdf.cell(60, 10, ' ', 0, 1, 'C')
-        
+        pdf.cell(60, 10, 'Il direttore del corso', 0, 1, 'C')
+         
     elif id_corso is not None:
         pdf.cell(60, 10, 'Il Docente', 0, 1, 'C')
     
@@ -125,19 +134,26 @@ def stampa_firme_accettazione(pdf, data_emissione, docente, id_corso):
     larghezza_pagina = pdf.w
     margine_dx = pdf.r_margin
     nome_formatore = docente
-    img_w = 39
+    if id_corso == 'Nozioni di sicurezza alimentare e applicazione HACCP':
+        img_w = 43.2
+    else:
+        img_w = 39
     x_firma = larghezza_pagina - margine_dx - img_w - 15
-    stampa_firma(pdf, nome_formatore, x_firma, y_firma)
+    stampa_firma(pdf, id_corso, nome_formatore, x_firma, y_firma)
     pdf.ln(15)
     pdf.cell(60, 10, ' ', 0, 0, 'C')
     pdf.cell(60, 10, ' ', 0, 0, 'C')
 
-def stampa_firma(pdf, nome_formatore="", x=None, y=None):
+def stampa_firma(pdf, id_corso, nome_formatore="", x=None, y=None):
     if not nome_formatore:
         return
     sign_path = "./images/firme/firma_" + nome_formatore + ".png"
-    img_w = 39
-    img_h = 14
+    if id_corso == 'Nozioni di sicurezza alimentare e applicazione HACCP':
+        img_w = 25.56
+        img_h = 34.44
+    else:
+        img_w = 39
+        img_h = 14
     if x is None:
         x = (pdf.w - img_w) / 2
     if y is None:
@@ -279,16 +295,16 @@ def crea_pdf(codice_fiscale, info):
         pdf.cell(200, 7, txt=testo_header, align='C', ln=True)
         pdf.ln(8)
 
-        stampa_denominazione_percorso_sviluppo(pdf, nome_corso)
+        stampa_multicell_nome_corso(pdf, nome_corso)
 
         #print(f"Id corso: {id_corso} della durata di {durata_corso}")
         #print(f"contenuti: {contenuti_corso}")
         if id_corso == 'Nozioni di sicurezza alimentare e applicazione HACCP':
             
-            header_str = f'della durata di {durata_corso} ore, in conformità al Reg. CE 852/2004'
+            header_str = 'CORSO EROGATO AI SENSI DEL REG.CE 852/2004, REG.CE 178/2002, REG.CE 1169/2011'
             stampa_grassetto(pdf, header_str)
 
-            header_str_2 = "Allegato II Cap. XII e s.m.i. ed ai sensi delle ulteriori normative nazionali e locali applicabili"
+            header_str_2 = f"della durata complessiva di {durata_corso} ore, tenutosi in modalità e-learning, con i seguenti contenuti:"
             stampa_paragrafo(pdf, header_str_2, contenuti_corso)
 
             pdf.ln(2)
