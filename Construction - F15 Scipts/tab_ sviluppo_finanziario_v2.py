@@ -127,7 +127,7 @@ for record in self:
                 contributo_pubblico = contributo_pubblico  # Contributo pubblico valido solo per l'anno 1
                 equity = equity  # Equity valido solo per l'anno 1
                 investimento = investimento  # Investimento valido solo per l'anno 1
-                costi_generali_investimento = investimento * aliquota_costi_generali # Costi generali dell'investimento
+                costi_generali_investimento = investimento * (aliquota_costi_generali / 100) # Costi generali dell'investimento
             else:
                 finanziamento = 0
                 contributo_pubblico = 0
@@ -152,9 +152,6 @@ for record in self:
             if anno == 1 and costi_operativi_anno_0 > 0:
                 costi_generali = (costi_operativi_anno_0 * aliquota_costi_generali) + costi_generali_investimento
                 costi_operativi = costi_operativi_anno_0 + costi_generali
-            elif anno == 1 and costi_operativi_anno_0 == 0:
-                costi_generali = (costi_operativi_anno_0 * aliquota_costi_generali) + costi_generali_investimento 
-                costi_operativi = 0
             else:
                 costi_generali = (costi_operativi_successivo * aliquota_costi_generali) + costi_generali_investimento
                 costi_operativi = costi_operativi_successivo + costi_generali
@@ -162,10 +159,8 @@ for record in self:
             
 
             # Calcolare EBITDA, EBT e Utile Netto per ogni anno, tenendo conto della quota interessi
-            if anno == 1 and costi_operativi_anno_0 == 0:
-                ebitda = ricavi_anno - costi_operativi - costi_generali - costi_investimento
-            else:
-                ebitda = ricavi_anno - costi_operativi - costi_generali
+
+            ebitda = ricavi_anno - costi_operativi - costi_generali
             ebt = ebitda - quota_interessi - ammortamento_materiale_totale - ammortamento_immateriale_totale# EBT diminuisce con la quota interessi
             irap = ricavi_anno * (record.x_percentuale_irap / 100)  # IRAP calcolato sui ricavi
             ires = (ebt - irap) * (record.x_percentuale_ires / 100)

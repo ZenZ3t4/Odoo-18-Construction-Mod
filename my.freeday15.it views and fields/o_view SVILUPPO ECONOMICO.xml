@@ -27,7 +27,7 @@
         <!-- Riga 2 - Colonne x1 : SVILUPPO ECONOMICO -->
         <group string="SVILUPPO ECONOMICO-FINANZIARIO" colspan="4">
             <field string="Durata Contratto (Anni)" name="x_durata_contratto" ttype="int" groups=""/>
-            <field string="Sviluppo Economico:" name="x_t_sviluppo_economico" ttype="html" groups=""/>
+            <field string=" " name="x_t_sviluppo_economico" ttype="html" groups=""/>
         </group>
         <group string="INDICATORI" col="3" colspan="3">
                 <group colspan="1"><field name="x_dscr" ttype="float" groups=""/></group>
@@ -36,6 +36,7 @@
                 <!-- <group colspan="1"><field name="x_tir" ttype="float" groups=""/></group> -->
                 <group colspan="1"><field name="x_indicatore_van" ttype="float" groups="" readonly="1"/></group>
                 <group colspan="1"><field name="x_payback_year" ttype="float" groups="" readonly="1"/></group>
+                <group colspan="1"><field name="x_computed_ricavo_minimo" readonly="1" widget="html"/></group>
             </group>
         <!-- Riga 3 - Colonne x2 : DATI COMPUTAZIONALI-->
         <group col="3" colspan="3" string="DATI COMPUTAZIONALI">
