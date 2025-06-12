@@ -283,15 +283,21 @@ def crea_pdf(codice_fiscale, info):
         pdf.ln(4)
         pdf.set_font("Helvetica", "BI", size=14)
 
+        print(f" l'id corso è {id_corso}")
+        print(f"Contenuti del corso: {contenuti_corso}")
+        print(contenuti_corso[990:1000])
         if id_corso == "Nozioni di sicurezza alimentare e applicazione HACCP":
             testo_header = "ha frequentato il corso di formazione"
             
-        if id_corso == "FORMAZIONE 231":
+        elif id_corso == "FORMAZIONE 231":
             testo_header = "per la partecipazione al Corso di Formazione:"
             
-        if id_corso == "CORSO SICUREZZA SUL LAVORO 2025":
+        elif id_corso == "CORSO SICUREZZA SUL LAVORO 2025":
             testo_header = "per la partecipazione al corso di formazione generale e specifica"
-            
+          
+        else:
+            testo_header = "per aver partecipato al"
+
         pdf.cell(200, 7, txt=testo_header, align='C', ln=True)
         pdf.ln(8)
 
@@ -363,9 +369,15 @@ def crea_pdf(codice_fiscale, info):
                 pdf.set_font('Arial', 'I', 10)
                 pdf.cell(w_autore, 10, autore, border=0, ln=1)
 
+        elif id_corso == "CORSO IN MATERIA DI PREVENZIONE DELLA CORRUZIONE E DELL'ILLEGALITA":
+            paragrafo_ai_sensi = ("ai sensi delle cogenti normative in materia, svoltosi in modalità FAD")
+            stampa_multicell_grande(pdf, paragrafo_ai_sensi)
 
+            header_str = f"della durata complessiva di {durata_corso} ore, con i seguenti contenuti:"
+            stampa_paragrafo(pdf, header_str, contenuti_corso)
+            pdf.ln(2)
         else:
-            paragrafo_ai_sensi = ("ai sensi dell'Art.37 del D. Lgs. n° 81/08 e s.m.i. e secondo l'Accordo Stato Regioni e "
+            paragrafo_ai_sensi = ("ai sensi dell'Art.37 del D. Lgs. n. 81/08 e s.m.i. e secondo l'Accordo Stato Regioni e "
                                  "Provincie Autonome di Trento e Bolzano del 21.12.2011")
             stampa_multicell_grande(pdf, paragrafo_ai_sensi)
 

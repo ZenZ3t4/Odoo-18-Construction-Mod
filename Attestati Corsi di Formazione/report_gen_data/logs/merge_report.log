@@ -8497,3 +8497,18 @@
 2025-05-23 17:40:57,470 - INFO - PDF: 65 righe scritte, 11 mancanti.
 2025-05-23 17:40:57,470 - INFO - Errori salvati in: ./logs/errors\errors_Nozioni_di_sicurezza_alimentare_e_applicazione_HACCP_20250523_1740.xlsx
 2025-05-23 17:40:57,470 - INFO - Script completato con successo.
+2025-06-12 09:12:22,951 - ERROR - Nessun file Excel trovato in './odoo_data' contenente 'antico' nel nome.
+2025-06-12 09:12:22,969 - CRITICAL - Errore critico durante l'esecuzione dello script: Nessun file Excel trovato in './odoo_data' contenente 'antico' nel nome.
+2025-06-12 09:12:40,224 - INFO - File Odoo trovato: ./odoo_data\lista_odoo_2025_corruzione.xlsx
+2025-06-12 09:13:27,615 - INFO - Docente selezionato: petrignani
+2025-06-12 09:13:29,154 - WARNING - [!] Email non trovata nel master: freedayhasstest@gmail.com
+2025-06-12 09:13:29,175 - WARNING - [!] Email non trovata nel master: allfood.domotica.1@gmail.com
+2025-06-12 09:13:29,580 - INFO - PDF: 0 righe scritte, 2 mancanti.
+2025-06-12 09:13:29,580 - INFO - Errori salvati in: ./logs/errors\errors_CORSO_IN_MATERIA_DI_PREVENZIONE_DELLA_CORRUZIONE_E_DELL’ILLEGALITÀ_20250612_0913.xlsx
+2025-06-12 09:13:29,580 - INFO - Script completato con successo.
+2025-06-12 09:15:20,125 - INFO - File Odoo trovato: ./odoo_data\lista_odoo_2025_corruzione.xlsx
+2025-06-12 09:15:24,160 - INFO - Docente selezionato: petrignani
+2025-06-12 09:15:25,961 - WARNING - [!] Email non trovata nel master: allfood.domotica.1@gmail.com
+2025-06-12 09:15:26,315 - INFO - PDF: 1 righe scritte, 1 mancanti.
+2025-06-12 09:15:26,315 - INFO - Errori salvati in: ./logs/errors\errors_CORSO_IN_MATERIA_DI_PREVENZIONE_DELLA_CORRUZIONE_E_DELL’ILLEGALITÀ_20250612_0915.xlsx
+2025-06-12 09:15:26,315 - INFO - Script completato con successo.

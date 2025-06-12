@@ -170,7 +170,7 @@ try:
     path_file_errori = os.path.join(folder_error_output, nome_file_errori)
     wb_error.save(path_file_errori)
 
-    print(f"\n✅ File 'stampa_pdf.xlsx' aggiornato.")
+    print(f"\n✅ File {file_output} aggiornato.")
     print(f"📁 File sessione salvato in: {path_file_sessione}")
     print(f"⚠️ File errori salvato in: {path_file_errori}")
     logging.info(f"PDF: {righe_scritti} righe scritte, {righe_mancanti} mancanti.")

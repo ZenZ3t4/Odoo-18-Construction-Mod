@@ -17,6 +17,7 @@ logging.basicConfig(
 # Funzione che estrae data di nascita da codice fiscale e restituisce gg/mm/aaaa
 def estrai_data_nascita_da_codice_fiscale(codice_fiscale):
     mesi_codice = 'ABCDEHLMPRST'  # Mesi: A=Gen, B=Feb, ..., T=Dic
+    # print("DEBUG codice_fiscale:", codice_fiscale)  # Add this line
     anno = int(codice_fiscale[6:8])
     mese = mesi_codice.index(codice_fiscale[8]) + 1
     giorno = int(codice_fiscale[9:11])
@@ -32,9 +33,9 @@ def estrai_data_nascita_da_codice_fiscale(codice_fiscale):
     return data_ita
 
 # Percorsi e costanti
-path_db_master = "./db/test_db_anagrafica.xlsx"
+path_db_master = "./db/db_anagrafica_new_reports.xlsx"
 path_aziende = "./db/aziende.xlsx"
-path_stampa_pdf = "./db/stampa_pdf.xlsx"
+path_stampa_pdf = "./db/test_stampa_pdf.xlsx"
 print(os.getcwd())
 if not os.path.exists(path_stampa_pdf):
     print(f"Errore: il file {path_stampa_pdf} non esiste. Prima devi generarlo")

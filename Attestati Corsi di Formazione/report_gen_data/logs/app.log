@@ -18932,3 +18932,81 @@
 2025-06-11 12:54:38 - INFO - N. totale stampe: 1848
 2025-06-11 12:54:38 - INFO - N. PDF non generati per mancanza id_corso: 0
 2025-06-11 12:54:38 - INFO - N. ERRORI CRITICI: 0
+2025-06-12 09:29:43 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 09:29:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\ITALIA CHEF S.R.L.\Modello 231\MGLFLR84A59D960F_2025_Modello 231.pdf
+2025-06-12 09:29:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Sicurezza sul Lavoro\PTRNGL76M67A285D_2025_Sicurezza sul Lavoro.pdf
+2025-06-12 09:29:43 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\HACCP e Celiachia\BSCCNZ76S60G273H_2025_HACCP e Celiachia.pdf
+2025-06-12 09:29:43 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: cannot access local variable 'testo_header' where it is not associated with a value
+2025-06-12 09:29:43 - INFO - N. totale stampe: 3
+2025-06-12 09:29:43 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 09:29:43 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 09:34:05 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 09:34:05 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: cannot access local variable 'testo_header' where it is not associated with a value
+2025-06-12 09:34:05 - INFO - N. totale stampe: 0
+2025-06-12 09:34:05 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 09:34:05 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 09:35:02 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 09:35:02 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: 'latin-1' codec can't encode character '\u2019' in position 997: ordinal not in range(256)
+2025-06-12 09:35:02 - INFO - N. totale stampe: 0
+2025-06-12 09:35:02 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 09:35:02 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 09:39:54 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 09:39:54 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: 'latin-1' codec can't encode character '\u2019' in position 997: ordinal not in range(256)
+2025-06-12 09:39:54 - INFO - N. totale stampe: 0
+2025-06-12 09:39:54 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 09:39:54 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 09:59:12 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 09:59:12 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: 'latin-1' codec can't encode character '\u2019' in position 997: ordinal not in range(256)
+2025-06-12 09:59:12 - INFO - N. totale stampe: 0
+2025-06-12 09:59:12 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 09:59:12 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 10:01:39 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:01:40 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: 'latin-1' codec can't encode character '\u2019' in position 997: ordinal not in range(256)
+2025-06-12 10:01:40 - INFO - N. totale stampe: 0
+2025-06-12 10:01:40 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:01:40 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 10:03:43 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:03:43 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: 'latin-1' codec can't encode character '\u2019' in position 997: ordinal not in range(256)
+2025-06-12 10:03:43 - INFO - N. totale stampe: 0
+2025-06-12 10:03:43 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:03:43 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 10:08:24 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:08:24 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: 'latin-1' codec can't encode character '\u2019' in position 997: ordinal not in range(256)
+2025-06-12 10:08:24 - INFO - N. totale stampe: 0
+2025-06-12 10:08:24 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:08:24 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 10:10:26 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:10:26 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: 'latin-1' codec can't encode character '\u2019' in position 997: ordinal not in range(256)
+2025-06-12 10:10:26 - INFO - N. totale stampe: 0
+2025-06-12 10:10:26 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:10:26 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 10:12:50 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:12:50 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Anti Corruzione\BNVFRC85H42L219F_2025_Anti Corruzione.pdf
+2025-06-12 10:12:50 - INFO - N. totale stampe: 1
+2025-06-12 10:12:50 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:12:50 - INFO - N. ERRORI CRITICI: 0
+2025-06-12 10:14:43 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:14:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Anti Corruzione\BNVFRC85H42L219F_2025_Anti Corruzione.pdf
+2025-06-12 10:14:44 - INFO - N. totale stampe: 1
+2025-06-12 10:14:44 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:14:44 - INFO - N. ERRORI CRITICI: 0
+2025-06-12 10:23:27 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:23:28 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: [Errno 13] Permission denied: 'E-Learning Odoo Reports\\2025\\Authentica S.p.A.\\Anti Corruzione\\BNVFRC85H42L219F_2025_Anti Corruzione.pdf'
+2025-06-12 10:23:28 - INFO - N. totale stampe: 0
+2025-06-12 10:23:28 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:23:28 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 10:23:39 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:23:40 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Anti Corruzione\BNVFRC85H42L219F_2025_Anti Corruzione.pdf
+2025-06-12 10:23:40 - INFO - N. totale stampe: 1
+2025-06-12 10:23:40 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:23:40 - INFO - N. ERRORI CRITICI: 0
+2025-06-12 10:25:31 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:25:32 - ERROR - Errore nel creare PDF per BNVFRC85H42L219F: [Errno 13] Permission denied: 'E-Learning Odoo Reports\\2025\\Authentica S.p.A.\\Anti Corruzione\\BNVFRC85H42L219F_2025_Anti Corruzione.pdf'
+2025-06-12 10:25:32 - INFO - N. totale stampe: 0
+2025-06-12 10:25:32 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:25:32 - INFO - N. ERRORI CRITICI: 1
+2025-06-12 10:25:44 - INFO - ------------------------------- INIZIO GENERAZIONE PDF ------------------------------------ 
+2025-06-12 10:25:44 - INFO - Il file PDF è stato salvato in: E-Learning Odoo Reports\2025\Authentica S.p.A.\Anti Corruzione\BNVFRC85H42L219F_2025_Anti Corruzione.pdf
+2025-06-12 10:25:44 - INFO - N. totale stampe: 1
+2025-06-12 10:25:44 - INFO - N. PDF non generati per mancanza id_corso: 0
+2025-06-12 10:25:44 - INFO - N. ERRORI CRITICI: 0
